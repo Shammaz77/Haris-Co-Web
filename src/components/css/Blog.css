@@ -1,0 +1,50 @@
+.blog-image{
+  width: 95%;
+	min-height: 350px;
+}
+.blog-heading-full-width{
+	width: 100%;
+	font-size: 39px;
+	line-height: 1.1;
+	padding-bottom: 15px;
+}
+.date-time-blog h4{
+	font-size: 22px;
+}
+.date-time-blog {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-bottom: 20px;
+}
+.blog-box{
+	width: 100%;
+	margin-bottom: 20px;
+}
+.blogs{
+	padding-top: 80px;
+}
+.blog-sub{
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 1.2;
+}
+.blog-main{
+	padding-bottom: 70px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,121 @@
+.header-page-name{
+	font-size: 100px;
+	margin-left: -10px;
+	padding: 6% 0px 5% 0px;
+}
+.header-page-name-small{
+	font-weight: 300 !important;
+	font-size: 36px;
+	padding-bottom: 25px;
+}
+.header-page-name-common{
+	font-size: 46px;
+	width: 50%;
+	line-height: 1.1;
+}
+.header-service-common{
+	padding: 6% 0px 6% 0px;
+	margin-left: -10px;
+}
+.page-path{
+	color: grey;
+	font-size: 18px;
+	padding-bottom: 5px;
+}
+.page-path span{
+	color: #000;
+}
+.brand-details{
+	background-color: #D9D9D982;
+	padding: 40px 30px 40px 30px;
+}
+.brand-titles{
+	font-size: 30px;
+	line-height: 1.1;
+}
+.enquire-btn{
+	padding: 9px 20px !important;
+	border-radius: 0px !important;
+	border: 2px solid #000 !important;
+}
+.brand-sub-titles{
+	font-size: 18px;
+	font-weight: 400;
+	color: #4d4a4a;
+}
+.arrow-icon{
+	width: 25px;
+}
+.enquiry-btn-dv{
+	padding-top: 30px;
+}
+.expertise{
+	background-color: #000;
+	padding: 50px 0px;
+	margin-top: 4%;
+}
+.expertise-heading{
+	color: #fff;
+	text-align: center;
+	font-size: 32px;
+	font-weight: 500;
+	padding-bottom: 70px;
+}
+.count-number{
+	color: #fff;
+	font-size: 35px;
+	font-weight: 500;
+}
+.main-titile-experise{
+	color: #fff;
+	font-size: 30px;
+	font-weight: 500;
+	padding-bottom: 40px;
+}
+.sub-titile-experise{
+	color: #fff;
+	font-size: 21px;
+	font-weight: 300;
+	width: 70%;
+}
+.expertise-inner-div{
+	display: flex;
+	width: 100% !important;
+	padding-bottom: 70px;
+}
+.content-expertise{
+	padding-left: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
