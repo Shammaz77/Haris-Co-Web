@@ -70,7 +70,7 @@
 	color: #fff;
 	font-size: 30px;
 	font-weight: 500;
-	padding-bottom: 40px;
+	padding-bottom: 30px;
 }
 .sub-titile-experise{
 	color: #fff;
@@ -88,11 +88,27 @@
 }
 
 
-
-
-
-
-
+@media (max-width:1250px){
+	.header-page-name-common {
+		width: 60%;
+	}
+}
+@media (max-width:991px){
+	.header-page-name-common {
+		width: 70%;
+	}
+	.services-box {
+    min-height: 600px;
+	}
+}
+@media (max-width:800px){
+	.header-page-name-common {
+		width: 90%;
+	}
+	.header-page-name-common {
+    font-size: 42px;
+		}
+}
 
 
 

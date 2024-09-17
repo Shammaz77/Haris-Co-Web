@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import '../components/css/Branding.css'
 import arrow from '.././Assets/arrow.svg'
+
 const Branding = () => {
   return (
     <div className='services-page'>
@@ -37,7 +38,7 @@ const Branding = () => {
 								<h2 className='expertise-heading'>Field of Expertise</h2>
 							</div>
 						</div>
-						<div className="col-lg-4">
+						<div className="col-lg-4 col-md-6">
 							<div className="expertise-inner-div">
 								<div className="count-expertise">
 									<h3 className='count-number'>01.</h3>
@@ -48,7 +49,7 @@ const Branding = () => {
 								</div>
 							</div>
 						</div>
-						<div className="col-lg-4">
+						<div className="col-lg-4 col-md-6">
 							<div className="expertise-inner-div">
 								<div className="count-expertise">
 									<h3 className='count-number'>01.</h3>
@@ -59,7 +60,7 @@ const Branding = () => {
 								</div>
 							</div>
 						</div>
-						<div className="col-lg-4">
+						<div className="col-lg-4 col-md-6">
 							<div className="expertise-inner-div">
 								<div className="count-expertise">
 									<h3 className='count-number'>01.</h3>
@@ -70,7 +71,7 @@ const Branding = () => {
 								</div>
 							</div>
 						</div>
-						<div className="col-lg-4">
+						<div className="col-lg-4 col-md-6">
 							<div className="expertise-inner-div">
 								<div className="count-expertise">
 									<h3 className='count-number'>03.</h3>
@@ -81,7 +82,7 @@ const Branding = () => {
 								</div>
 							</div>
 						</div>
-						<div className="col-lg-4">
+						<div className="col-lg-4 col-md-6">
 							<div className="expertise-inner-div">
 								<div className="count-expertise">
 									<h3 className='count-number'>05.</h3>
@@ -92,7 +93,7 @@ const Branding = () => {
 								</div>
 							</div>
 						</div>
-						<div className="col-lg-4">
+						<div className="col-lg-4 col-md-6">
 							<div className="expertise-inner-div">
 								<div className="count-expertise">
 									<h3 className='count-number'>06.</h3>
@@ -109,5 +110,4 @@ const Branding = () => {
     </div>
   )
 }
-
 export default Branding;

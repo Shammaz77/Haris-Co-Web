@@ -18,7 +18,10 @@ a{
 	margin: auto;
 	width: 90%;
 }
-
+@font-face {
+  font-family: thin;
+  src: url(./Font/HelveticaNeueLight.otf);
+}
 
 
 

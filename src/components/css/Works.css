@@ -1,0 +1,54 @@
+.similiar-title{
+	font-size: 22px;
+	font-weight: 400;
+	padding-bottom: 10px;
+}
+.similiar-sub{
+	font-size: 19px;
+	line-height: 1.3;
+	font-family: thin;
+	text-align: justify;
+}
+.similar-contents{
+	padding-top: 20px;
+}
+.similar-image{
+	width: 100%;
+}
+.similar-div{
+	margin-bottom: 50px;
+}
+.top-space{
+	padding-top: 50px;
+}
+.tab-text-active{
+	font-size: 28px;
+	font-weight: 500;
+}
+.tab-text{
+	font-size: 26px;
+	font-family: thin;
+	color: grey;
+}
+.tabs-main{
+	padding-bottom: 10px;
+	display: flex;
+	cursor: pointer;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

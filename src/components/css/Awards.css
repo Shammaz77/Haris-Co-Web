@@ -1,0 +1,45 @@
+.awards-count-text{
+	font-size: 45px;
+	font-weight: 500;
+}
+.awards-name-text{
+	font-size: 40px;
+	font-weight: 500;
+	padding-bottom: 18px;
+	line-height: 1.0;
+}
+.sub-textawards{
+	font-family: thin;
+	font-size: 19px;
+	line-height: 1.4;
+}
+.awwards-box{
+	display: flex;
+	width: 100%;
+}
+.name-awards{
+	padding-left: 20px;
+}
+.awards-main-box{
+	padding-left: 20px;
+}
+.black-bg{
+	background-color: black;
+}
+.top-space-awards{
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+.black-bg{
+	color: #fff !important;
+	padding: 40px 30px 40px 30px;
+}
+
+
+
+
+
+
+
+
+

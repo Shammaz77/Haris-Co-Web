@@ -1,0 +1,75 @@
+.why-work-title{
+	text-align: center;
+	font-weight: 900;
+	font-size: 32px;
+	padding-bottom: 60px;
+}
+.underline-dv{
+	border: 1px solid #000;
+	width: 120px;
+}
+.career-inner-div{
+	display: flex;
+	padding-bottom: 55px;
+}
+.content-career{
+	padding-left: 15px;
+}
+.count-number-career{
+	color: #000;
+	font-weight: 900;
+}
+.sub-titile-career{
+	padding-top: 15px;
+}
+.sub-titile-career{
+	font-size: 21px;
+	font-weight: 300;
+	line-height: 1.1;
+	width: 70%;
+}
+.career-heading-div{
+	padding-top: 60px;
+}
+.vancancy-div{
+	border: 1px solid #000;
+	padding: 25px 20px;
+	margin-bottom: 30px;
+}
+.designation-dv{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.designation-name{
+	font-weight: 500;
+	font-size: 24px;
+}
+.work-type{
+	font-weight: 500;
+	font-size: 20px;
+}
+.work-location{
+	color: grey;
+	font-size: 19px;
+	font-weight: 300;
+}
+.career-btn-dv{
+	padding-top: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import logo from '.././Assets/Logo.png'
 import arrow from '.././Assets/arrow.svg'
+import menu from '.././Assets/menu.svg'
 const Navbar = () => {
   return (
     <div className="container-main">
@@ -12,6 +13,7 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="list-nav">
+          <img src={menu} className='menu-icon' alt="" />
           <ul>
             <li><Link to='/services'>Services</Link></li>
             <li><Link to='/services'>Works</Link></li>
