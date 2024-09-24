@@ -1,18 +1,32 @@
 .services-box{
 	padding: 10px 20px;
-	min-height: 500px;
+	min-height: 420px;
+	width: 97% !important;
+	margin: auto;
 	position: relative;
 	cursor: pointer;
 	margin-bottom: 30px;
 }
+.vedio-home{
+	width: 100%  !important;
+}
 .service-name{
 	color: #fff;
+	font-size: 21px;
 	width: 90%;
+	margin-right: 20px;
+	align-items: center;
+	display: flex;
+	justify-content: start;
 }
 .service-number{
 	color: #fff;
 	font-family: Thin;
 	font-size: 20px;
+}
+.navbar-sidebar ul a{
+	color: #000;
+	text-decoration: none !important;
 }
 .icon-service{
 	width: 50px;
@@ -58,6 +72,7 @@
 }
 .rotate-icon{
 	width: 16px;
+	height: 18px;
 	margin-left: 10px;
 }
 .services-box:hover .rotate-icon{
@@ -99,7 +114,7 @@
 }
 .about-text{
 	color: #fff;
-	font-size: 38px;
+	font-size: 28px;
 	font-family: Thin;
 }
 .about-text span{
@@ -116,13 +131,14 @@
 	margin-left: 5px;
 }
 .count-number{
-	font-size: 90px;
+	font-size: 57px;
 	color: black;
 	margin-bottom: 0px !important;
 }
 .count-text{
 	margin-top: 0px !important;
 	font-family: Thin;
+	font-size: 18px;
 }
 .counter-home{
 	width: 85%;
@@ -138,6 +154,7 @@
 .fearless{
 	background-color: black;
 	padding: 10px 0px;
+	margin-top: -7px;
 }
 .fearless-title{
 	color: #fff;
@@ -145,6 +162,7 @@
 	font-size: 80px;
 	font-family: Thin;
 }
+
 .badge-logo{
 	width: 100%;
 }
@@ -194,27 +212,29 @@
 }
 .home-work-service{
 	position: relative;
+	width: 97% !important;
+	margin: auto;
 }
 .work-number-text{
 	color: #FFCD3C;
-	font-size: 60px;
+	font-size: 40px;
 	font-family: Thin;
 	padding-bottom: 20px;
 }
 .work-number-text-color{
 	color: #14C38E;
-	font-size: 60px;
+	font-size: 40px;
 	font-family: Thin;
 	padding-bottom: 20px;
 }
 .sub-text-work-hide{
-	font-size: 18px;
+	font-size: 15px;
 	color: #fff;
 	font-family: Thin;
 }
 .sub-text-work{
 	display: none;
-	font-size: 17px;
+	font-size: 15px;
 	color: #fff;
 	font-family: Thin;
 	transition: opacity 0.9s ease, max-height 0.9s ease;
@@ -248,9 +268,94 @@
 }
 
 
+.tabs-main {
+  display: flex;
+  overflow-x: auto; /* Allows horizontal scrolling */
+  white-space: nowrap; /* Prevents tabs from wrapping to the next line */
+  scrollbar-width: thin; /* For Firefox */
+}
 
+.tab-text, .tab-text-active {
+  flex: 0 0 auto; /* Prevents shrinking or stretching of the tabs */
+  padding: 10px 20px 10px 0px;
+  cursor: pointer;
+}
+/* For Webkit browsers like Chrome and Safari */
+.tabs-main::-webkit-scrollbar {
+  height: 8px;
+}
+.tabs-main::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+}
+.tabs-main::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+.main-titile-career{
+	font-size: 22px !important;
+}
 
-
+.services-page .brand-divs{
+	padding-bottom: 60px;
+}
+.services-page .side{
+	padding-left: 60px;
+}
+.services-page .brand-details{
+	margin-bottom: 60px;
+}
+.contact-box{
+	background-color: #F4F4F4;
+	padding: 30px 40px;
+	margin-bottom: 80px;
+}
+.contact-inner-div  span{
+	font-family: boldtext;
+	padding-right: 10px;
+}
+.contact-inner-div p{
+	font-family: Thin;
+	font-size: 19px;
+}
+.quote-text{
+	padding-bottom: 20px;
+	font-family: boldtext;
+	font-size: 25px;
+}
+.map-main iframe{
+	width: 100%;
+	height: 400px;
+}
+.contact-box .form-group{
+	margin-bottom: 20px;
+}
+.contact-box .form-control{
+	background-color: transparent !important;
+	border: 1px solid #000 !important;
+	padding: 10px 16px !important;
+	border-radius: 0px !important;
+}
+.contact-box .form-group label{
+	padding-bottom: 11px;
+}
+.contact-inner-div{
+	padding-bottom: 20px;
+}
+.submit-button-form-apply{
+	background-color: #000 !important;
+	color: #fff !important;
+	border-radius: 0px !important;
+	padding: 10px 40px !important;
+	margin-top: 20px !important;
+	display: table !important;
+	margin-left: auto !important; 
+}
+.thank-you-message {
+  display: none;
+  color: green;
+  font-size: 20px;
+  margin-top: 20px;
+}
 
 
 
@@ -279,7 +384,7 @@
 	.mobile-show-slider{
 		display: block;
 	}
-	.home-work-service {
+	.home-work-	service {
 		margin-bottom: 30px;
 	}
 	.counter-home {
@@ -295,11 +400,33 @@
 		display: block;
 		width: 100%;
 	}
+	.services-page .side {
+    padding-left: 	0px;
+	}
+	.client-imagee {
+    width: 100%;
+    padding-bottom: 20px;
+}
+	.work-details-right{
+	display: none;
+	}
+	.work-details{
+	display: none;
+	}
+	.black-bg-service{
+	padding: 30px 0px 50px 0px;
+	}
 }
 @media (max-width:766px){
 	.scroll-icon {
     width: 74px;
     top: -249px;
+	}
+	.tab-text-active {
+    font-size: 23px;
+	}
+	.tab-text {
+    font-size: 20px;
 	}
 }
 @media (max-width:650px){
@@ -323,8 +450,16 @@
 	.about-content {
 		width: 100%;
 	}
+	.about-text {
+		font-size: 21px;
+		line-height: 1.3;
+}
 	.counter-section{
 		padding-bottom: 25px;
+	}
+	.contact-box {
+    padding: 30px 22px;
+    margin-bottom: 80px;
 	}
 }
 @media (max-width:550px){
@@ -335,8 +470,20 @@
 		width: 67px;
 		top: -150px;
 	}
-}
+	.badge-logo {
+		margin-left: -4px;
 
+	}
+}
+@media (max-width:480px){
+	.header-page-name-common {
+		font-size: 21px;
+	}
+	.header-page-name-small {
+    font-size: 32px;
+    padding-bottom: 16px;
+	}
+}
 
 
 

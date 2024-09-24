@@ -72,4 +72,4 @@ const WorkOne = () => {
 	)
 }
 
-export default WorkOne
+export default WorkOne;

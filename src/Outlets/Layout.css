@@ -9,7 +9,7 @@
 .list-nav ul li a{
 	text-decoration: none;
 	color: #000 !important;
-	font-size: 20px;
+	font-size: 18px;
 	font-family: Thin;
 }
 .navbar-main{
@@ -17,6 +17,9 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+}
+.iconnnn{
+	padding-top: 40px;
 }
 .logo-main{
 	width: 300px;
@@ -45,14 +48,14 @@
 	color: #fff;
 	text-align: center;
 	line-height: 1.1;
-	font-size: 28px;
+	font-size: 18px;
 	padding-top: 20px;
 }
 .footer-lists ul li a{
 	color: #fff;
 	text-decoration: none;
 	font-family: thin;
-	font-size: 20px;
+	font-size: 16px;
 }
 .footer-lists ul {
 	display: flex;
@@ -68,7 +71,7 @@
 }
 .social-media-icons .icon-logo-social-media{
 	margin-right: 20px;
-	width: 80px;
+	width: 55px;
 }
 .social-media-icons{
 	width: max-content;
@@ -113,18 +116,116 @@
 	width: 14px;
 	height: 17px;
 }
+.apply-postion-text{
+	text-align: center;
+}
+.form-input-dv{
+	padding-bottom: 23px;
+}
+.form-input-dv .form-control{
+	padding: 10px 16px !important;
+	border-radius: 0px !important;
+}
+.form-controll option{
+	color: grey !important;
+	font-weight: 400 !important;
+}
+.form-career .form-controll{
+	padding: 10px 16px !important;
+	border-radius: 0px !important;
+}
+.btn-subbmit{
+	background-color: #000 !important;
+	color: #fff !important;
+	border-radius: 0px !important;
+	padding: 10px 40px !important;
+	outline: none !important;
+	border-color: #000 !important;
+}
+.border-none{
+	border: none !important;
+}
+.career-btns{
+	color: #000 !important;
+	background-color: #fff !important;
+}
 
 
 
 
 
+/* sidebar code */
+.sidebar{
+	width: 90%;
+	min-width: 270px;
+	max-width: 320px;
+	height: 100%;
+	position: fixed;
+	top: 0px;
+	overflow:auto !important;
+	right: -320px;
+	z-index: 20;
+	transition: 0.2s ease;
+	background: #000000;
+	color: #000;
+}
+.sidebar .close-icon{
+	width: 25px;
+	margin-right: 0px;
+}
+.open-cart{
+	right: 0px !important;
+}
+.open-cartt{
+	display:none;
+}
+.open-cart:before{
+	content: '';
+	position: fixed;
+	top: 0px;
+	height: 70vh;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	pointer-events: none;
+	z-index: -1;
+}
+.navbar-sidebar {
+	padding: 25px;
+	margin-top: 65px;
+}
+.navbar-sidebar ul li{
+	list-style: none;
+	background: #F9F9F9;
+	text-align: center;
+	padding: 10px 15px;
+	margin-bottom: 20px;
+	border-radius: 0px;
+	font-weight: 500;
+}
+.navbar-sidebar ul li a{
+	text-decoration: none;
+	color: #000;
+}
+.navbar-sidebar ul{
+    padding: 0;
+}
+.sidebar .closse{
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	color: #000000;
+}
+.sidebar .active {
+	color: #272B73;
+}
+.dropdown-item{
+	color: grey;
+	font-size: 15px !important;
+}
+.sub-sub-dropdown{
 
-
-
-
-
-
-
+}
 
 
 
@@ -145,7 +246,7 @@
 }
 @media (max-width:1400px){
 	.list-nav ul li {
-    padding: 0px 18px;
+    padding: 0px 12px;
 	}
 }
 @media (max-width:1270px){
@@ -153,17 +254,17 @@
 		width: 180px;
 	}
 	.list-nav ul li a {
-    font-size: 18px;
+    font-size: 16px !important;
 	}
 	.list-nav ul {
     padding-left: 0px;
 	}
 }
 @media (max-width:1180px){
-	.enquire-btn {
-		padding: 8px 15px !important;
-		font-size: 16px !important;
-	}
+    .enquire-btn {
+        padding: 7px 11px !important;
+        font-size: 15px !important;
+    }
 }
 @media (max-width:1140px){
 	.container-main {
@@ -176,8 +277,9 @@
 		display: none;
 	}
 	.brand-titles {
-    font-size: 30px;
+    font-size: 26px;
     padding-bottom: 25px;
+	line-height: 1.3;
 	}
 	.footer-lists ul{
 		padding-left: 0px;
@@ -199,14 +301,35 @@
 		font-size: 20px;
 	}
 	.header-page-name {
-    font-size: 60px;
-    margin-left: -10px;
-    padding: 6% 0px 7% 0px;
+		font-size: 25px;
+		margin-left: -2px;
+		padding: 6% 0px 7% 0px;
+}
+	.footer-lists ul {
+    display: flex;
+    align-items: center;
+    width: max-content;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 90%;
+    text-align: center;
+	}
+    .logo-main {
+        width: 150px;
+    }
+		.menu-icon {
+			width: 32px !important;
+	}
+	.services-box{
+		min-height: 430px !important;
 	}
 }
 @media (max-width:520px){
 	.footer-main-bg form {
-		width: 90%;
+		width: 95%;
+	}
+	.footer-main-bg .form-group {
+    width: 50%;
 	}
 	.footer-main-bg .contact-btn-nav {
     width: 50%;

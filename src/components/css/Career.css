@@ -43,7 +43,7 @@
 }
 .designation-name{
 	font-weight: 500;
-	font-size: 24px;
+	font-size: 20px;
 }
 .work-type{
 	font-weight: 500;
@@ -57,7 +57,9 @@
 .career-btn-dv{
 	padding-top: 30px;
 }
-
+.main-career-form .modal-content{
+	border-radius: 0px !important;
+}
 
 
 

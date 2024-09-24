@@ -22,8 +22,14 @@ a{
   font-family: thin;
   src: url(./Font/HelveticaNeueLight.otf);
 }
-
-
+@font-face {
+  font-family: boldtext;
+  src: url(./Font/HelveticaNeueBold.otf);
+}
+.list-nav ul li a.active-link {
+  font-family: boldtext !important;
+	 color: #000000 !important; /* Optionally, you can also change the color */
+}
 
 
 

@@ -3,14 +3,14 @@
 	font-weight: 500;
 }
 .awards-name-text{
-	font-size: 40px;
+	font-size: 30px;
 	font-weight: 500;
 	padding-bottom: 18px;
 	line-height: 1.0;
 }
 .sub-textawards{
 	font-family: thin;
-	font-size: 19px;
+	font-size: 17px;
 	line-height: 1.4;
 }
 .awwards-box{
@@ -34,10 +34,22 @@
 	color: #fff !important;
 	padding: 40px 30px 40px 30px;
 }
+.sccc{
+	height: 250px;
+	width: 100px !important;
+}
+.award-image-img{
+	width: 100%;
+}
 
-
-
-
+@media (max-width:991px){
+	.awwards-box {
+		padding-bottom: 50px;
+	}
+	.brand-divs{
+		padding-top: 30px;
+	}
+}
 
 
 

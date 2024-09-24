@@ -26,20 +26,20 @@ const Footer = () => {
               </form>
               </div>
               <div className="social-media-icons">
-                <img src={facebook} className='icon-logo-social-media' alt="social media icon" />
-                <img src={instagram} className='icon-logo-social-media' alt="social media icon" />
-                <img src={x} className='icon-logo-social-media' alt="social media icon" />
-                <img src={linkedin} className='icon-logo-social-media' alt="social media icon" />
+                <Link to='https://www.facebook.com/harisandconsulting'><img src={facebook} className='icon-logo-social-media' alt="social media icon" /></Link>
+                <Link to='https://www.instagram.com/harisand.co/?hl=en'><img src={instagram} className='icon-logo-social-media' alt="social media icon" /></Link>
+                <Link to='https://x.com/harisand_co'><img src={x} className='icon-logo-social-media' alt="social media icon" /></Link>
+                <Link to='https://www.linkedin.com/company/harisand-co/mycompany/verification/'><img src={linkedin} className='icon-logo-social-media' alt="social media icon" /></Link>
               </div>
               <div className="footer-lists">
                 <ul>
-                  <li><Link to='/'>Services</Link></li>
+                  <li><Link to='/services'>Services</Link></li>
                   <li><Link to='/'>Works</Link></li>
-                  <li><Link to='/'>Clients</Link></li>
-                  <li><Link to='/'>Awards</Link></li>
-                  <li><Link to='/'>About us</Link></li>
+                  <li><Link to='/clients'>Clients</Link></li>
+                  <li><Link to='/awards'>Awards</Link></li>
+                  <li><Link to='/about'>About us</Link></li>
                   <li><Link to='/'>Blogs</Link></li>
-                  <li><Link to='/'>Careers</Link></li>
+                  <li><Link to='/career'>Careers</Link></li>
                 </ul>
               </div>
             </div>

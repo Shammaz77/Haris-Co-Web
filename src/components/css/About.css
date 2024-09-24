@@ -1,0 +1,112 @@
+.about-banner-img{
+	width: 100%;
+}
+.team-title{
+	font-size: 19px;
+	text-align: center;
+	font-family: boldtext;
+}
+.meet-team{
+	font-size: 26px;
+	text-align: center;
+	font-family: boldtext;
+}
+.heading-team{
+	padding-top: 90px;
+	padding-bottom: 30px;
+}
+.slider-team-main{
+	width: 95%;
+	margin: auto;
+}
+.image-team{
+	width: 98%;
+	/* min-height: 200px; */
+	margin: auto;
+}
+.name{
+	font-family: boldtext;
+	font-size: 22px;
+	line-height: 1.1;
+	margin-bottom: 0px !important;
+}
+.designation{
+	font-family: Thin;
+	color: grey;
+	font-size: 15px;
+	margin-top: 0px !important;
+}
+.team-div{
+	position: relative;
+	cursor: pointer;
+}
+.member-details-departments .designation{
+	padding-top: 5px;
+}
+.member-details{
+	position: absolute;
+	right: -30px;
+	top: 60px;
+	display: none;
+}
+/* .team-div:hover .member-details{
+	display: block;
+} */
+
+.shows:hover .member-details{
+	display: block;
+}
+.show1:hover .member-details{
+	display: block;
+}
+.show2:hover .member-details{
+	display: block;
+}
+.show3:hover .member-details{
+	display: block;
+}
+.show4:hover .member-details{
+	display: block;
+}
+.show5:hover .member-details{
+	display: block;
+}
+.show6:hover .member-details{
+	display: block;
+}
+.show7:hover .member-details{
+	display: block;
+}
+.show8:hover .member-details{
+	display: block;
+}
+.show9:hover .member-details{
+	display: block;
+}
+.border-line{
+	border: 1px solid #000;
+	margin-top: -9px;
+}
+.member-details-departments{
+	padding-top: 30px;
+}
+.member-details-departments{
+	width: 96%;
+	margin: auto;
+}
+
+.slick-slide .image-team-dept{
+	width: 98%;
+	margin: auto;
+}
+
+
+
+
+
+
+@media (max-width:700px){
+	.team-div {
+		width: 96%;
+	}
+}

@@ -33,7 +33,7 @@ const Blogs = () => {
 				</div>
 				<div className="blogs">
 					<div className="row">
-						<div className="col-lg-3">
+						<div className="col-lg-3 col-md-6">
 							<div className="blog-main">
 								<img src={blogone} className='blog-box' alt="" />
 								<div className="date-time-blog">
@@ -43,7 +43,7 @@ const Blogs = () => {
 								<p className='blog-sub'>Lorem Ipsum is simply dummy text of printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy.</p>
 							</div>
 						</div>
-						<div className="col-lg-3">
+						<div className="col-lg-3 col-md-6">
 							<div className="blog-main">
 								<img src={blogone} className='blog-box' alt="" />
 								<div className="date-time-blog">
@@ -53,7 +53,7 @@ const Blogs = () => {
 								<p className='blog-sub'>Lorem Ipsum is simply dummy text of printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy.</p>
 							</div>
 						</div>
-						<div className="col-lg-3">
+						<div className="col-lg-3 col-md-6">
 							<div className="blog-main">
 								<img src={blogone} className='blog-box' alt="" />
 								<div className="date-time-blog">
@@ -63,7 +63,7 @@ const Blogs = () => {
 								<p className='blog-sub'>Lorem Ipsum is simply dummy text of printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy.</p>
 							</div>
 						</div>
-						<div className="col-lg-3">
+						<div className="col-lg-3 col-md-6">
 							<div className="blog-main">
 								<img src={blogone} className='blog-box' alt="" />
 								<div className="date-time-blog">
@@ -73,7 +73,7 @@ const Blogs = () => {
 								<p className='blog-sub'>Lorem Ipsum is simply dummy text of printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy.</p>
 							</div>
 						</div>
-						<div className="col-lg-3">
+						<div className="col-lg-3 col-md-6">
 							<div className="blog-main">
 								<img src={blogone} className='blog-box' alt="" />
 								<div className="date-time-blog">
@@ -83,7 +83,7 @@ const Blogs = () => {
 								<p className='blog-sub'>Lorem Ipsum is simply dummy text of printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy.</p>
 							</div>
 						</div>
-						<div className="col-lg-3">
+						<div className="col-lg-3 col-md-6">
 							<div className="blog-main">
 								<img src={blogone} className='blog-box' alt="" />
 								<div className="date-time-blog">
@@ -93,7 +93,7 @@ const Blogs = () => {
 								<p className='blog-sub'>Lorem Ipsum is simply dummy text of printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy.</p>
 							</div>
 						</div>
-						<div className="col-lg-3">
+						<div className="col-lg-3 col-md-6">
 							<div className="blog-main">
 								<img src={blogone} className='blog-box' alt="" />
 								<div className="date-time-blog">
@@ -103,7 +103,7 @@ const Blogs = () => {
 								<p className='blog-sub'>Lorem Ipsum is simply dummy text of printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy.</p>
 							</div>
 						</div>
-						<div className="col-lg-3">
+						<div className="col-lg-3 col-md-6">
 							<div className="blog-main">
 								<img src={blogone} className='blog-box' alt="" />
 								<div className="date-time-blog">
