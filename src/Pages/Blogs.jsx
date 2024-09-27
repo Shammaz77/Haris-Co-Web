@@ -5,7 +5,7 @@ import blogone from './../Assets/blogone.png'
 import '../components/css/Blog.css'
 const Blogs = () => {
 	return (
-    <div className='blogs-page'>
+    <div className='blogs-page font-h'>
 			<div className="container-main">
 				<div className="header-service-common">
 					<h2 className='header-page-name-small'>Blogs</h2>

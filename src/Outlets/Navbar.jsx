@@ -15,7 +15,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="container-main">
+    <div className="container-main font-h">
       <div className='navbar-main'>
         <div className="logo-nav">
           <Link to='/'>
@@ -65,7 +65,7 @@ const Navbar = () => {
             </li>
             <li>
               <Link
-                to='/blogs'
+                to='/'
                 className={location.pathname === '/blogs' ? 'active-link' : ''}
               >
                 Blogs
@@ -80,6 +80,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
+              <p className='hiring'>We're Hiring</p>
               <Link
                 to='/career'
                 className={location.pathname === '/career' ? 'active-link' : ''}

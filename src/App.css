@@ -5,6 +5,8 @@
 	box-sizing: border-box;
 }
 body{
+}
+.font-h{
   font-family: 'Helvetica Neue', sans-serif !important;
 }
 ul li{
@@ -30,7 +32,15 @@ a{
   font-family: boldtext !important;
 	 color: #000000 !important; /* Optionally, you can also change the color */
 }
-
+.hiring{
+	font-size: 10px;
+	color: #fff;
+	background-color: #7743DB;
+	position: absolute;
+	padding: 2px 5px;
+	top: 10px;
+	border-radius: 2px;
+}
 
 
 

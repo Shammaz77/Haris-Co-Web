@@ -16,9 +16,11 @@ import PerfomanceMarketing from '../Pages/PerfomanceMarketing';
 import PRCommunication from '../Pages/PRCommunication';
 import SeoService from '../Pages/SeoService';
 import Web from '../Pages/Web';
+import DigitalMarketing from '../Pages/DigitalMarketing';
 import SocialMedia from '../Pages/SocialMedia';
 import Production from '../Pages/Production';
-import Contact from '.././Pages/Contact'
+import Contact from '.././Pages/Contact';
+
 const Router = () => {
   return (
     <Routes>
@@ -43,6 +45,7 @@ const Router = () => {
         <Route path="socialmedia" element={<SocialMedia />} />
         <Route path="contact" element={<Contact />} />
       </Route>
+      <Route path="digital" element={<DigitalMarketing />} />
     </Routes>
   );
 };

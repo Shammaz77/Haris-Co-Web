@@ -28,7 +28,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import vedio from '.././Assets/vedio.mp4'
 import CountUp from 'react-countup';
-
+import ptwo from '../Assets/Production/2.png';
 
 const Home = () => {
 
@@ -89,14 +89,15 @@ const Home = () => {
 		autoplay: true,
 		autoplaySpeed: 2000,
 		pauseOnHover: true,
-		arrows: false,
+		arrows: true,
 		responsive: [
 			{
 				breakpoint: 991,
 				settings: {
 					slidesToShow: 1,
 					slidesToScroll: 2,
-					initialSlide: 2
+					initialSlide: 2,
+					arrows: false,
 				}
 			},
 			{
@@ -114,14 +115,16 @@ const Home = () => {
 				settings: {
 					slidesToShow: 1,
 					slidesToScroll: 2,
-					initialSlide: 2
+					initialSlide: 2,
+					arrows: false,
 				}
 			},
 			{
 				breakpoint: 480,
 				settings: {
 					slidesToShow: 1,
-					slidesToScroll: 1
+					slidesToScroll: 1,
+					arrows: false,
 				}
 			}
 		]
@@ -130,7 +133,7 @@ const Home = () => {
 
 
 	return (
-		<div className='home-page'>
+		<div className='home-page font-h'>
 			<div className="vedio-section">
 			<video src={vedio} className="vedio-home" autoPlay loop muted playsInline></video>
 			</div>
@@ -285,6 +288,14 @@ const Home = () => {
 					</div>
 					<div className="main-slidersss">
 						<Slider {...settingsOne}>
+						<div className="home-work-service hover-effect">
+								<img src={ptwo} className='service-image-work' alt="service image" />
+								<div className="work-details-right">
+									<h2 className='work-number-text-color'>01.</h2>
+									<p className='sub-text-work-hide'>At Haris&Co., we understand that your brand is more</p>
+									<p className='sub-text-work'>At Haris&Co., we understand that your brand is more than just a logo or a tagline—it's the essence of your business, the story you tell, and the promise you make to your customers. Our branding services are designed to uncover and articulate your unique identity, ensuring that every touchpoint resonates with your target audience. From initial brand strategy and research to crafting a compelling visual identity, we work closely with you to build a brand that is authentic, memorable, and impactful. </p>
+								</div>
+							</div>
 							<div className="home-work-service hover-effect">
 								<img src={work0} className='service-image-work' alt="service image" />
 								<div className="work-details-right">

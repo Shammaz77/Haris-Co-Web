@@ -5,7 +5,7 @@ import work from '../../Assets/similiar-works.png'
 import '../../components/css/Works.css'
 const WorkOne = () => {
 	return (
-		<div className='work-page'>
+		<div className='work-page font-h'>
 			<div className="container-main">
 				<div className="header-service-common">
 					<h2 className='header-page-name-small'>works</h2>

@@ -8,7 +8,7 @@ import linkedin from '../Assets/linkedin.png'
 import arrow from '.././Assets/arrow-white.png'
 const Footer = () => {
   return (
-    <div className='footer-main-bg'>
+    <div className='footer-main-bg font-h'>
       <div className="container-main">
         <div className="row">
           <div className="col-lg-12">
@@ -21,7 +21,7 @@ const Footer = () => {
                   <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email"/>
                 </div>
                 <div className="contact-btn-nav">
-                  <Link to='/' className='btn enquire-btn'>Contact Us <img src={arrow} className='arrow-icons' alt="arrow icon" /></Link>
+                  <Link to='/contact' className='btn enquire-btn'>Contact Us <img src={arrow} className='arrow-icons' alt="arrow icon" /></Link>
                 </div>
               </form>
               </div>

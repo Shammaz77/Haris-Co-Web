@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import arrow from '.././Assets/arrow.svg'
 const Contact = () => {
 	return (
-		<div className='contact-page'>
+		<div className='contact-page font-h'>
 			<div className="container-main">
 				<div className="header-service-common">
 					<h2 className='header-page-name-small'>	Contact us</h2>
@@ -16,7 +16,7 @@ const Contact = () => {
 								<h4 className='quote-text'>Get a Quote</h4>
 								<div className="contact-page-forms">
 									<form id="myForm" action="https://api.web3forms.com/submit" method="POST">
-										<input type="hidden" name="access_key" value="c20f4dac-7e30-48f0-b9df-cc1270141395" />
+										<input type="hidden" name="access_key" value="f94f2cd3-c0a3-494b-a2d4-ca767a1fd557" />
 										<div class="row">
 											<div class="col-lg-6">
 												<div class="form-group">

@@ -9,7 +9,7 @@ import b from '../Assets/b.png'
 
 const Awards = () => {
 	return (
-		<div className='career-page'>
+		<div className='career-page font-h'>
 			<div className="container-main">
 				<div className="header-service-common">
 					<h2 className='header-page-name-small'>Awards</h2>

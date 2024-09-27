@@ -2,10 +2,16 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import '../components/css/Branding.css'
 import arrow from '.././Assets/arrow.svg'
+import a from '../Assets/Branding/a.png';
+import haida from '../Assets/Branding/haida.png';
+import ice from '../Assets/Branding/ice.png';
+import pink from '../Assets/Branding/pink.png';
+import reel from '../Assets/Branding/reel.png';
+import work from '../Assets/similiar-works.png';
 
 const Branding = () => {
-  return (
-    <div className='services-page'>
+	return (
+		<div className='services-page font-h'>
 			<div className="container-main">
 				<div className="header-service">
 					<h2 className='header-page-name'>Branding</h2>
@@ -20,20 +26,80 @@ const Branding = () => {
 						</div>
 						<div className="col-lg-6">
 							<div className="brand-divs">
-								<p className='brand-sub-titles'>Our branding solutions bring out the ‘why’ in your brand to your audience. Our solutions are designed to develop a strong brand narrative by defining your unique voice. 
+								<p className='brand-sub-titles'>Our branding solutions bring out the ‘why’ in your brand to your audience. Our solutions are designed to develop a strong brand narrative by defining your unique voice.
 
-Our solutions focus on highlighting your brand through storytelling and strategies by incorporating stunning visual elements like logos, color palettes, brand guidelines, and typography.</p>
+									Our solutions focus on highlighting your brand through storytelling and strategies by incorporating stunning visual elements like logos, color palettes, brand guidelines, and typography.</p>
 								<p className='brand-sub-titles'>We are committed to becoming your partners in your journey and are with you from brand integration to constant refining of your brand strategy. Our branding solutions are an ongoing process that helps you foster positive and lasting relationships with your customers.
 
-We believe in creating authentic, memorable, and stand-out branding stories that help drive growth and communication with your target audience. 
+									We believe in creating authentic, memorable, and stand-out branding stories that help drive growth and communication with your target audience.
 
-Speak your truth with our branding solutions. We help tell a brand story that resonates, captivates, and converts. 
-</p>
+									Speak your truth with our branding solutions. We help tell a brand story that resonates, captivates, and converts.
+								</p>
 								<div className="enquiry-btn-dv">
-									<Link to='/' className='btn enquire-btn'>Enquire Now <img src={arrow} className='arrow-icon' alt="arrow icon" /></Link>
+									<Link to='/contact' className='btn enquire-btn'>Enquire Now <img src={arrow} className='arrow-icon' alt="arrow icon" /></Link>
 								</div>
 							</div>
 						</div>
+					</div>
+				</div>
+			</div>
+			<div className="works-details">
+				<div className="container-main">
+					<div className="row">
+					<div className="col-lg-4 col-md-6">
+              <div className="similar-div">
+                <img src={work} className='similar-image' alt="Branding work" />
+                <div className="similar-contents">
+                  <h4 className='similiar-title'>Branding: Transforming Ideas into Impactful Brands</h4>
+                  <p className='similiar-sub'>At Haris&Co., we pride ourselves on delivering creative solutions for branding.</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6">
+              <div className="similar-div">
+                <img src={haida} className='similar-image' alt="Branding work" />
+                <div className="similar-contents">
+                  <h4 className='similiar-title'>Branding: Transforming Ideas into Impactful Brands</h4>
+                  <p className='similiar-sub'>At Haris&Co., we pride ourselves on delivering creative solutions for branding.</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6">
+              <div className="similar-div">
+                <img src={ice} className='similar-image' alt="Branding work" />
+                <div className="similar-contents">
+                  <h4 className='similiar-title'>Branding: Transforming Ideas into Impactful Brands</h4>
+                  <p className='similiar-sub'>At Haris&Co., we pride ourselves on delivering creative solutions for branding.</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6">
+              <div className="similar-div">
+                <img src={pink} className='similar-image' alt="Branding work" />
+                <div className="similar-contents">
+                  <h4 className='similiar-title'>Branding: Transforming Ideas into Impactful Brands</h4>
+                  <p className='similiar-sub'>At Haris&Co., we pride ourselves on delivering creative solutions for branding.</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6">
+              <div className="similar-div">
+                <img src={reel} className='similar-image' alt="Branding work" />
+                <div className="similar-contents">
+                  <h4 className='similiar-title'>Branding: Transforming Ideas into Impactful Brands</h4>
+                  <p className='similiar-sub'>At Haris&Co., we pride ourselves on delivering creative solutions for branding.</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6">
+              <div className="similar-div">
+                <img src={a} className='similar-image' alt="Branding work" />
+                <div className="similar-contents">
+                  <h4 className='similiar-title'>Branding: Transforming Ideas into Impactful Brands</h4>
+                  <p className='similiar-sub'>At Haris&Co., we pride ourselves on delivering creative solutions for branding.</p>
+                </div>
+              </div>
+            </div>
 					</div>
 				</div>
 			</div>
@@ -114,7 +180,7 @@ Speak your truth with our branding solutions. We help tell a brand story that re
 					</div>
 				</div>
 			</div>
-    </div>
-  )
+		</div>
+	)
 }
 export default Branding;

@@ -31,10 +31,11 @@
 .career-heading-div{
 	padding-top: 60px;
 }
-.vancancy-div{
-	border: 1px solid #000;
-	padding: 25px 20px;
-	margin-bottom: 30px;
+.vancancy-div {
+    border: 1px solid #000;
+    padding: 25px 20px;
+    margin-bottom: 30px;
+    min-height: 227px;
 }
 .designation-dv{
 	display: flex;

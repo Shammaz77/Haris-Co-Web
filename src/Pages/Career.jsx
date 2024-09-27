@@ -14,7 +14,7 @@ const Career = () => {
 
 
 	return (
-		<div className='career-page'>
+		<div className='career-page font-h'>
 			<div className="container-main">
 				<div className="header-service-common">
 					<h2 className='header-page-name-small'>Careers</h2>
@@ -177,7 +177,7 @@ const Career = () => {
 						</Modal.Header>
 						<Modal.Body className='form-career'>
 							<Form action="https://api.web3forms.com/submit" method="POST">
-							<input type="hidden" name="access_key" value="c20f4dac-7e30-48f0-b9df-cc1270141395"/>
+							<input type="hidden" name="access_key" value="364519ea-0c9e-43dc-8c72-b4869e61ada7"/>
 								<Form.Group controlId="formName" className='form-input-dv'>
 									<Form.Label>Name</Form.Label>
 									<Form.Control type="text" name='Name' placeholder="Enter your name" />
@@ -203,7 +203,7 @@ const Career = () => {
 									<option value="6">Business Development Executive									</option>
 
 								</Form.Select>
-								<input type="hidden" name="redirect" target="_blank" value="https://web3forms.com/success"/>
+								<input type="hidden" name="redirect" target="_blank" value="/about"/>
 								<button class="submit-button-form-apply btn" type="submit">SUBMIT</button>
 							</Form>
 						</Modal.Body>

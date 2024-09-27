@@ -2,10 +2,15 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import '../components/css/Branding.css'
 import arrow from '.././Assets/arrow.svg'
-
+import mone from '../Assets/Perfomance/1.png';
+import mtwo from '../Assets/Perfomance/2.png';
+import mthree from '../Assets/Perfomance/3.png';
+import mfour from '../Assets/Perfomance/4.png';
+import mfive from '../Assets/Perfomance/5.png';
+import msix from '../Assets/Perfomance/6.png';
 const PerfomanceMarketing = () => {
 	return (
-		<div className='services-page'>
+		<div className='services-page font-h'>
 			<div className="container-main">
 				<div className="header-service">
 					<h2 className='header-page-name'>Perfomance Marketing</h2>
@@ -29,10 +34,70 @@ const PerfomanceMarketing = () => {
 									Our performance marketing strategies help you get the best out of your digital investment and deliver greater ROI and results.
 								</p>
 								<div className="enquiry-btn-dv">
-									<Link to='/' className='btn enquire-btn'>Enquire Now <img src={arrow} className='arrow-icon' alt="arrow icon" /></Link>
+									<Link to='/contact' className='btn enquire-btn'>Enquire Now <img src={arrow} className='arrow-icon' alt="arrow icon" /></Link>
 								</div>
 							</div>
 						</div>
+					</div>
+				</div>
+			</div>
+			<div className="works-details">
+				<div className="container-main">
+					<div className="row">
+					<div className="col-lg-4 col-md-6">
+              <div className="similar-div">
+                <img src={mfive} className='similar-image' alt="SEO work" />
+                <div className="similar-contents">
+                  <h4 className='similiar-title'>1.  Skyrocketing sales with Walkaroo!</h4>
+                  <p className='similiar-sub'>We helped Walkaroo, one of India’s popular footwear brands, scale their revenue to ₹10M+ in just 6 months!</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6">
+              <div className="similar-div">
+                <img src={mone} className='similar-image' alt="SEO work" />
+                <div className="similar-contents">
+                  <h4 className='similiar-title'>2.  Scaling revenue to ₹ 2M+ !</h4>
+                  <p className='similiar-sub'>We teamed with Skin Bae, a leading skincare brand offering Korean skincare, to scale their revenue and increase ROAS by 4 times!</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6">
+              <div className="similar-div">
+                <img src={mtwo} className='similar-image' alt="SEO work" />
+                <div className="similar-contents">
+                  <h4 className='similiar-title'>3.  Increasing ROAS for care n cure.</h4>
+                  <p className='similiar-sub'>Explore how we helped Qatar-based online pharmacy, Care n Cure increase their ROAS. </p>
+                </div>
+              </div>
+            </div>
+            {/* <div className="col-lg-4 col-md-6">
+              <div className="similar-div">
+                <img src={mthree} className='similar-image' alt="SEO work" />
+                <div className="similar-contents">
+                  <h4 className='similiar-title'>SEO: Boosting Visibility</h4>
+                  <p className='similiar-sub'>Explore how we enhance visibility with our SEO strategies.</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6">
+              <div className="similar-div">
+                <img src={mfour} className='similar-image' alt="SEO work" />
+                <div className="similar-contents">
+                  <h4 className='similiar-title'>SEO: Boosting Visibility</h4>
+                  <p className='similiar-sub'>Explore how we enhance visibility with our SEO strategies.</p>
+                </div>
+              </div>
+            </div> */}
+            <div className="col-lg-4 col-md-6">
+              <div className="similar-div">
+                <img src={msix} className='similar-image' alt="SEO work" />
+                <div className="similar-contents">
+                  <h4 className='similiar-title'>4. Achieving new milestones with Sika Car Services!</h4>
+                  <p className='similiar-sub'>We teamed up with Qatar based Sika Car Services, a car service company to scale their revenue and increase their online presence!</p>
+                </div>
+              </div>
+            </div>
 					</div>
 				</div>
 			</div>

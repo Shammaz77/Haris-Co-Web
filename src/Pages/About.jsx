@@ -21,6 +21,8 @@ import nihal from '.././Assets/NihalD.png'
 import yogid from '.././Assets/YogiD.png'
 import adarshd from '.././Assets/AdarshD.png'
 import vishnud from '.././Assets/VishnuD.png'
+import azar from '.././Assets/azar.png'
+
 
 
 
@@ -77,7 +79,7 @@ const About = () => {
 	};
 
 	return (
-		<div className='about-page'>
+		<div className='about-page font-h'>
 			<div className="container-main">
 				<div className="header-service-common">
 					<h2 className='header-page-name-small'>About Us</h2>
@@ -235,6 +237,13 @@ const About = () => {
 							<div className="member-details-departments">
 								<h3 className='name'>Vishnu KP</h3>
 								<h4 className='designation'>Chief of Production</h4>
+							</div>
+						</div>
+						<div className='team-div show6'>
+							<img src={azar} className='image-team-dept' alt="" />
+							<div className="member-details-departments">
+								<h3 className='name'> Mohamed Azaruddin</h3>
+								<h4 className='designation'>Head of Brand Solution</h4>
 							</div>
 						</div>
 					</Slider>

@@ -2,10 +2,15 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import '../components/css/Branding.css'
 import arrow from '.././Assets/arrow.svg'
-
+import one from '../Assets/works/one.png';
+import two from '../Assets/works/two.png';
+import three from '../Assets/works/three.png';
+import four from '../Assets/works/four.png';
+import five from '../Assets/works/five.png';
+import six from '../Assets/works/six.png';
 const Creative = () => {
 	return (
-		<div className='services-page'>
+		<div className='services-page font-h'>
 			<div className="container-main">
 				<div className="header-service">
 					<h2 className='header-page-name'>Creative</h2>
@@ -30,7 +35,67 @@ const Creative = () => {
 									Our creative minds at Haris & Co. help craft captivating and never-before-seen ideas for your brand to drive exceptional results.
 								</p>
 								<div className="enquiry-btn-dv">
-									<Link to='/' className='btn enquire-btn'>Enquire Now <img src={arrow} className='arrow-icon' alt="arrow icon" /></Link>
+									<Link to='/contact' className='btn enquire-btn'>Enquire Now <img src={arrow} className='arrow-icon' alt="arrow icon" /></Link>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div className="works-details">
+				<div className="container-main">
+					<div className="row">
+						<div className="col-lg-4 col-md-6">
+							<div className="similar-div">
+								<img src={one} className='similar-image' alt="SEO work" />
+								<div className="similar-contents">
+									<h4 className='similiar-title'>SEO: Boosting Visibility</h4>
+									<p className='similiar-sub'>Explore how we enhance visibility with our SEO strategies.</p>
+								</div>
+							</div>
+						</div>
+						<div className="col-lg-4 col-md-6">
+							<div className="similar-div">
+								<img src={two} className='similar-image' alt="SEO work" />
+								<div className="similar-contents">
+									<h4 className='similiar-title'>SEO: Boosting Visibility</h4>
+									<p className='similiar-sub'>Explore how we enhance visibility with our SEO strategies.</p>
+								</div>
+							</div>
+						</div>
+						<div className="col-lg-4 col-md-6">
+							<div className="similar-div">
+								<img src={three} className='similar-image' alt="SEO work" />
+								<div className="similar-contents">
+									<h4 className='similiar-title'>SEO: Boosting Visibility</h4>
+									<p className='similiar-sub'>Explore how we enhance visibility with our SEO strategies.</p>
+								</div>
+							</div>
+						</div>
+						<div className="col-lg-4 col-md-6">
+							<div className="similar-div">
+								<img src={four} className='similar-image' alt="SEO work" />
+								<div className="similar-contents">
+									<h4 className='similiar-title'>SEO: Boosting Visibility</h4>
+									<p className='similiar-sub'>Explore how we enhance visibility with our SEO strategies.</p>
+								</div>
+							</div>
+						</div>
+						<div className="col-lg-4 col-md-6">
+							<div className="similar-div">
+								<img src={five} className='similar-image' alt="SEO work" />
+								<div className="similar-contents">
+									<h4 className='similiar-title'>SEO: Boosting Visibility</h4>
+									<p className='similiar-sub'>Explore how we enhance visibility with our SEO strategies.</p>
+								</div>
+							</div>
+						</div>
+						<div className="col-lg-4 col-md-6">
+							<div className="similar-div">
+								<img src={six} className='similar-image' alt="SEO work" />
+								<div className="similar-contents">
+									<h4 className='similiar-title'>SEO: Boosting Visibility</h4>
+									<p className='similiar-sub'>Explore how we enhance visibility with our SEO strategies.</p>
 								</div>
 							</div>
 						</div>

@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom';
 const Services = () => {
 
 	return (
-		<div className='services-page'>
+		<div className='services-page font-h'>
 			<div className="container-main">
 				<div className="services-div">
 					<div className="services-section">
