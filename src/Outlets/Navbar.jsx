@@ -104,7 +104,7 @@ const Navbar = () => {
             <Link to='/services' onClick={toggleCart}><li> Services</li> </Link>
             <Link to='/works' onClick={toggleCart}><li>Works </li></Link>
             <Link to='/clients' onClick={toggleCart}><li>Clients</li> </Link>
-            <Link to='/award' onClick={toggleCart}><li>Awards </li></Link>
+            <Link to='/awards' onClick={toggleCart}><li>Awards </li></Link>
             <Link to='/blog' onClick={toggleCart}><li>Blogs </li></Link>
             <Link to='/about' onClick={toggleCart}><li>About us </li></Link>
             <Link to='/career' onClick={toggleCart}><li>Careers</li> </Link>

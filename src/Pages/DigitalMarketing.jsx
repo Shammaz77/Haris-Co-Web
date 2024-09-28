@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../components/css/Digital.css';
 import { Link } from 'react-router-dom';
 import logo from '../Assets/navlogo.png'
@@ -19,9 +19,16 @@ import logo4 from '../Assets/DigitalMarketing/logo4.png'
 import logo5 from '../Assets/DigitalMarketing/logo5.png'
 import o1 from '../Assets/DigitalMarketing/1.png'
 import feature from '../Assets/DigitalMarketing/feature.png'
-
-
-
+import arrowhover from '../Assets/DigitalMarketing/arrow.svg'
+import case1 from '../Assets/DigitalMarketing/case1.png'
+import case2 from '../Assets/DigitalMarketing/case2.png'
+import case3 from '../Assets/DigitalMarketing/case3.png'
+import clock from '../Assets/DigitalMarketing/clock.png'
+import review from '../Assets/DigitalMarketing/rev.png'
+import userimg from '../Assets/DigitalMarketing/user.png'
+import call from '../Assets/DigitalMarketing/Call.svg'
+import Email from '../Assets/DigitalMarketing/Email.svg'
+import Address from '../Assets/DigitalMarketing/Address.svg'
 
 
 
@@ -92,7 +99,46 @@ const DigitalMarketing = () => {
 	};
 
 
+	const [activeTab, setActiveTab] = useState('Performance Marketing');
 
+	// Tab click handler
+	const handleTabClick = (tab) => {
+		setActiveTab(tab);
+	};
+
+
+
+	const reviews = [
+		{
+			title: 'Lorem Ipsum',
+			subtitle: '“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”',
+			username: 'Lorem',
+			userdesignation: 'Lorem Ipsum',
+			userimg: userimg, // Replace with actual image path
+		},
+		{
+			title: 'Dolor Sit Amet',
+			subtitle: '“Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”',
+			username: 'Dolor',
+			userdesignation: 'Dolor Sit Amet',
+			userimg: userimg, // Replace with actual image path
+		},
+		// Add more reviews as needed
+	];
+	const [currentIndex, setCurrentIndex] = useState(0);
+	const [fadeClass, setFadeClass] = useState('dgfade-in');
+
+	useEffect(() => {
+		const interval = setInterval(() => {
+			setFadeClass('dgfade-out');
+			setTimeout(() => {
+				setCurrentIndex((prevIndex) => (prevIndex + 1) % reviews.length);
+				setFadeClass('dgfade-in');
+			}, 500); // Transition duration
+		}, 5000); // Change review every 5 seconds
+
+		return () => clearInterval(interval);
+	}, []);
 
 
 
@@ -104,7 +150,7 @@ const DigitalMarketing = () => {
 						<div className="logo-dg">
 							<img src={logo} className='logo-dg-nav' alt="" />
 						</div>
-						<div className="items-dg">
+						<div className="itemss-dg">
 							<ul>
 								<li><Link to='/'>Home</Link></li>
 								<li><Link to='/'>Services</Link></li>
@@ -305,33 +351,364 @@ const DigitalMarketing = () => {
 							<div className="headlines-main-dv-dg">
 								<h3 className='headline-title-dg'>Making Headlines</h3>
 								<p className='headline-subtitle-dg'>To get featured in multiple news articles gives us immense joy</p>
-									<div className="headlines-main-dvv-dg">
-										<Slider {...settingsHeadlines}>
-											<div className="featured-img-dv-main">
-												<img src={feature} className='dg-feature-img' alt="" />
-											</div>
-											<div className="featured-img-dv-main">
-												<img src={feature} className='dg-feature-img' alt="" />
-											</div>
-											<div className="featured-img-dv-main">
-												<img src={feature} className='dg-feature-img' alt="" />
-											</div>
-											<div className="featured-img-dv-main">
-												<img src={feature} className='dg-feature-img' alt="" />
-											</div>
-											<div className="featured-img-dv-main">
-												<img src={feature} className='dg-feature-img' alt="" />
-											</div>
-											<div className="featured-img-dv-main">
-												<img src={feature} className='dg-feature-img' alt="" />
-											</div>
-										</Slider>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div className="headlines-main-dvv-dg">
+					<Slider {...settingsHeadlines}>
+						<div className="featured-img-dv-main">
+							<img src={feature} className='dg-feature-img' alt="" />
+							<img src={arrowhover} className='hover-arrow-main-dg' alt="" />
+						</div>
+						<div className="featured-img-dv-main">
+							<img src={feature} className='dg-feature-img' alt="" />
+							<img src={arrowhover} className='hover-arrow-main-dg' alt="" />
+						</div>
+						<div className="featured-img-dv-main">
+							<img src={feature} className='dg-feature-img' alt="" />
+							<img src={arrowhover} className='hover-arrow-main-dg' alt="" />
+						</div>
+						<div className="featured-img-dv-main">
+							<img src={feature} className='dg-feature-img' alt="" />
+							<img src={arrowhover} className='hover-arrow-main-dg' alt="" />
+						</div>
+						<div className="featured-img-dv-main">
+							<img src={feature} className='dg-feature-img' alt="" />
+							<img src={arrowhover} className='hover-arrow-main-dg' alt="" />
+						</div>
+						<div className="featured-img-dv-main">
+							<img src={feature} className='dg-feature-img' alt="" />
+							<img src={arrowhover} className='hover-arrow-main-dg' alt="" />
+						</div>
+					</Slider>
+				</div>
+				{/* discuss  */}
+				<div className="discuss-dg-main">
+					<div className="container-main">
+						<div className="row">
+							<div className="col-lg-12">
+								<div className="lets-discuss-main-dg">
+									<div className="half-dg-discss">
+										<h3 className='discuss-title-dg'>Let's Discuss How We Can Grow Your Business</h3>
 									</div>
+									<div className="righthalf-dg-discss">
+										<Link to='/' className='btn-proposal-dg'>Consult Us</Link>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				{/* case study  */}
+				<div className="casestudy-main-div-dg">
+					<div className="container-main">
+						<div className="row">
+							<div className="col-lg-12">
+								<div className="div-box-case-study-main">
+									<h3 className="title-casestudy-dg-main">Our Case Studies</h3>
+									<p className="sub-title-casestudy-dg-main">Read in detail about our stories of victories.</p>
+
+									{/* Tabs */}
+									<div className="items-services-case-study-dg">
+										<p
+											className={`items-dg ${activeTab === 'Performance Marketing' ? 'active-dg-item' : ''}`}
+											onClick={() => handleTabClick('Performance Marketing')}
+										>
+											Performance Marketing
+										</p>
+										<p
+											className={`items-dg ${activeTab === 'SEO' ? 'active-dg-item' : ''}`}
+											onClick={() => handleTabClick('SEO')}
+										>
+											SEO
+										</p>
+										<p
+											className={`items-dg ${activeTab === 'PR & Communication' ? 'active-dg-item' : ''}`}
+											onClick={() => handleTabClick('PR & Communication')}
+										>
+											PR & Communication
+										</p>
+										<p
+											className={`items-dg ${activeTab === 'Social Media' ? 'active-dg-item' : ''}`}
+											onClick={() => handleTabClick('Social Media')}
+										>
+											Social Media
+										</p>
+									</div>
+								</div>
+							</div>
+
+							{/* Conditional rendering based on activeTab */}
+							{activeTab === 'Performance Marketing' && (
+								<div className='row'>
+									<div className="col-lg-6">
+										<div className="casestudy-card-dg height-dg">
+											<img src={case1} className='casestudy-img-box' alt="Performance Marketing" />
+											<div className="details-case-dv-dv">
+												<h4 className="heading-casestudy-service-dg">From 0 to ₹6 Million Revenue per month (4+ ROAS)</h4>
+												<div className="time-date-dg">
+													<img src={clock} className='clock-icon-dg' alt="Clock Icon" />
+													<p className="text-of-time">March 8, 2024</p>
+												</div>
+												<p className="description-service-dg">Explore how we transformed Bluetyga into a revenue-generating company from scratch.</p>
+											</div>
+										</div>
+									</div>
+									<div className="col-lg-6">
+										<div className="casestudy-card-dg">
+											<div className="sub-full-dv-dg">
+												<div className="img-box-dgg">
+													<img src={case2} className='casestudy-img-box' alt="" />
+												</div>
+												<div className="details-case-dv-dv">
+													<h4 className='heading-casestudy-service-dg-sub'>Generated a Massive ₹10 Million in 6 Months	</h4>
+													<div className="time-date-dg">
+														<img src={clock} className='clock-icon-dg' alt="" />
+														<p className='text-of-time'>March 8, 2024</p>
+													</div>
+													<p className='description-service-dg grey-clr-fg'>Dive in to learn how we improved the online sales rate of Walkaroo - one of India's leading footwear brands.</p>
+												</div>
+											</div>
+										</div>
+										<div className="casestudy-card-dg">
+											<div className="sub-full-dv-dg">
+												<div className="img-box-dgg">
+													<img src={case3} className='casestudy-img-box' alt="" />
+												</div>
+												<div className="details-case-dv-dv">
+													<h4 className='heading-casestudy-service-dg-sub'>Generated a Massive ₹10 Million in 6 Months	</h4>
+													<div className="time-date-dg">
+														<img src={clock} className='clock-icon-dg' alt="" />
+														<p className='text-of-time'>March 8, 2024</p>
+													</div>
+													<p className='description-service-dg grey-clr-fg'>Dive in to learn how we improved the online sales rate of Walkaroo - one of India's leading footwear brands.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							)}
+							{activeTab === 'SEO' && (
+								<div className='row'>
+									<div className="col-lg-6">
+										<div className="casestudy-card-dg height-dg">
+											<img src={case1} className='casestudy-img-box' alt="Performance Marketing" />
+											<div className="details-case-dv-dv">
+												<h4 className="heading-casestudy-service-dg">From 0 to ₹6 Million Revenue per month (4+ ROAS)</h4>
+												<div className="time-date-dg">
+													<img src={clock} className='clock-icon-dg' alt="Clock Icon" />
+													<p className="text-of-time">March 8, 2024</p>
+												</div>
+												<p className="description-service-dg">Explore how we transformed Bluetyga into a revenue-generating company from scratch.</p>
+											</div>
+										</div>
+									</div>
+									<div className="col-lg-6">
+										<div className="casestudy-card-dg">
+											<div className="sub-full-dv-dg">
+												<div className="img-box-dgg">
+													<img src={case2} className='casestudy-img-box' alt="" />
+												</div>
+												<div className="details-case-dv-dv">
+													<h4 className='heading-casestudy-service-dg-sub'>Generated a Massive ₹10 Million in 6 Months	</h4>
+													<div className="time-date-dg">
+														<img src={clock} className='clock-icon-dg' alt="" />
+														<p className='text-of-time'>March 8, 2024</p>
+													</div>
+													<p className='description-service-dg grey-clr-fg'>Dive in to learn how we improved the online sales rate of Walkaroo - one of India's leading footwear brands.</p>
+												</div>
+											</div>
+										</div>
+										<div className="casestudy-card-dg">
+											<div className="sub-full-dv-dg">
+												<div className="img-box-dgg">
+													<img src={case2} className='casestudy-img-box' alt="" />
+												</div>
+												<div className="details-case-dv-dv">
+													<h4 className='heading-casestudy-service-dg-sub'>Generated a Massive ₹10 Million in 6 Months	</h4>
+													<div className="time-date-dg">
+														<img src={clock} className='clock-icon-dg' alt="" />
+														<p className='text-of-time'>March 8, 2024</p>
+													</div>
+													<p className='description-service-dg grey-clr-fg'>Dive in to learn how we improved the online sales rate of Walkaroo - one of India's leading footwear brands.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							)}
+
+							{activeTab === 'PR & Communication' && (
+								<div className='row'>
+									<div className="col-lg-6">
+										<div className="casestudy-card-dg height-dg">
+											<img src={case1} className='casestudy-img-box' alt="Performance Marketing" />
+											<div className="details-case-dv-dv">
+												<h4 className="heading-casestudy-service-dg">From 0 to ₹6 Million Revenue per month (4+ ROAS)</h4>
+												<div className="time-date-dg">
+													<img src={clock} className='clock-icon-dg' alt="Clock Icon" />
+													<p className="text-of-time">March 8, 2024</p>
+												</div>
+												<p className="description-service-dg">Explore how we transformed Bluetyga into a revenue-generating company from scratch.</p>
+											</div>
+										</div>
+									</div>
+									<div className="col-lg-6">
+										<div className="casestudy-card-dg">
+											<div className="sub-full-dv-dg">
+												<div className="img-box-dgg">
+													<img src={case2} className='casestudy-img-box' alt="" />
+												</div>
+												<div className="details-case-dv-dv">
+													<h4 className='heading-casestudy-service-dg-sub'>Generated a Massive ₹10 Million in 6 Months	</h4>
+													<div className="time-date-dg">
+														<img src={clock} className='clock-icon-dg' alt="" />
+														<p className='text-of-time'>March 8, 2024</p>
+													</div>
+													<p className='description-service-dg grey-clr-fg'>Dive in to learn how we improved the online sales rate of Walkaroo - one of India's leading footwear brands.</p>
+												</div>
+											</div>
+										</div>
+										<div className="casestudy-card-dg">
+											<div className="sub-full-dv-dg">
+												<div className="img-box-dgg">
+													<img src={case2} className='casestudy-img-box' alt="" />
+												</div>
+												<div className="details-case-dv-dv">
+													<h4 className='heading-casestudy-service-dg-sub'>Generated a Massive ₹10 Million in 6 Months	</h4>
+													<div className="time-date-dg">
+														<img src={clock} className='clock-icon-dg' alt="" />
+														<p className='text-of-time'>March 8, 2024</p>
+													</div>
+													<p className='description-service-dg grey-clr-fg'>Dive in to learn how we improved the online sales rate of Walkaroo - one of India's leading footwear brands.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							)}
+
+							{activeTab === 'Social Media' && (
+								<div className='row'>
+									<div className="col-lg-6">
+										<div className="casestudy-card-dg height-dg">
+											<img src={case1} className='casestudy-img-box' alt="Performance Marketing" />
+											<div className="details-case-dv-dv">
+												<h4 className="heading-casestudy-service-dg">1From 0 to ₹6 Million Revenue per month (4+ ROAS)</h4>
+												<div className="time-date-dg">
+													<img src={clock} className='clock-icon-dg' alt="Clock Icon" />
+													<p className="text-of-time">March 8, 2024</p>
+												</div>
+												<p className="description-service-dg">Explore how we transformed Bluetyga into a revenue-generating company from scratch.</p>
+											</div>
+										</div>
+									</div>
+									<div className="col-lg-6">
+										<div className="casestudy-card-dg">
+											<div className="sub-full-dv-dg">
+												<div className="img-box-dgg">
+													<img src={case2} className='casestudy-img-box' alt="" />
+												</div>
+												<div className="details-case-dv-dv">
+													<h4 className='heading-casestudy-service-dg-sub'>Generated a Massive ₹10 Million in 6 Months	</h4>
+													<div className="time-date-dg">
+														<img src={clock} className='clock-icon-dg' alt="" />
+														<p className='text-of-time'>March 8, 2024</p>
+													</div>
+													<p className='description-service-dg grey-clr-fg'>Dive in to learn how we improved the online sales rate of Walkaroo - one of India's leading footwear brands.</p>
+												</div>
+											</div>
+										</div>
+										<div className="casestudy-card-dg">
+											<div className="sub-full-dv-dg">
+												<div className="img-box-dgg">
+													<img src={case2} className='casestudy-img-box' alt="" />
+												</div>
+												<div className="details-case-dv-dv">
+													<h4 className='heading-casestudy-service-dg-sub'>Generated a Massive ₹10 Million in 6 Months	</h4>
+													<div className="time-date-dg">
+														<img src={clock} className='clock-icon-dg' alt="" />
+														<p className='text-of-time'>March 8, 2024</p>
+													</div>
+													<p className='description-service-dg grey-clr-fg'>Dive in to learn how we improved the online sales rate of Walkaroo - one of India's leading footwear brands.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							)}
+						</div>
+						<div className="row">
+							<div className="col-lg-12">
+								<div className="button-view-more-dg">
+									<Link to='/' className='btn-proposal-dg'>View More</Link>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div className="clients-reviews">
+					<div className="container-main">
+						<div className="row">
+							<div className="col-lg-5">
+								<div className="clients-reviews-box-dg">
+									<h3 className='clients-text-dg'>Client Reviews</h3>
+									<p className='clients-sub-text-dg'>Here is what our clients have to say about our service</p>
+									<img src={review} className='review-icon-dg' alt="" />
+								</div>
+							</div>
+							<div className="col-lg-7">
+								<div className="reviews-section-box-dg">
+									<div className={`review-content ${fadeClass}`}>
+										<h3 className='rev-title-main-dg'>{reviews[currentIndex].title}</h3>
+										<p className='rev-sub-title-main-dg'>{reviews[currentIndex].subtitle}</p>
+										<div className="reviewr-details-dg">
+											<img src={reviews[currentIndex].userimg} className='userimage-main-dg' alt={reviews[currentIndex].username} />
+											<div className="details-name-review-dg">
+												<h4 className='user-namee-dg'>{reviews[currentIndex].username}</h4>
+												<p className='user-desg-dg'>{reviews[currentIndex].userdesignation}</p>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+			{/* chat-section */}
+			<div className="chat-section-digital">
+				<div className="container-main">
+					<div className="row">
+						<div className="col-lg-6">
+							<div className="chat-inner-box-dv-dg">
+								<h3 className='lets-chat-title-dg'>Let's Have a Chat</h3>
+								<p className='lets-chat-sub-title-dg'>Give us a call or email us to learn more about our services. Need a face-to-face discussion? Feel free to visit us. </p>
+								<div className="address-details-div">
+									<div className="half-full-icon-svg">
+										<div className="half-address-svg">
+											<img src={call} className='half-icon-img' alt="" />
+										</div>
+										<div className="half-address-svg">
+											<img src={Email} className='half-icon-img' alt="" />
+										</div>
+									</div>
+									<img src={Address} className='half-icon-img-full' alt="" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+
+
+
+
 
 
 		</div>

@@ -45,60 +45,42 @@ const Creative = () => {
 			<div className="works-details">
 				<div className="container-main">
 					<div className="row">
-						<div className="col-lg-4 col-md-6">
-							<div className="similar-div">
-								<img src={one} className='similar-image' alt="SEO work" />
-								<div className="similar-contents">
-									<h4 className='similiar-title'>SEO: Boosting Visibility</h4>
-									<p className='similiar-sub'>Explore how we enhance visibility with our SEO strategies.</p>
-								</div>
-							</div>
-						</div>
-						<div className="col-lg-4 col-md-6">
-							<div className="similar-div">
-								<img src={two} className='similar-image' alt="SEO work" />
-								<div className="similar-contents">
-									<h4 className='similiar-title'>SEO: Boosting Visibility</h4>
-									<p className='similiar-sub'>Explore how we enhance visibility with our SEO strategies.</p>
-								</div>
-							</div>
-						</div>
-						<div className="col-lg-4 col-md-6">
-							<div className="similar-div">
-								<img src={three} className='similar-image' alt="SEO work" />
-								<div className="similar-contents">
-									<h4 className='similiar-title'>SEO: Boosting Visibility</h4>
-									<p className='similiar-sub'>Explore how we enhance visibility with our SEO strategies.</p>
-								</div>
-							</div>
-						</div>
-						<div className="col-lg-4 col-md-6">
-							<div className="similar-div">
-								<img src={four} className='similar-image' alt="SEO work" />
-								<div className="similar-contents">
-									<h4 className='similiar-title'>SEO: Boosting Visibility</h4>
-									<p className='similiar-sub'>Explore how we enhance visibility with our SEO strategies.</p>
-								</div>
-							</div>
-						</div>
-						<div className="col-lg-4 col-md-6">
-							<div className="similar-div">
-								<img src={five} className='similar-image' alt="SEO work" />
-								<div className="similar-contents">
-									<h4 className='similiar-title'>SEO: Boosting Visibility</h4>
-									<p className='similiar-sub'>Explore how we enhance visibility with our SEO strategies.</p>
-								</div>
-							</div>
-						</div>
-						<div className="col-lg-4 col-md-6">
-							<div className="similar-div">
-								<img src={six} className='similar-image' alt="SEO work" />
-								<div className="similar-contents">
-									<h4 className='similiar-title'>SEO: Boosting Visibility</h4>
-									<p className='similiar-sub'>Explore how we enhance visibility with our SEO strategies.</p>
-								</div>
-							</div>
-						</div>
+					<div className="col-lg-4 col-md-6">
+              <div className="similar-div">
+                <img src={six} className='similar-image' alt="SEO work" />
+                <div className="similar-contents">
+                  <h4 className='similiar-title'>1. Collaborating with TCS</h4>
+                  <p className='similiar-sub'>We partnered up with Tata Consultancy Services (TCS) for the design and copy for their TCS Sustainathon 2024.</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6">
+              <div className="similar-div">
+                <img src={one} className='similar-image' alt="SEO work" />
+                <div className="similar-contents">
+                  <h4 className='similiar-title'>2. Partnering with Kairali TMT</h4>
+                  <p className='similiar-sub'>See how we partnered up with South India’s most popular steel company, Kairali TMT for an ad. </p>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6">
+              <div className="similar-div">
+                <img src={five} className='similar-image' alt="SEO work" />
+                <div className="similar-contents">
+                  <h4 className='similiar-title'>3.  Boosting brand awareness for mr.alfred</h4>
+                  <p className='similiar-sub'>We helped boost brand visibility and ROI for a vacation rental management software solution, mr.alfred.</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6">
+              <div className="similar-div">
+                <img src={two} className='similar-image' alt="SEO work" />
+                <div className="similar-contents">
+                  <h4 className='similiar-title'>4.  Driving results with Med7 Online.  </h4>
+                  <p className='similiar-sub'>See how our creative team partnered with Med7 Online, an online pharmacy delivery in the UAE , to increase their brand visibility.</p>
+                </div>
+              </div>
+            </div>
 					</div>
 				</div>
 			</div>

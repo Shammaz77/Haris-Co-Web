@@ -77,7 +77,7 @@ const Works = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 col-md-6">
+            {/* <div className="col-lg-4 col-md-6">
               <div className="similar-div">
                 <img src={work} className='similar-image' alt="Branding work" />
                 <div className="similar-contents">
@@ -85,17 +85,17 @@ const Works = () => {
                   <p className='similiar-sub'>At Haris&Co., we pride ourselves on delivering creative solutions for branding.</p>
                 </div>
               </div>
-            </div>
+            </div> */}
             <div className="col-lg-4 col-md-6">
               <div className="similar-div">
                 <img src={haida} className='similar-image' alt="Branding work" />
                 <div className="similar-contents">
-                  <h4 className='similiar-title'>2. Branding the backbone of smart construction</h4>
+                  <h4 className='similiar-title'>1. Branding the backbone of smart construction</h4>
                   <p className='similiar-sub'>We helped craft a brand story that speaks for itself, for Haida BIM, a company offering engineering software support for construction businesses.</p>
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 col-md-6">
+            {/* <div className="col-lg-4 col-md-6">
               <div className="similar-div">
                 <img src={ice} className='similar-image' alt="Branding work" />
                 <div className="similar-contents">
@@ -103,8 +103,8 @@ const Works = () => {
                   <p className='similiar-sub'>At Haris&Co., we pride ourselves on delivering creative solutions for branding.</p>
                 </div>
               </div>
-            </div>
-            <div className="col-lg-4 col-md-6">
+            </div> */}
+            {/* <div className="col-lg-4 col-md-6">
               <div className="similar-div">
                 <img src={pink} className='similar-image' alt="Branding work" />
                 <div className="similar-contents">
@@ -112,12 +112,12 @@ const Works = () => {
                   <p className='similiar-sub'>At Haris&Co., we pride ourselves on delivering creative solutions for branding.</p>
                 </div>
               </div>
-            </div>
+            </div> */}
             <div className="col-lg-4 col-md-6">
               <div className="similar-div">
                 <img src={a} className='similar-image' alt="Branding work" />
                 <div className="similar-contents">
-                  <h4 className='similiar-title'>5. Crafting the soul of the brand</h4>
+                  <h4 className='similiar-title'>2. Crafting the soul of the brand</h4>
                   <p className='similiar-sub'>We helped Dubai-based brand, Automate My Biz craft their brand story that speaks their truth.</p>
                 </div>
               </div>
@@ -126,8 +126,8 @@ const Works = () => {
               <div className="similar-div">
                 <img src={reel} className='similar-image' alt="Branding work" />
                 <div className="similar-contents">
-                  <h4 className='similiar-title'>Branding: Transforming Ideas into Impactful Brands</h4>
-                  <p className='similiar-sub'>At Haris&Co., we pride ourselves on delivering creative solutions for branding.</p>
+                  <h4 className='similiar-title'>3. Branding for a change.</h4>
+                  <p className='similiar-sub'>We helped a healthy food manufacturing unit to define their brand with our branding services.</p>
                 </div>
               </div>
             </div>
@@ -490,8 +490,8 @@ const Works = () => {
               <div className="similar-div">
                 <img src={organic} className='similar-image' alt="SEO work" />
                 <div className="similar-contents">
-                  <h4 className='similiar-title'>3.  Choosing healthy and organic with Organic Habits</h4>
-                  <p className='similiar-sub'>We helped organic and health-oriented company, Organic Habits to establish their online presence. </p>
+                  <h4 className='similiar-title'>3.  Making gifting special with Keva Box									</h4>
+                  <p className='similiar-sub'>We teamed up with Keva Box, a jewelry brand, to boost their online presence and drive results with a new and improved website </p>
                 </div>
               </div>
             </div>

@@ -121,14 +121,14 @@ const About = () => {
 						<div className='team-div show1'>
 							<img src={adarsh} className='image-team' alt="" />
 							<div className="member-details">
-								<h3 className='name'>Aadarsh</h3>
+								<h3 className='name'>Aadarsh MS</h3>
 								{/* <h4 className='designation'>Founder</h4> */}
 							</div>
 						</div>
 						<div className='team-div show2'>
 							<img src={ragin} className='image-team' alt="" />
 							<div className="member-details">
-								<h3 className='name'>Ragin</h3>
+								<h3 className='name'>Ragin  Raj</h3>
 								{/* <h4 className='designation'>Founder</h4> */}
 							</div>
 						</div>
@@ -142,14 +142,14 @@ const About = () => {
 						<div className='team-div show4'>
 							<img src={saheel} className='image-team' alt="" />
 							<div className="member-details">
-								<h3 className='name'>Saheel</h3>
+								<h3 className='name'> Ibrahim <br /> Saheel </h3>
 								{/* <h4 className='designation'>Founder</h4> */}
 							</div>
 						</div>
 						<div className='team-div show5'>
 							<img src={amna} className='image-team' alt="" />
 							<div className="member-details">
-								<h3 className='name'>Amna</h3>
+								<h3 className='name'>Amna Iqbal</h3>
 								{/* <h4 className='designation'>Founder</h4> */}
 							</div>
 						</div>
@@ -159,14 +159,14 @@ const About = () => {
 						<div className='team-div show6'>
 							<img src={hadi} className='image-team' alt="" />
 							<div className="member-details">
-								<h3 className='name'>Aadarsh</h3>
+								<h3 className='name'>Hadi <br /> Fathima <br /> Farooque								</h3>
 								{/* <h4 className='designation'>Founder</h4> */}
 							</div>
 						</div>
 						<div className='team-div show7'>
 							<img src={nab} className='image-team' alt="" />
 							<div className="member-details">
-								<h3 className='name'>Abu Nabhan</h3>
+								<h3 className='name'>Abu <br /> Nabhan</h3>
 								{/* <h4 className='designation'>Chief of Branding</h4> */}
 							</div>
 						</div>
@@ -180,7 +180,7 @@ const About = () => {
 						<div className='team-div show9'>
 							<img src={nizwa} className='image-team' alt="" />
 							<div className="member-details">
-								<h3 className='name'>Saheel</h3>
+								<h3 className='name'>Nizwa  iqbal</h3>
 								{/* <h4 className='designation'>Founder</h4> */}
 							</div>
 						</div>
@@ -243,7 +243,7 @@ const About = () => {
 							<img src={azar} className='image-team-dept' alt="" />
 							<div className="member-details-departments">
 								<h3 className='name'> Mohamed Azaruddin</h3>
-								<h4 className='designation'>Head of Brand Solution</h4>
+								<h4 className='designation'>Chief of Brand Solution</h4>
 							</div>
 						</div>
 					</Slider>

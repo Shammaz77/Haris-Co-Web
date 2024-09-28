@@ -80,7 +80,7 @@
 }
 .black-bg-service{
 	background-color: black;
-	padding: 30px 0px 150px 0px;
+	padding: 30px 0px 130px 0px;
 	margin-top: 60px;
 }
 .black-bg-service .header-page-name-small{
@@ -356,6 +356,13 @@
   font-size: 20px;
   margin-top: 20px;
 }
+.client-imageee {
+	width: 100% !important;
+	min-height: 118px;
+}
+
+
+
 
 
 
@@ -407,12 +414,12 @@
     width: 100%;
     padding-bottom: 20px;
 }
-	.work-details-right{
+	/* .work-details-right{
 	display: none;
 	}
 	.work-details{
 	display: none;
-	}
+	} */
 	.black-bg-service{
 	padding: 30px 0px 50px 0px;
 	}
@@ -432,6 +439,12 @@
 @media (max-width:650px){
 	.fearless-title {
 		font-size: 50px;
+	}
+	.client-imagee {
+		min-height: 640px;
+	}
+	.main-slidersss .slick-dots{
+		display: none !important;
 	}
 	.badge-logo {
 		margin-left: -15px;

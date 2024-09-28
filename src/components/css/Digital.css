@@ -51,17 +51,17 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	font-family: Abroreguler;
+	font-family: Abrothin;
 }
-.items-dg ul{
+.itemss-dg ul{
 	display: flex;
 	align-items: center;
 	margin-bottom: 0px;
 }
-.items-dg ul li{
+.itemss-dg ul li{
 	padding: 0px 20px;
 }
-.items-dg ul li a{
+.itemss-dg ul li a{
 	color: #ffff;
 	text-decoration: none;
 }
@@ -362,6 +362,8 @@
 }
 .dg-feature-img{
 	width: 95%;
+	margin: auto;
+	display: table;
 	border-radius: 20px !important;
 }
 
@@ -372,78 +374,284 @@
   transform: scale(1.1);
 	width: 100%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.headlines-main-dvv-dg .slick-center .dg-feature-img{
+	width: 98%;
+}
+.headlines-main-dvv-dg{
+	padding-top: 25px;
+	width: 96% !important;
+	margin: auto;
+	padding-bottom: 70px;
+}
+.headlines-main-dvv-dg .slick-dots li {
+	position: relative;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin: 0 -3px;
+	padding: 0;
+	cursor: pointer;
+}
+.headlines-main-dvv-dg  .slick-dots {
+	position: absolute;
+	bottom: -45px;
+	display: block;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-align: center;
+}
+.hover-arrow-main-dg{
+	width: 40px;
+	position: absolute;
+	bottom: 40px;
+	right: 40px;
+	display: none !important;
+}
+.featured-img-dv-main{
+	position: relative;
+	cursor: pointer;
+}
+.featured-img-dv-main:hover .hover-arrow-main-dg{
+	display: block !important;
+}
+.lets-discuss-main-dg{
+	background-repeat: no-repeat;
+	/* background-position: contain; */
+	padding: 30px 50px;
+	width: 100% !important;
+	display: flex;
+	justify-content: space-between;
+	border-radius: 30px;
+	background-image: url('../../Assets/DigitalMarketing//discuss.svg');
+}
+@font-face {
+	font-family: babues;
+	src: url('../../Font//Bebas/BebasNeue-Regular.ttf');
+}
+.discuss-title-dg{
+	font-family: babues;
+	color: #fff;
+	line-height: 1.4;
+	font-size: 55px;
+	margin-bottom: 0px !important;
+}
+.half-dg-discss{
+	width: 70%;
+}
+.righthalf-dg-discss .btn-proposal-dg{
+	display: table !important;
+	width: max-content;
+	margin-top: 50px !important;
+	margin-left: auto !important;
+}
+.casestudy-main-div-dg{
+	padding-top: 100px;
+}
+.title-casestudy-dg-main{
+	font-size: 40px;
+	text-align: center;
+	font-family: Abrobold;
+}
+.sub-title-casestudy-dg-main{
+	font-size: 16px;
+	font-family: PoppinsRegular;
+	text-align: center;
+	padding-bottom: 30px;
+}
+.items-dg{
+	font-size: 17px;
+	font-family: PoppinsSemiBold;
+	padding: 0px 20px;
+	color: #888888;
+	cursor: pointer;
+}
+.items-services-case-study-dg{
+	display: flex;
+	justify-content: space-between;
+	white-space: nowrap;
+	overflow-x: auto;
+	scrollbar-width: thin;
+	margin-bottom: 30px;
+}
+.active-dg-item{
+	color: #000;
+}
+.casestudy-card-dg{
+	background-color: #fff;
+	border-radius: 20px;
+	padding: 10px;
+	margin-bottom: 20px;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.casestudy-img-box{
+	width: 100% !important;
+}
+.heading-casestudy-service-dg{
+	font-size: 23px;
+	line-height: 1.5;
+	padding-top: 20px;
+	font-family: PoppinsSemiBold;
+}
+.heading-casestudy-service-dg-sub{
+	font-size: 21px;
+	font-family: PoppinsRegular;
+}
+.details-case-dv-dv{
+	width: 95%;
+	margin: auto;
+}
+.description-service-dg{
+	font-size: 16px;
+	font-family: PoppinsRegular;
+}
+.clock-icon-dg{
+	width: 20px;
+}
+.time-date-dg{
+	display: flex;
+	align-items: center;
+	padding-bottom: 20px;
+	padding-top: 10px;
+}
+.text-of-time{
+	font-size: 15px;
+	padding-left: 10px;
+	margin-bottom: 0px !important;
+	font-family: PoppinsRegular;
+	color: grey !important;
+}
+.sub-full-dv-dg{
+	display: flex;
+	justify-content: space-between;
+}
+.sub-full-dv-dg .sub-full-dv-dg{
+	width: 100% !important;
+}
+.sub-full-dv-dg .details-case-dv-dv{
+	width: 55% !important;
+	padding-left: 20px;
+}
+.img-box-dgg{
+	width: 45% !important;
+}
+.height-dg{
+	min-height: 560px;
+}
+.grey-clr-fg{
+	color: grey !important;
+}
+.button-view-more-dg .btn-proposal-dg{
+	width: max-content !important;
+	margin: auto;
+	display: table;
+}
+.button-view-more-dg{
+	padding-top: 35px;
+}
+.clients-text-dg{
+	font-family: Abrobold;
+	font-size: 40px;
+	padding-top: 40px;
+}
+.clients-reviews{
+	padding: 60px 0px;
+	margin-top: 60px;
+	margin-bottom: 60px;
+	box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+.clients-sub-text-dg{
+	font-size: 15px;
+	font-family: PoppinsRegular;
+	padding-bottom: 10px;
+}
+.review-icon-dg{
+	width: 170px;
+}
+.reviews-section-box-dg{
+	background-color: #000;
+	border-radius: 20px;
+	padding: 25px 30px;
+}
+.userimage-main-dg{
+	width: 50px;
+	height: 50px;
+}
+.rev-title-main-dg{
+	color: #ffff;
+	font-size: 16px;
+	font-family: PoppinsBold;
+}
+.rev-sub-title-main-dg{
+	color: #ffff;
+	font-family: PoppinsRegular;
+	padding-top: 20px;
+	font-size: 15px;
+	padding-bottom: 15px;
+}
+.user-desg-dg{
+	color: #fff;
+	font-family: PoppinsRegular;
+	font-size: 15px;
+	margin-bottom: 0px !important;
+}
+.user-namee-dg{
+	font-family: PoppinsBold;
+	color: #fff;
+	font-size: 16px;
+	margin-bottom: 0px !important;
+}
+.reviewr-details-dg{
+	display: flex;
+}
+.details-name-review-dg{
+	padding-left: 15px;
+}
+.dgfade-in {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+.dgfade-out {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.lets-chat-title-dg{
+	color: #fff;
+	font-size: 40px;
+	font-family: Abrobold;
+}
+.lets-chat-sub-title-dg{
+	color: #a9a9a9;
+	font-size: 15px;
+	padding-bottom: 20px;
+	font-family: PoppinsRegular;
+}
+.address-details-div{
+	width: 100%;
+	cursor: pointer;
+	padding-bottom: 50px;
+}
+.half-full-icon-svg{
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	padding-bottom: 20px;
+}
+.half-icon-img{
+	width: 80%;
+}
+.half-address-svg{
+	width: 90%;
+	display: flex;
+	justify-content: space-between;
+}
+.half-icon-img-full{
+	width: 100%;
+	padding-top: 20px;
+}
+.chat-section-digital{
+}
 
 
 

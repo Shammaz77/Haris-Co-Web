@@ -65,8 +65,9 @@ const Web = () => {
 							<div className="similar-div">
 								<img src={organic} className='similar-image' alt="SEO work" />
 								<div className="similar-contents">
-									<h4 className='similiar-title'>3.  Choosing healthy and organic with Organic Habits</h4>
-									<p className='similiar-sub'>We helped organic and health-oriented company, Organic Habits to establish their online presence. </p>
+									<h4 className='similiar-title'>3. Making gifting special with Keva Box
+									</h4>
+									<p className='similiar-sub'>We teamed up with Keva Box, a jewelry brand, to boost their online presence and drive results with a new and improved website.</p>
 								</div>
 							</div>
 						</div>

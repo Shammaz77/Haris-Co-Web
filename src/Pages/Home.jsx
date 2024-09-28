@@ -30,6 +30,59 @@ import vedio from '.././Assets/vedio.mp4'
 import CountUp from 'react-countup';
 import ptwo from '../Assets/Production/2.png';
 
+
+
+import disha from '../Assets/Web/disha.png';
+import lady from '../Assets/Web/lady.png';
+import organic from '../Assets/Web/organic.png';
+import popees from '../Assets/Web/popees.png';
+import truth from '../Assets/Web/truth.png';
+import wild from '../Assets/Web/wildtree.png';
+import a from '../Assets/Branding/a.png';
+import haida from '../Assets/Branding/haida.png';
+import ice from '../Assets/Branding/ice.png';
+import pink from '../Assets/Branding/pink.png';
+import reel from '../Assets/Branding/reel.png';
+import one from '../Assets/works/one.png';
+import two from '../Assets/works/two.png';
+import three from '../Assets/works/three.png';
+import four from '../Assets/works/four.png';
+import five from '../Assets/works/five.png';
+import six from '../Assets/works/six.png';
+import pthree from '../Assets/Production/3.png';
+import pfour from '../Assets/Production/4.png';
+import pfive from '../Assets/Production/5.png';
+import psix from '../Assets/Production/6.png';
+import done from '../Assets/PR/1.png';
+import dtwo from '../Assets/PR/2.png';
+import dthree from '../Assets/PR/3.png';
+import dfour from '../Assets/PR/4.png';
+import sone from '../Assets/Seo/1.png';
+import stwo from '../Assets/Seo/2.png';
+import sthree from '../Assets/Seo/3.png';
+import sfour from '../Assets/Seo/4.png';
+import sfive from '../Assets/Seo/5.png';
+import mone from '../Assets/Perfomance/1.png';
+import mtwo from '../Assets/Perfomance/2.png';
+import mthree from '../Assets/Perfomance/3.png';
+import mfour from '../Assets/Perfomance/4.png';
+import mfive from '../Assets/Perfomance/5.png';
+import msix from '../Assets/Perfomance/6.png';
+import smone from '../Assets/SocialMedia/1.png';
+import smtwo from '../Assets/SocialMedia/2.png';
+import smthree from '../Assets/SocialMedia/3.png';
+import smfour from '../Assets/SocialMedia/4.png';
+import smfive from '../Assets/SocialMedia/5.png';
+import smsix from '../Assets/SocialMedia/6.png';
+import dfive from '../Assets/PR/5.png';
+import dsix from '../Assets/PR/6.png';
+
+
+
+
+
+
+
 const Home = () => {
 
 
@@ -83,11 +136,11 @@ const Home = () => {
 	var settingsOne = {
 		dots: true,
 		infinite: true,
-		speed: 500,
+		speed: 1000,
 		slidesToShow: 2,
 		slidesToScroll: 1,
 		autoplay: true,
-		autoplaySpeed: 2000,
+		autoplaySpeed: 3000,
 		pauseOnHover: true,
 		arrows: true,
 		responsive: [
@@ -288,63 +341,252 @@ const Home = () => {
 					</div>
 					<div className="main-slidersss">
 						<Slider {...settingsOne}>
-						<div className="home-work-service hover-effect">
+						{/* <div className="home-work-service hover-effect">
 								<img src={ptwo} className='service-image-work' alt="service image" />
 								<div className="work-details-right">
 									<h2 className='work-number-text-color'>01.</h2>
 									<p className='sub-text-work-hide'>At Haris&Co., we understand that your brand is more</p>
 									<p className='sub-text-work'>At Haris&Co., we understand that your brand is more than just a logo or a tagline—it's the essence of your business, the story you tell, and the promise you make to your customers. Our branding services are designed to uncover and articulate your unique identity, ensuring that every touchpoint resonates with your target audience. From initial brand strategy and research to crafting a compelling visual identity, we work closely with you to build a brand that is authentic, memorable, and impactful. </p>
 								</div>
+							</div> */}
+														<div className="home-work-service hover-effect">
+								<img src={six} className='service-image-work' alt="service image" />
+								<div className="work-details-right">
+									<h2 className='work-number-text-color'>1.</h2>
+									<p className='sub-text-work-hide'> Collaborating with TCS</p>
+									<p className='sub-text-work'>We partnered up with Tata Consultancy Services (TCS) for the design and copy for their TCS Sustainathon 2024.</p>
+								</div>
 							</div>
+							<div className="home-work-service hover-effect">
+								<img src={mfive} className='service-image-work' alt="service image" />
+								<div className="work-details-right">
+									<h2 className='work-number-text-color'>2.</h2>
+									<p className='sub-text-work-hide'> Skyrocketing sales with Walkaroo!</p>
+									<p className='sub-text-work'>We helped Walkaroo, one of India’s popular footwear brands, scale their revenue to ₹10M+ in just 6 months!</p>
+								</div>
+							</div>
+							<div className="home-work-service hover-effect">
+								<img src={popees} className='service-image-work' alt="service image" />
+								<div className="work-details-right">
+									<h2 className='work-number-text-color'>03.</h2>
+									<p className='sub-text-work-hide'> Revamping Popees</p>
+									<p className='sub-text-work'>We partnered with one of Kerala’s best known brands, Popees to boost their online presence and brand visibility</p>
+								</div>
+							</div>
+							<div className="home-work-service hover-effect">
+								<img src={truth} className='service-image-work' alt="service image" />
+								<div className="work-details">
+									<h2 className='work-number-text'>04.</h2>
+									<p className='sub-text-work-hide'>Vamping up Truthcare Pharmacy.</p>
+									<p className='sub-text-work'>Our web development and UI/UX services helped give Truthcare Pharmacy a new and improved online presence.</p>
+								</div>
+							</div>
+							<div className="home-work-service hover-effect">
+								<img src={one} className='service-image-work' alt="service image" />
+								<div className="work-details">
+									<h2 className='work-number-text'>05.</h2>
+									<p className='sub-text-work-hide'>Partnering with Kairali TMT</p>
+									<p className='sub-text-work'>See how we partnered up with South India’s most popular steel company, Kairali TMT for an ad. </p>
+								</div>
+							</div>
+
+
+
+
+							<div className="home-work-service hover-effect">
+								<img src={sfour} className='service-image-work' alt="service image" />
+								<div className="work-details-right">
+									<h2 className='work-number-text-color'>06.</h2>
+									<p className='sub-text-work-hide'> Launching Kairali TMT Online</p>
+									<p className='sub-text-work'>We partnered with one of South India’s biggest steel brands to increase their online presence. Explore how we helped drive organic traffic from 1k to 2 lakh+! </p>
+								</div>
+							</div>
+							<div className="home-work-service hover-effect">
+								<img src={disha} className='service-image-work' alt="service image" />
+								<div className="work-details-right">
+									<h2 className='work-number-text-color'>07.</h2>
+									<p className='sub-text-work-hide'> Styling an online presence for Disha Creationz!</p>
+									<p className='sub-text-work'>We collaborated with Disha Creationz, a clothing brand to increase their brand visibility and engagement.</p>
+								</div>
+							</div>
+							<div className="home-work-service hover-effect">
+								<img src={organic} className='service-image-work' alt="service image" />
+								<div className="work-details-right">
+									<h2 className='work-number-text-color'>08.</h2>
+									<p className='sub-text-work-hide'> Choosing healthy and organic with Organic Habits</p>
+									<p className='sub-text-work'>We helped organic and health-oriented company, Organic Habits to establish their online presence. </p>
+								</div>
+							</div>
+
+							<div className="home-work-service hover-effect">
+								<img src={sthree} className='service-image-work' alt="service image" />
+								<div className="work-details">
+									<h2 className='work-number-text'>09.</h2>
+									<p className='sub-text-work-hide'>SEO expertise that drives results!</p>
+									<p className='sub-text-work'>Discover how our SEO experts generated 1M+ revenue within 10 months for BOSQ, a premium workspace solutions brand! Our strategies delivered organic 500+ sales-quality leads. </p>
+								</div>
+							</div>
+
+
+
 							<div className="home-work-service hover-effect">
 								<img src={work0} className='service-image-work' alt="service image" />
 								<div className="work-details-right">
-									<h2 className='work-number-text-color'>01.</h2>
-									<p className='sub-text-work-hide'>At Haris&Co., we understand that your brand is more</p>
-									<p className='sub-text-work'>At Haris&Co., we understand that your brand is more than just a logo or a tagline—it's the essence of your business, the story you tell, and the promise you make to your customers. Our branding services are designed to uncover and articulate your unique identity, ensuring that every touchpoint resonates with your target audience. From initial brand strategy and research to crafting a compelling visual identity, we work closely with you to build a brand that is authentic, memorable, and impactful. </p>
+									<h2 className='work-number-text-color'>10.</h2>
+									<p className='sub-text-work-hide'>Redefining brand stories.</p>
+									<p className='sub-text-work'>We helped create a unique and authentic branding for the new eatery, Calicut Parivar Restaurant.</p>
 								</div>
 							</div>
 
 							<div className="home-work-service hover-effect">
 								<img src={work2} className='service-image-work' alt="service image" />
 								<div className="work-details">
-									<h2 className='work-number-text'>02.</h2>
-									<p className='sub-text-work-hide'>At Haris&Co., we understand that your brand is more</p>
-									<p className='sub-text-work'>At Haris&Co., we understand that your brand is more than just a logo or a tagline—it's the essence of your business, the story you tell, and the promise you make to your customers. Our branding services are designed to uncover and articulate your unique identity, ensuring that every </p>
+									<h2 className='work-number-text'>11.</h2>
+									<p className='sub-text-work-hide'>Crafting the soul of the brand.</p>
+									<p className='sub-text-work'>We helped Dubai-based brand, Automate My Biz craft their brand story that speaks their truth </p>
 								</div>
 							</div>
 							<div className="home-work-service hover-effect">
 								<img src={work3} className='service-image-work' alt="service image" />
 								<div className="work-details-right">
-									<h2 className='work-number-text-color'>03.</h2>
-									<p className='sub-text-work-hide'>At Haris&Co., we understand that your brand is more</p>
-									<p className='sub-text-work'>At Haris&Co., we understand that your brand is more than just a logo or a tagline—it's the essence of your business, the story you tell, and the promise you make to your customers. Our branding services are designed to uncover and articulate your unique identity, ensuring that every touchpoint resonates with your target audience. From initial brand strategy and research to crafting a compelling visual identity, we work closely with you to build a brand that is authentic, memorable, and impactful. </p>
+									<h2 className='work-number-text-color'>12.</h2>
+									<p className='sub-text-work-hide'>Branding for a change.</p>
+									<p className='sub-text-work'>We helped a healthy food manufacturing unit to define their brand with our branding services. </p>
 								</div>
 							</div>
 							<div className="home-work-service hover-effect">
 								<img src={work4} className='service-image-work' alt="service image" />
 								<div className="work-details">
-									<h2 className='work-number-text'>04.</h2>
-									<p className='sub-text-work-hide'>At Haris&Co., we understand that your brand is more</p>
-									<p className='sub-text-work'>At Haris&Co., we understand that your brand is more than just a logo or a tagline—it's the essence of your business, the story you tell, and the promise you make to your customers. Our branding services are designed to uncover and articulate your unique identity, ensuring that every </p>
+									<h2 className='work-number-text'>13.</h2>
+									<p className='sub-text-work-hide'>Beyond conventions with Foodies Bay.</p>
+									<p className='sub-text-work'>Our branding services helped craft a stunning brand identity for a multi cuisine restaurant in Dubai. </p>
 								</div>
 							</div>
 							<div className="home-work-service hover-effect">
 								<img src={work5} className='service-image-work' alt="service image" />
-								<div className="work-details-right">
+								{/* <div className="work-details-right">
 									<h2 className='work-number-text-color'>05.</h2>
 									<p className='sub-text-work-hide'>At Haris&Co., we understand that your brand is more</p>
 									<p className='sub-text-work'>At Haris&Co., we understand that your brand is more than just a logo or a tagline—it's the essence of your business, the story you tell, and the promise you make to your customers. Our branding services are designed to uncover and articulate your unique identity, ensuring that every touchpoint resonates with your target audience. From initial brand strategy and research to crafting a compelling visual identity, we work closely with you to build a brand that is authentic, memorable, and impactful. </p>
-								</div>
+								</div> */}
 							</div>
 							<div className="home-work-service hover-effect">
 								<img src={work6} className='service-image-work' alt="service image" />
-								<div className="work-details-right">
-									<h2 className='work-number-text-color'>06.</h2>
-									<p className='sub-text-work-hide'>At Haris&Co., we understand that your brand is more</p>
-									<p className='sub-text-work'>At Haris&Co., we understand that your brand is more than just a logo or a tagline—it's the essence of your business, the story you tell, and the promise you make to your customers. Our branding services are designed to uncover and articulate your unique identity, ensuring that every touchpoint resonates with your target audience. From initial brand strategy and research to crafting a compelling visual identity, we work closely with you to build a brand that is authentic, memorable, and impactful. </p>
+								<div className="work-details">
+									<h2 className='work-number-text-color'>14.</h2>
+									<p className='sub-text-work-hide'>1.  Brand stories that speak unique.</p>
+									<p className='sub-text-work'>From brand story to visual concepts, we helped create a new voice and brand identity for Healbev, a new beverage company.</p>
 								</div>
 							</div>
+
+
+
+							<div className="home-work-service hover-effect">
+								<img src={lady} className='service-image-work' alt="service image" />
+								<div className="work-details">
+									<h2 className='work-number-text'>15.</h2>
+									<p className='sub-text-work-hide'>Baking with Lady Loafella!</p>
+									<p className='sub-text-work'>Explore how we enhance visibility with our SEO strategies.</p>
+								</div>
+							</div>
+
+
+
+
+
+							<div className="home-work-service hover-effect">
+								<img src={wild} className='service-image-work' alt="service image" />
+								<div className="work-details">
+									<h2 className='work-number-text'>16.</h2>
+									<p className='sub-text-work-hide'>Serving the goodness of nuts with Wild Tree.</p>
+									<p className='sub-text-work'>We vamped up the online presence of Wild Tree, a UAE-based food company dealing in nuts and snacks.</p>
+								</div>
+							</div>
+
+
+
+
+
+							<div className="home-work-service hover-effect">
+								<img src={sfive} className='service-image-work' alt="service image" />
+								<div className="work-details">
+									<h2 className='work-number-text'>17.</h2>
+									<p className='sub-text-work-hide'>Strategies that put you on top.</p>
+									<p className='sub-text-work'>We helped Skin Bae, a brand that sells premium and authentic Korean skincare products, rank higher than industry leaders like Amazon, Nykaa, and more. </p>
+								</div>
+							</div>
+
+
+							<div className="home-work-service hover-effect">
+								<img src={sone} className='service-image-work' alt="service image" />
+								<div className="work-details-right">
+									<h2 className='work-number-text-color'>18.</h2>
+									<p className='sub-text-work-hide'> SEO strategies that rank you on the first page!</p>
+									<p className='sub-text-work'>Our SEO strategies made a difference for Abu Dhabi-based home care provider Infinity Care. Our strategies reduced bounce rates and generated 200+ leads in just 2 months! </p>
+								</div>
+							</div>
+
+
+
+
+
+							<div className="home-work-service hover-effect">
+								<img src={stwo} className='service-image-work' alt="service image" />
+								<div className="work-details-right">
+									<h2 className='work-number-text-color'>19.</h2>
+									<p className='sub-text-work-hide'>200+ leads in 2 months!</p>
+									<p className='sub-text-work'>Our SEO strategies made a difference for Abu Dhabi-based home care provider Infinity Care. Our strategies reduced bounce rates and generated 200+ leads in just 2 months!</p>
+								</div>
+							</div>
+							<div className="home-work-service hover-effect">
+								<img src={smone} className='service-image-work' alt="service image" />
+								<div className="work-details">
+									<h2 className='work-number-text'>20.</h2>
+									<p className='sub-text-work-hide'>Scroll-stopping Design Creatives!</p>
+									<p className='sub-text-work'>We crafted unique and captivating design creatives for Organic Habits, an organic and health-oriented food company, and Care n Cure, an online pharmacy.  </p>
+								</div>
+							</div>
+
+
+
+
+
+							<div className="home-work-service hover-effect">
+								<img src={smtwo} className='service-image-work' alt="service image" />
+								<div className="work-details-right">
+									<h2 className='work-number-text-color'>21.</h2>
+									<p className='sub-text-work-hide'> A community of 50+ happy clients!</p>
+									<p className='sub-text-work'>Explore how we delivered show-stopping creative solutions to over 50+ clients from multiple industries.</p>
+								</div>
+							</div>
+							<div className="home-work-service hover-effect">
+								<img src={smthree} className='service-image-work' alt="service image" />
+								<div className="work-details">
+									<h2 className='work-number-text'>22.</h2>
+									<p className='sub-text-work-hide'>Campaigning for change with Femisafe.</p>
+									<p className='sub-text-work'>Our captivating and strong campaigns for Femisafe for Women’s Day were dearly loved and recognized!</p>
+								</div>
+							</div>
+
+
+
+							<div className="home-work-service hover-effect">
+								<img src={mone} className='service-image-work' alt="service image" />
+								<div className="work-details">
+									<h2 className='work-number-text'>23.</h2>
+									<p className='sub-text-work-hide'>Scaling revenue to ₹ 2M+ !</p>
+									<p className='sub-text-work'>We teamed with Skin Bae, a leading skincare brand offering Korean skincare, to scale their revenue and increase ROAS by 4 times! </p>
+								</div>
+							</div>
+
+
+
+
+
+
+
+
+
 						</Slider>
 					</div>
 				</div>
@@ -368,7 +610,7 @@ const Home = () => {
 						</div>
 						<div className="col-lg-12 mobile-show-slider">
 							<div className="clients-image-main">
-								<img src={clientsmobile} className='client-imagee' alt="" />
+								<img src={clientsmobile} className='client-imageee' alt="" />
 							</div>
 						</div>
 						<div className="col-lg-12">
