@@ -195,7 +195,8 @@ const About = () => {
 						<h3 className='meet-team'>Meet the minds shaping an <br /> industry.</h3>
 					</div>
 				</div>
-				<div className="slider-team-main">
+				<div className="slider-team-main mainx">
+					<div className="container-main">
 					<Slider {...settings}>
 						<div className='team-div show1'>
 							<img src={nabhand} className='image-team-dept' alt="" />
@@ -247,6 +248,7 @@ const About = () => {
 							</div>
 						</div>
 					</Slider>
+					</div>
 				</div>
 			</div>
 		</div>

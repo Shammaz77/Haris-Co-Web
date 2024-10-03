@@ -360,7 +360,9 @@
 	width: 100% !important;
 	min-height: 118px;
 }
-
+.vedio-mob{
+	display: none;
+}
 
 
 
@@ -381,6 +383,7 @@
 	.mobile-hide-slider{
 		display: none;
 	}
+
 	.menu-icon{
 		display: block;
 		width: 40px;
@@ -436,6 +439,32 @@
     font-size: 20px;
 	}
 }
+@media (max-width:700px){
+	.vedio-home{
+		display: none;
+	}
+	.vedio-mob{
+		display: block;
+		width: 100%;
+		max-height: 53vh;
+		object-fit: cover;
+		margin-top: -2px;
+	}
+	.hover-effect:hover .sub-text-work{
+		display: none !important;
+	}
+	.sub-text-work{
+		display: none !important;
+	}
+	.hover-effect:hover .sub-text-work-hide {
+    display: block;
+	}
+	.work-number-text-color {
+    font-size: 37px;
+		padding-top: 15px;
+    padding-bottom: 10px;
+	}
+}
 @media (max-width:650px){
 	.fearless-title {
 		font-size: 50px;
@@ -448,11 +477,14 @@
 	}
 	.badge-logo {
 		margin-left: -15px;
-		width: 82%;
+		width: 75%;
 	}
 	.scroll-icon {
 		width: 74px;
 		top: -180px;
+	}
+	.fearless-main{
+		margin-top: -18px;
 	}
 	.container-main {
 		width: 90%;
@@ -480,12 +512,14 @@
 		font-size: 33px;
 	}
 	.scroll-icon {
-		width: 67px;
-		top: -150px;
+		width: 57px;
+		top: -83px;
 	}
 	.badge-logo {
-		margin-left: -4px;
-
+		margin-left: -6px;
+	}
+	.fearless-title {
+		font-size: 47px;
 	}
 }
 @media (max-width:480px){
@@ -497,7 +531,15 @@
     padding-bottom: 16px;
 	}
 }
-
+@media (max-width:400px){
+	.vedio-mob{
+		display: block;
+		width: 100%;
+		max-height: 60vh;
+		object-fit: cover;
+		margin-top: -2px;
+	}
+}
 
 
 

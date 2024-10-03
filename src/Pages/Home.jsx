@@ -27,6 +27,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import vedio from '.././Assets/vedio.mp4'
+import vediomob from '.././Assets/mob.mp4'
+
 import CountUp from 'react-countup';
 import ptwo from '../Assets/Production/2.png';
 
@@ -188,7 +190,8 @@ const Home = () => {
 	return (
 		<div className='home-page font-h'>
 			<div className="vedio-section">
-			<video src={vedio} className="vedio-home" autoPlay loop muted playsInline></video>
+				<video src={vedio} className="vedio-home" autoPlay loop muted playsInline></video>
+				<video src={vediomob} className="vedio-mob" autoPlay loop muted playsInline></video>
 			</div>
 			<div className="fearless">
 				<div className="container-main">
@@ -341,7 +344,7 @@ const Home = () => {
 					</div>
 					<div className="main-slidersss">
 						<Slider {...settingsOne}>
-						{/* <div className="home-work-service hover-effect">
+							{/* <div className="home-work-service hover-effect">
 								<img src={ptwo} className='service-image-work' alt="service image" />
 								<div className="work-details-right">
 									<h2 className='work-number-text-color'>01.</h2>
@@ -349,7 +352,7 @@ const Home = () => {
 									<p className='sub-text-work'>At Haris&Co., we understand that your brand is more than just a logo or a tagline—it's the essence of your business, the story you tell, and the promise you make to your customers. Our branding services are designed to uncover and articulate your unique identity, ensuring that every touchpoint resonates with your target audience. From initial brand strategy and research to crafting a compelling visual identity, we work closely with you to build a brand that is authentic, memorable, and impactful. </p>
 								</div>
 							</div> */}
-														<div className="home-work-service hover-effect">
+							<div className="home-work-service hover-effect">
 								<img src={six} className='service-image-work' alt="service image" />
 								<div className="work-details-right">
 									<h2 className='work-number-text-color'>1.</h2>
