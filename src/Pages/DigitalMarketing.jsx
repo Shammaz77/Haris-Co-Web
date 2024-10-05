@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
+import { Helmet } from 'react-helmet-async';
 import '../components/css/Digital.css';
 import { Link } from 'react-router-dom';
 import logo from '../Assets/navlogo.png'
-import founder from '../Assets/DigitalMarketing/FOUNDER.png'
+import founder from '../Assets/DigitalMarketing/founderhero.png'
 import clients from '../Assets/DigitalMarketing/Clients.svg'
 import clients2 from '../Assets/DigitalMarketing/clients-pending.svg'
 import amna from '../Assets/DigitalMarketing/amna.png'
@@ -68,9 +69,9 @@ import aw3 from '../Assets/DigitalMarketing/aw3.webp'
 import aw2 from '../Assets/DigitalMarketing/aw2.webp'
 import arroww from '../Assets/DigitalMarketing/arroww.svg'
 import cl1 from '../Assets/DigitalMarketing/mobile-clients.svg'
+import cl2 from '../Assets/DigitalMarketing/mobile-clients2.svg'
+import cl3 from '../Assets/DigitalMarketing/mobile-clients3.svg'
 import s11 from '../Assets/DigitalMarketing/s11.svg'
-import { Helmet } from "react-helmet";
-
 
 import { Container } from 'react-bootstrap';
 
@@ -274,25 +275,25 @@ const DigitalMarketing = () => {
 	return (
 
 		<div className='digitalmarketing-page font-page'>
+			<div className="navbar-full-dg">
 			<Helmet>
 				<title>Revenue Focused Digital Marketing Agency in Kerala | Haris&Co</title>
-				<meta name="description" content="Grow your business with the best digital marketing agency in Kerala. We, at Haris&Co., offer all the essential digital marketing services to boost your business revenue." />
+				<meta name="description" content="Grow your business with the best digital marketing agency in Kerala. We, at Haris&Co.offer all the essential digital marketing services to boost your business revenue."/>
 				<link rel="canonical" href="https://harisand.co/digital-marketing-agency-in-kerala" />
 			</Helmet>
-
-			<div className="navbar-full-dg">
 				<div className="container-main">
 					<div className="navbar-dg">
 						<div className="logo-dg">
-							<img src={logo} className='logo-dg-nav' alt="Logo" />
+							<Link to='/'><img src={logo} className='logo-dg-nav' alt="Logo" /></Link>
 						</div>
 						<div className="itemss-dg">
 							<ul>
 								<li><Link to='/'>Home</Link></li>
-								<li><Link to='/'>Services</Link></li>
-								<li><Link to='/'>Culture</Link></li>
-								<li><Link to='/'>Case Studies</Link></li>
-								<li><Link to='/'>Contact Us</Link></li>
+								<li><Link to='/services'>Services</Link></li>
+								{/* <li><Link to='/'>Culture</Link></li> */}
+								<li><Link to='/works'>Case Studies</Link></li>
+								<li><Link to='/career'>Career</Link></li>
+								<li><Link to='/contact'>Contact Us</Link></li>
 							</ul>
 						</div>
 						<div className="buttons-dg comn-main">
@@ -418,16 +419,16 @@ const DigitalMarketing = () => {
 										<img src={cl1} className='sliderimageclients' alt="Clients" />
 									</div>
 									<div className="image-slietnts-sliders">
-										<img src={cl1} className='sliderimageclients' alt="Clients" />
+										<img src={cl2} className='sliderimageclients' alt="Clients" />
+									</div>
+									<div className="image-slietnts-sliders">
+										<img src={cl3} className='sliderimageclients' alt="Clients" />
 									</div>
 									<div className="image-slietnts-sliders">
 										<img src={cl1} className='sliderimageclients' alt="Clients" />
 									</div>
 									<div className="image-slietnts-sliders">
-										<img src={cl1} className='sliderimageclients' alt="Clients" />
-									</div>
-									<div className="image-slietnts-sliders">
-										<img src={cl1} className='sliderimageclients' alt="Clients" />
+										<img src={cl2} className='sliderimageclients' alt="Clients" />
 									</div>
 								</Slider>
 							</div>
@@ -469,7 +470,7 @@ const DigitalMarketing = () => {
 								</div>
 							</div>
 							<div className="buttons-dg-fearless comn-main no-showww full-width">
-								<Link to='/' className='btn-proposal-dg full-width text-center'>Learn More About Us <img src={arroww} className='arrow-icon-white-btn' alt="Icon" /></Link>
+								<Link to='/about' className='btn-proposal-dg full-width text-center'>Learn More About Us <img src={arroww} className='arrow-icon-white-btn' alt="Icon" /></Link>
 							</div>
 						</div>
 					</div>
@@ -641,24 +642,32 @@ const DigitalMarketing = () => {
 				<div className="headlines-main-dvv-dg">
 					<Slider {...settingsHeadlinesOne}>
 						<div className="featured-img-dv-main">
-							<img src={f1} className='dg-feature-img' alt="Featured Image" />
-							<div className="bgcolor-dg"></div>
-							<img src={arrowhover} className='hover-arrow-main-dg' alt="Arrow" />
+							<div className="main-dv-for-img">
+								<img src={f1} className='dg-feature-img' alt="Featured Image" />
+								<div className="bgcolor-dg"></div>
+								<img src={arrowhover} className='hover-arrow-main-dg' alt="Arrow" />
+							</div>
 						</div>
 						<div className="featured-img-dv-main">
-							<img src={f2} className='dg-feature-img' alt="Featured Image" />
-							<div className="bgcolor-dg"></div>
-							<img src={arrowhover} className='hover-arrow-main-dg' alt="Arrow" />
+							<div className="main-dv-for-img">
+								<img src={f2} className='dg-feature-img' alt="Featured Image" />
+								<div className="bgcolor-dg"></div>
+								<img src={arrowhover} className='hover-arrow-main-dg' alt="Arrow" />
+							</div>
 						</div>
 						<div className="featured-img-dv-main">
-							<img src={f3} className='dg-feature-img' alt="Featured Image" />
-							<div className="bgcolor-dg"></div>
-							<img src={arrowhover} className='hover-arrow-main-dg' alt="Arrow" />
+							<div className="main-dv-for-img">
+								<img src={f3} className='dg-feature-img' alt="Featured Image" />
+								<div className="bgcolor-dg"></div>
+								<img src={arrowhover} className='hover-arrow-main-dg' alt="Arrow" />
+							</div>
 						</div>
 						<div className="featured-img-dv-main">
-							<img src={f4} className='dg-feature-img' alt="Featured Image" />
-							<div className="bgcolor-dg"></div>
-							<img src={arrowhover} className='hover-arrow-main-dg' alt="Arrow" />
+							<div className="main-dv-for-img">
+								<img src={f4} className='dg-feature-img' alt="Featured Image" />
+								<div className="bgcolor-dg"></div>
+								<img src={arrowhover} className='hover-arrow-main-dg' alt="Arrow" />
+							</div>
 						</div>
 					</Slider>
 				</div>
@@ -672,7 +681,7 @@ const DigitalMarketing = () => {
 										<h3 className='discuss-title-dg'>Let's Discuss How We Can Grow Your Business</h3>
 									</div>
 									<div className="righthalf-dg-discss comn-main">
-										<Link to='/' className='btn-proposal-dg'>Consult Us <img src={arroww} className='arrow-icon-white-btn' alt="Arrow" /></Link>
+										<Link to='/contact' className='btn-proposal-dg'>Consult Us <img src={arroww} className='arrow-icon-white-btn' alt="Arrow" /></Link>
 									</div>
 								</div>
 							</div>
@@ -1133,7 +1142,7 @@ const DigitalMarketing = () => {
 							<div className="col-lg-12">
 								<div className="center-dv-btn-box">
 									<div className="button-view-more-dg comn-main ">
-										<Link to='/' className='btn-proposal-dg'>View More <img src={arroww} className='arrow-icon-white-btn' alt="" /></Link>
+										<Link to='/services' className='btn-proposal-dg'>View More <img src={arroww} className='arrow-icon-white-btn' alt="" /></Link>
 									</div>
 								</div>
 							</div>

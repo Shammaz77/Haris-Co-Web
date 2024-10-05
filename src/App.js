@@ -3,6 +3,7 @@ import Router from './Routes/Router';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+import { HelmetProvider } from 'react-helmet-async';  // Import HelmetProvider
 
 function App() {
   const { pathname } = useLocation(); // Get the current path
@@ -13,9 +14,9 @@ function App() {
   }, [pathname]); // Dependency on pathname
 
   return (
-    <div className="App">
+    <HelmetProvider>
       <Router /> {/* Router that manages routes */}
-    </div>
+    </HelmetProvider>
   );
 }
 
