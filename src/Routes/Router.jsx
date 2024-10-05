@@ -20,7 +20,7 @@ import DigitalMarketing from '../Pages/DigitalMarketing';
 import SocialMedia from '../Pages/SocialMedia';
 import Production from '../Pages/Production';
 import Contact from '.././Pages/Contact';
-
+import Privacy from '../Pages/Privacy';
 const Router = () => {
   return (
     <Routes>
@@ -34,6 +34,7 @@ const Router = () => {
         <Route path="works" element={<Works />} />
         <Route path="workone" element={<WorkOne />} />
         <Route path="awards" element={<Awards />} />
+        <Route path="privacy" element={<Privacy />} />
         <Route path="about" element={<About />} />
         <Route path="services" element={<Services />} />
         <Route path="creative" element={<Creative />} />
@@ -45,7 +46,7 @@ const Router = () => {
         <Route path="socialmedia" element={<SocialMedia />} />
         <Route path="contact" element={<Contact />} />
       </Route>
-      <Route path="digital" element={<DigitalMarketing />} />
+      <Route path="digital-marketing-agency-in-kerala" element={<DigitalMarketing />} />
     </Routes>
   );
 };

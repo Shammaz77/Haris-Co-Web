@@ -40,6 +40,7 @@ const Footer = () => {
                   <li><Link to='/about'>About us</Link></li>
                   <li><Link to='/'>Blogs</Link></li>
                   <li><Link to='/career'>Careers</Link></li>
+                  <li><Link to='/digital-marketing-agency-in-kerala'>Digital Marketing</Link></li>
                 </ul>
               </div>
             </div>

@@ -1,13 +1,10 @@
-import React from 'react'
+import React, { useRef, useState, useEffect } from 'react';
 import '../components/css/Services.css'
 import icon from '../Assets/icon-social.png'
 import icontwo from '../Assets/Exclude.png'
 import iconthree from '../Assets/three.png'
 import iconfour from '../Assets/Union.png'
 import arrow from '../Assets/icon.png'
-import serviceimage from '../Assets/work-image.png'
-import blogone from './../Assets/blogone.png'
-import serviceimage2 from '../Assets/work-image.png'
 import clients from '../Assets/clients.png'
 import clientsone from '../Assets/clients-logos.png'
 import clientsmobile from '../Assets/one.png'
@@ -28,60 +25,27 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import vedio from '.././Assets/vedio.mp4'
 import vediomob from '.././Assets/mob.mp4'
-
 import CountUp from 'react-countup';
-import ptwo from '../Assets/Production/2.png';
-
-
-
 import disha from '../Assets/Web/disha.png';
 import lady from '../Assets/Web/lady.png';
 import organic from '../Assets/Web/organic.png';
 import popees from '../Assets/Web/popees.png';
 import truth from '../Assets/Web/truth.png';
 import wild from '../Assets/Web/wildtree.png';
-import a from '../Assets/Branding/a.png';
-import haida from '../Assets/Branding/haida.png';
-import ice from '../Assets/Branding/ice.png';
-import pink from '../Assets/Branding/pink.png';
-import reel from '../Assets/Branding/reel.png';
 import one from '../Assets/works/one.png';
-import two from '../Assets/works/two.png';
-import three from '../Assets/works/three.png';
-import four from '../Assets/works/four.png';
-import five from '../Assets/works/five.png';
 import six from '../Assets/works/six.png';
-import pthree from '../Assets/Production/3.png';
-import pfour from '../Assets/Production/4.png';
-import pfive from '../Assets/Production/5.png';
-import psix from '../Assets/Production/6.png';
-import done from '../Assets/PR/1.png';
-import dtwo from '../Assets/PR/2.png';
-import dthree from '../Assets/PR/3.png';
-import dfour from '../Assets/PR/4.png';
 import sone from '../Assets/Seo/1.png';
 import stwo from '../Assets/Seo/2.png';
 import sthree from '../Assets/Seo/3.png';
 import sfour from '../Assets/Seo/4.png';
 import sfive from '../Assets/Seo/5.png';
 import mone from '../Assets/Perfomance/1.png';
-import mtwo from '../Assets/Perfomance/2.png';
-import mthree from '../Assets/Perfomance/3.png';
-import mfour from '../Assets/Perfomance/4.png';
 import mfive from '../Assets/Perfomance/5.png';
-import msix from '../Assets/Perfomance/6.png';
 import smone from '../Assets/SocialMedia/1.png';
 import smtwo from '../Assets/SocialMedia/2.png';
 import smthree from '../Assets/SocialMedia/3.png';
-import smfour from '../Assets/SocialMedia/4.png';
-import smfive from '../Assets/SocialMedia/5.png';
-import smsix from '../Assets/SocialMedia/6.png';
-import dfive from '../Assets/PR/5.png';
-import dsix from '../Assets/PR/6.png';
-
-
-
-
+import rightarrow from '../Assets/rgtarrow.svg';
+import leftarrow from '../Assets/btnarrow.svg';
 
 
 
@@ -89,7 +53,7 @@ const Home = () => {
 
 
 	var settings = {
-		dots: true,
+		dots: false,
 		infinite: true,
 		speed: 500,
 		slidesToShow: 4,
@@ -185,6 +149,53 @@ const Home = () => {
 		]
 	}
 
+	const sliderRef = useRef(null);
+
+
+
+	// const words = ["Fearless", "Authentic", "Markerting"];
+	// const [currentWordIndex, setCurrentWordIndex] = useState(0);
+	// const [charIndex, setCharIndex] = useState(0);
+	// const [isErasing, setIsErasing] = useState(false);
+	// const [text, setText] = useState('');
+	// const typingSpeed = 150; // Speed of typing in milliseconds
+	// const erasingSpeed = 100; // Speed of erasing
+	// const newWordDelay = 1000; // Delay before starting to type a new word
+
+	// useEffect(() => {
+	//   const handleTyping = () => {
+	//     if (!isErasing && charIndex < words[currentWordIndex].length) {
+	//       setText((prev) => prev + words[currentWordIndex].charAt(charIndex));
+	//       setCharIndex(charIndex + 1);
+	//     } else if (isErasing && charIndex > 0) {
+	//       setText((prev) => prev.substring(0, prev.length - 1));
+	//       setCharIndex(charIndex - 1);
+	//     } else if (isErasing && charIndex === 0) {
+	//       setIsErasing(false);
+	//       setCurrentWordIndex((prev) => (prev + 1) % words.length);
+	//     } else if (!isErasing && charIndex === words[currentWordIndex].length) {
+	//       setTimeout(() => setIsErasing(true), newWordDelay);
+	//     }
+	//   };
+
+	//   const typingTimeout = setTimeout(handleTyping, isErasing ? erasingSpeed : typingSpeed);
+	//   return () => clearTimeout(typingTimeout);
+	// }, [charIndex, isErasing, words, currentWordIndex]);
+	const [currentWord, setCurrentWord] = useState(0);
+
+	// Array of words to flip through
+	const words = ['Fearless', 'Authentic', 'Marketing'];
+
+	useEffect(() => {
+		const interval = setInterval(() => {
+			setCurrentWord(prevWord => (prevWord + 1) % words.length);
+		}, 3000); // Change word every 3 seconds
+
+		return () => clearInterval(interval);
+	}, []);
+
+
+
 
 
 	return (
@@ -196,9 +207,11 @@ const Home = () => {
 			<div className="fearless">
 				<div className="container-main">
 					<div className="row align-items-center">
-						<div className="col-lg-4">
+						<div className="col-lg-4">	
 							<div className="fearless-main">
-								<h2 className='fearless-title'>Fearless</h2>
+								<h2 className={`fearless-title flip-animate ${currentWord !== 0 ? 'flip-active' : ''}`}>
+									<span data-hover={words[(currentWord + 1) % words.length]}>{words[currentWord]}</span>
+								</h2>
 							</div>
 						</div>
 						<div className="col-lg-6 col-md-7">
@@ -222,7 +235,7 @@ const Home = () => {
 					</div>
 				</div>
 				<div className="services-div">
-					<Slider {...settings}>
+					<Slider ref={sliderRef} {...settings}>
 						<Link to='/socialmedia'>
 							<div className="services-box bluish-purple">
 								<img src={icon} className='icon-service' alt="icon" />
@@ -334,6 +347,20 @@ const Home = () => {
 
 
 					</Slider>
+					<div className="control-button-slider">
+						<img
+							src={leftarrow}
+							className='arrow-btn-imgs'
+							alt="Left Arrow"
+							onClick={() => sliderRef.current.slickPrev()} // Trigger slickPrev on click
+						/>
+						<img
+							src={rightarrow}
+							className='arrow-btn-imgs rpsace'
+							alt="Right Arrow"
+							onClick={() => sliderRef.current.slickNext()} // Trigger slickNext on click
+						/>
+					</div>
 				</div>
 			</div>
 			<div className="black-bg-service">
@@ -603,17 +630,17 @@ const Home = () => {
 					<div className="row">
 						<div className="col-lg-12 mobile-hide-slider">
 							<div className="clients-image-main">
-								<img src={clients} className='client-imagee' alt="" />
+								<img src={clients} className='client-imagee' alt="Clients" />
 							</div>
 						</div>
 						<div className="col-lg-12 mobile-hide-slider">
 							<div className="clients-image-main">
-								<img src={clientsone} className='client-imagee' alt="" />
+								<img src={clientsone} className='client-imagee' alt="Clients" />
 							</div>
 						</div>
 						<div className="col-lg-12 mobile-show-slider">
 							<div className="clients-image-main">
-								<img src={clientsmobile} className='client-imageee' alt="" />
+								<img src={clientsmobile} className='client-imageee' alt="Clients" />
 							</div>
 						</div>
 						<div className="col-lg-12">
@@ -669,8 +696,8 @@ const Home = () => {
 				</div>
 			</div>
 			<div className="founder-section">
-				<img src={founder} className='founder-main-image' alt="" />
-				<img src={foundermobile} className='founder-main-image-mobile' alt="" />
+				<img src={founder} className='founder-main-image' alt="FounderImage" />
+				<img src={foundermobile} className='founder-main-image-mobile' alt="FounderImage" />
 			</div>
 			{/* <div className="blogs-main">
 				<div className="container-main">

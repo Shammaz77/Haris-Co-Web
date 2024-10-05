@@ -25,7 +25,7 @@ const Awards = () => {
 									</div>
 									<div className="name-awards">
 										<h2 className='awards-name-text'>Afaqs! startup <br /> brands Silver </h2>
-										<img src={awardimage} className='award-image-img' alt="" />
+										<img src={awardimage} className='award-image-img' alt="Award" />
 									</div>
 								</div>
 							</div>
@@ -33,7 +33,7 @@ const Awards = () => {
 						<div className="col-lg-6">
 							<div className="awards-details-main">
 								<p className='sub-textawards'>Our Valentine’s Day Campaign for  Haris&Co. was widely loved and received the silver award from afaqs! for the category ‘Best Use of Video on Social Media’</p>
-								<img src={b} className='iconnnn' alt="" />
+								<img src={b} className='iconnnn' alt="Award" />
 							</div>
 						</div>
 					</div>
@@ -48,7 +48,7 @@ const Awards = () => {
 									</div>
 									<div className="name-awards">
 										<h2 className='awards-name-text'>Afaqs! startup <br /> brands Silver </h2>
-										<img src={awardimage} className='award-image-img' alt="" />
+										<img src={awardimage} className='award-image-img' alt="Award" />
 									</div>
 								</div>
 							</div>
@@ -56,7 +56,7 @@ const Awards = () => {
 						<div className="col-lg-6">
 							<div className="awards-details-main">
 								<p className='sub-textawards'>The Mother’s Day Campaign we made for Craftise, a crafting materials supplier, gained love from the audience, bagging a silver award for ‘Best Branded Content’.</p>
-								<img src={w} className='iconnnn' alt="" />
+								<img src={w} className='iconnnn' alt="Award" />
 							</div>
 						</div>
 					</div>
@@ -71,7 +71,7 @@ const Awards = () => {
 									</div>
 									<div className="name-awards">
 										<h2 className='awards-name-text'>Afaqs! startup <br /> brands Silver </h2>
-										<img src={awardimage} className='award-image-img' alt="" />
+										<img src={awardimage} className='award-image-img' alt="Award" />
 									</div>
 								</div>
 							</div>
@@ -79,7 +79,7 @@ const Awards = () => {
 						<div className="col-lg-6">
 							<div className="awards-details-main">
 								<p className='sub-textawards'>Our Women’s Day Campaign for Femisafe, a supplier of women’s hygiene products, won the silver award for ‘Best Moment Marketing’.</p>
-								<img src={b} className='iconnnn' alt="" />
+								<img src={b} className='iconnnn' alt="Award" />
 							</div>
 						</div>
 					</div>
@@ -95,7 +95,7 @@ const Awards = () => {
 									</div>
 									<div className="name-awards">
 										<h2 className='awards-name-text'>Pepper Awards -    <br /> Silver </h2>
-										<img src={award1} className='award-image-img sccc' alt="" />
+										<img src={award1} className='award-image-img sccc' alt="Award" />
 									</div>
 								</div>
 							</div>
@@ -103,7 +103,7 @@ const Awards = () => {
 						<div className="col-lg-6">
 							<div className="awards-details-main">
 								<p className='sub-textawards'>We bagged the silver award at the Pepper Awards, one of the prestigious awards in South India. We received this milestone achievement for the campaign we delivered for Femisafe.</p>
-								<img src={w} className='iconnnn' alt="" />
+								<img src={w} className='iconnnn' alt="Award" />
 							</div>
 						</div>
 					</div>
@@ -119,7 +119,7 @@ const Awards = () => {
 									<div className="name-awards">
 										<h2 className='awards-name-text'>Brand Storyz 
 										  <br />- Bronze </h2>
-										<img src={award3} className='award-image-img' alt="" />
+										<img src={award3} className='award-image-img' alt="Award" />
 									</div>
 								</div>
 							</div>
@@ -128,7 +128,7 @@ const Awards = () => {
 							<div className="awards-details-main">
 								<p className='sub-textawards'>Our campaign for Kiddiebus, an English learning platform for kids, that generated 7000+ leads cemented a bronze award by afaqs! for the ‘Best Lead Generation Campaign’.
 								</p>
-								<img src={b} className='iconnnn' alt="" />
+								<img src={b} className='iconnnn' alt="Award" />
 
 							</div>
 						</div>
@@ -144,7 +144,7 @@ const Awards = () => {
 									</div>
 									<div className="name-awards">
 										<h2 className='awards-name-text'>Afaqs! Startup Brands       <br />- Bronze</h2>
-										<img src={award2} className='award-image-img' alt="" />
+										<img src={award2} className='award-image-img' alt="Award" />
 									</div>
 								</div>
 							</div>
@@ -152,7 +152,7 @@ const Awards = () => {
 						<div className="col-lg-6">
 							<div className="awards-details-main">
 								<p className='sub-textawards'>The execution and the strong message of the Femisafe Women’s Day campaign were so good that we also bagged the bronze award for ‘Best Social Media Campaign’.</p>
-								<img src={w} className='iconnnn' alt="" />
+								<img src={w} className='iconnnn' alt="Award" />
 							</div>
 						</div>
 					</div>

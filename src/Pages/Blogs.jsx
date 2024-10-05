@@ -15,7 +15,7 @@ const Blogs = () => {
 					<div className="row">
 						<div className="col-lg-6">
 							<div className="brand-divs">
-								<img src={blog} className='blog-image' alt="" />
+								<img src={blog} className='blog-image' alt="Blog" />
 							</div>
 						</div>
 						<div className="col-lg-6">
@@ -35,7 +35,7 @@ const Blogs = () => {
 					<div className="row">
 						<div className="col-lg-3 col-md-6">
 							<div className="blog-main">
-								<img src={blogone} className='blog-box' alt="" />
+								<img src={blogone} className='blog-box' alt="Blog" />
 								<div className="date-time-blog">
 									<h6>Events  4 min read</h6>
 									<h6>January 25, 2024</h6>
@@ -45,7 +45,7 @@ const Blogs = () => {
 						</div>
 						<div className="col-lg-3 col-md-6">
 							<div className="blog-main">
-								<img src={blogone} className='blog-box' alt="" />
+								<img src={blogone} className='blog-box' alt="Blog" />
 								<div className="date-time-blog">
 									<h6>Events  4 min read</h6>
 									<h6>January 25, 2024</h6>
@@ -55,7 +55,7 @@ const Blogs = () => {
 						</div>
 						<div className="col-lg-3 col-md-6">
 							<div className="blog-main">
-								<img src={blogone} className='blog-box' alt="" />
+								<img src={blogone} className='blog-box' alt="Blog" />
 								<div className="date-time-blog">
 									<h6>Events  4 min read</h6>
 									<h6>January 25, 2024</h6>
@@ -65,7 +65,7 @@ const Blogs = () => {
 						</div>
 						<div className="col-lg-3 col-md-6">
 							<div className="blog-main">
-								<img src={blogone} className='blog-box' alt="" />
+								<img src={blogone} className='blog-box' alt="Blog" />
 								<div className="date-time-blog">
 									<h6>Events  4 min read</h6>
 									<h6>January 25, 2024</h6>
@@ -75,7 +75,7 @@ const Blogs = () => {
 						</div>
 						<div className="col-lg-3 col-md-6">
 							<div className="blog-main">
-								<img src={blogone} className='blog-box' alt="" />
+								<img src={blogone} className='blog-box' alt="Blog" />
 								<div className="date-time-blog">
 									<h6>Events  4 min read</h6>
 									<h6>January 25, 2024</h6>
@@ -85,7 +85,7 @@ const Blogs = () => {
 						</div>
 						<div className="col-lg-3 col-md-6">
 							<div className="blog-main">
-								<img src={blogone} className='blog-box' alt="" />
+								<img src={blogone} className='blog-box' alt="Blog" />
 								<div className="date-time-blog">
 									<h6>Events  4 min read</h6>
 									<h6>January 25, 2024</h6>
@@ -95,7 +95,7 @@ const Blogs = () => {
 						</div>
 						<div className="col-lg-3 col-md-6">
 							<div className="blog-main">
-								<img src={blogone} className='blog-box' alt="" />
+								<img src={blogone} className='blog-box' alt="Blog" />
 								<div className="date-time-blog">
 									<h6>Events  4 min read</h6>
 									<h6>January 25, 2024</h6>
@@ -105,7 +105,7 @@ const Blogs = () => {
 						</div>
 						<div className="col-lg-3 col-md-6">
 							<div className="blog-main">
-								<img src={blogone} className='blog-box' alt="" />
+								<img src={blogone} className='blog-box' alt="Blog" />
 								<div className="date-time-blog">
 									<h6>Events  4 min read</h6>
 									<h6>January 25, 2024</h6>

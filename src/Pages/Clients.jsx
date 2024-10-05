@@ -10,12 +10,12 @@ const Clients = () => {
 			</div>
 			<div className="col-lg-12 mobile-hide-slider">
 				<div className="clients-image-main">
-					<img src={clients} className='client-imagee' alt="" />
+					<img src={clients} className='client-imagee' alt="Clients" />
 				</div>
 			</div>
 			<div className="col-lg-12 mobile-show-slider">
 				<div className="clients-image-main">
-					<img src={clientsmobile} className='client-imagee' alt="" />
+					<img src={clientsmobile} className='client-imagee' alt="Clients" />
 				</div>
 			</div>
 		</div>

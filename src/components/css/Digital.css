@@ -21,7 +21,9 @@
 }
 /* main  font*/
 
-
+.font-noraml{
+	font-family: Abroreguler !important;
+}
 
 
 
@@ -1037,7 +1039,7 @@
 		padding-left: 30px;
 	}
 	.srvc-one-dg-mobil-show{
-		width: 50%;
+		width: 47%;
 	}
 	.servc-text-dg{
 		font-family: Abrobold;
@@ -1206,6 +1208,13 @@
 		font-size: 35px;
 		padding-bottom: 30px;
 	}
+	.headline-title-dg {
+    font-size: 31px;
+	}
+	.headline-subtitle-dg {
+    font-size: 14px;
+    line-height: 1.2;
+	}
 	.heading-casestudy-service-dg {
     font-size: 20px;
     line-height: 1.2;
@@ -1281,6 +1290,30 @@
 	.title-wrapper-dg {
 		font-size: 30px;
 		padding-top: 65px;
+	}
+	.discuss-title-dg {
+		font-size: 33px;
+	}
+	.clients-text-dg {
+    font-size: 34px;
+	}
+	.lets-chat-title-dg {
+    font-size: 31px;
+	}
+	.title-casestudy-dg-main {
+		font-size: 32px;
+	}
+	.lets-chat-sub-title-dg {
+		padding-top: 6px;
+		font-size: 14px;
+	}
+	.get-call-back-dg-pink {
+		padding: 50px 20px 30px 20px;
+	}
+	.righthalf-dg-discss .btn-proposal-dg {
+		padding: 9px 15px !important;
+		font-size: 14px;
+		margin-top: 32px !important;
 	}
 	.heading-casestudy-service-dg {
     font-size: 20px;

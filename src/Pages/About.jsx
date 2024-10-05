@@ -106,7 +106,7 @@ const About = () => {
 			</div>
 			<div className="col-lg-12">
 				<div className="about-banner-dv">
-					<img src={banner} className='about-banner-img' alt="" />
+					<img src={banner} className='about-banner-img' alt="Banner" />
 				</div>
 			</div>
 			<div className="team-div">
@@ -119,35 +119,35 @@ const About = () => {
 				<div className="slider-team-main">
 					<Slider {...settings}>
 						<div className='team-div show1'>
-							<img src={adarsh} className='image-team' alt="" />
+							<img src={adarsh} className='image-team' alt="Team" />
 							<div className="member-details">
 								<h3 className='name'>Aadarsh MS</h3>
 								{/* <h4 className='designation'>Founder</h4> */}
 							</div>
 						</div>
 						<div className='team-div show2'>
-							<img src={ragin} className='image-team' alt="" />
+							<img src={ragin} className='image-team' alt="Team" />
 							<div className="member-details">
 								<h3 className='name'>Ragin  Raj</h3>
 								{/* <h4 className='designation'>Founder</h4> */}
 							</div>
 						</div>
 						<div className='team-div show3'>
-							<img src={haris} className='image-team' alt="" />
+							<img src={haris} className='image-team' alt="Team" />
 							<div className="member-details">
 								<h3 className='name'>Haris <br /> Aboobacker</h3>
 								<h4 className='designation'>Founder</h4>
 							</div>
 						</div>
 						<div className='team-div show4'>
-							<img src={saheel} className='image-team' alt="" />
+							<img src={saheel} className='image-team' alt="Team" />
 							<div className="member-details">
 								<h3 className='name'> Ibrahim <br /> Saheel </h3>
 								{/* <h4 className='designation'>Founder</h4> */}
 							</div>
 						</div>
 						<div className='team-div show5'>
-							<img src={amna} className='image-team' alt="" />
+							<img src={amna} className='image-team' alt="Team" />
 							<div className="member-details">
 								<h3 className='name'>Amna Iqbal</h3>
 								{/* <h4 className='designation'>Founder</h4> */}
@@ -157,28 +157,28 @@ const About = () => {
 
 
 						<div className='team-div show6'>
-							<img src={hadi} className='image-team' alt="" />
+							<img src={hadi} className='image-team' alt="Team" />
 							<div className="member-details">
 								<h3 className='name'>Hadi <br /> Fathima <br /> Farooque								</h3>
 								{/* <h4 className='designation'>Founder</h4> */}
 							</div>
 						</div>
 						<div className='team-div show7'>
-							<img src={nab} className='image-team' alt="" />
+							<img src={nab} className='image-team' alt="Team" />
 							<div className="member-details">
 								<h3 className='name'>Abu <br /> Nabhan</h3>
 								{/* <h4 className='designation'>Chief of Branding</h4> */}
 							</div>
 						</div>
 						{/* <div className='team-div show8'>
-							<img src={rizwan} className='image-team' alt="" />
+							<img src={rizwan} className='image-team' alt="Team" />
 							<div className="member-details">
 								<h3 className='name'>Haris <br /> Aboobacker</h3>
 								<h4 className='designation'>Founder</h4>
 							</div>
 						</div> */}
 						<div className='team-div show9'>
-							<img src={nizwa} className='image-team' alt="" />
+							<img src={nizwa} className='image-team' alt="Team" />
 							<div className="member-details">
 								<h3 className='name'>Nizwa  iqbal</h3>
 								{/* <h4 className='designation'>Founder</h4> */}
@@ -199,49 +199,49 @@ const About = () => {
 					<div className="container-main">
 					<Slider {...settings}>
 						<div className='team-div show1'>
-							<img src={nabhand} className='image-team-dept' alt="" />
+							<img src={nabhand} className='image-team-dept' alt="Team" />
 							<div className="member-details-departments">
 								<h3 className='name'> Abu Nabhan</h3>
 								<h4 className='designation'>Chief of Branding</h4>
 							</div>
 						</div>
 						<div className='team-div show2'>
-							<img src={arjund} className='image-team-dept' alt="" />
+							<img src={arjund} className='image-team-dept' alt="Team" />
 							<div className="member-details-departments">
 								<h3 className='name'>Arjun P</h3>
 								<h4 className='designation'>Chief of Web Development</h4>
 							</div>
 						</div>
 						<div className='team-div show3'>
-							<img src={nihal} className='image-team-dept' alt="" />
+							<img src={nihal} className='image-team-dept' alt="Team" />
 							<div className="member-details-departments">
 								<h3 className='name'>Nihal Zubair</h3>
 								<h4 className='designation'>Chief of Creative</h4>
 							</div>
 						</div>
 						<div className='team-div show4'>
-							<img src={yogid} className='image-team-dept' alt="" />
+							<img src={yogid} className='image-team-dept' alt="Team" />
 							<div className="member-details-departments">
 								<h3 className='name'>Yogi</h3>
 								<h4 className='designation'>Chief of Influence Marketing</h4>
 							</div>
 						</div>
 						<div className='team-div show5'>
-							<img src={adarshd} className='image-team-dept' alt="" />
+							<img src={adarshd} className='image-team-dept' alt="Team" />
 							<div className="member-details-departments">
 								<h3 className='name'>Adarsh MS</h3>
 								<h4 className='designation'>Chief of Performance Marketing</h4>
 							</div>
 						</div>
 						<div className='team-div show6'>
-							<img src={vishnud} className='image-team-dept' alt="" />
+							<img src={vishnud} className='image-team-dept' alt="Team" />
 							<div className="member-details-departments">
 								<h3 className='name'>Vishnu KP</h3>
 								<h4 className='designation'>Chief of Production</h4>
 							</div>
 						</div>
 						<div className='team-div show6'>
-							<img src={azar} className='image-team-dept' alt="" />
+							<img src={azar} className='image-team-dept' alt="Team" />
 							<div className="member-details-departments">
 								<h3 className='name'> Mohamed Azaruddin</h3>
 								<h4 className='designation'>Chief of Brand Solution</h4>
