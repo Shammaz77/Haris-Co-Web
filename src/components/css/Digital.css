@@ -76,7 +76,7 @@
 	border-radius: 8px !important;
 }
 .navbar-full-dg{
-	border-bottom: 1px solid #d4d4d4;
+	border-bottom: 1px solid #454545;
 }
 .home-wrapper-section-dg{
 	padding-top: 9%;	
@@ -89,6 +89,14 @@
 }
 .title-wrapper-dg span{
 	color: #7744D5;
+}
+.sub-title-wrapper-dgs{
+	color: rgb(192, 192, 192);
+	font-size: 17px;
+	font-family: PoppinsRegular;
+	line-height: 1.5;
+	padding-bottom: 0px;
+	margin-bottom: 0px !important;
 }
 .sub-title-wrapper-dg{
 	color: rgb(192, 192, 192);
@@ -332,6 +340,7 @@
 .sub-title-srvc-dg{
 	color: rgb(192, 192, 192);
 	font-size: 16px;
+	width: 75%;
 	margin-bottom: 0px !important;
 	font-family: PoppinsRegular;
 }
@@ -428,8 +437,8 @@
 .hover-arrow-main-dg{
 	width: 40px;
 	position: absolute;
-	bottom: 40px;
-	right: 40px;
+	bottom: 10px;
+	right: 14px;
 	display: none !important;
 }
 .featured-img-dv-main{
@@ -442,7 +451,7 @@
 	width: 100%;
 }
 .bgcolor-dg {
-	background-color: #785da978;
+	background-color: #6d539c63;
 	width: 100%;
 	height: 100%;
 	position: absolute;
@@ -481,8 +490,8 @@
 .discuss-title-dg{
 	font-family: babues;
 	color: #fff;
-	line-height: 1.4;
-	font-size: 55px;
+	line-height: 1.3;
+	font-size: 60px;
 	margin-bottom: 0px !important;
 }
 .half-dg-discss{
@@ -672,7 +681,8 @@
 }
 .lets-chat-sub-title-dg{
 	color: #a9a9a9;
-	font-size: 15px;
+	font-size: 17px;
+	width: 80%;
 	padding-bottom: 20px;
 	font-family: PoppinsRegular;
 }
@@ -693,7 +703,6 @@
 .half-address-svg{
 	width: 90%;
 	display: flex;
-	justify-content: space-between;
 }
 .half-icon-img-full{
 	width: 89%;
@@ -801,13 +810,10 @@
 .google-logo{
 	width: max-content;
 	display: table;
-	margin: auto;
 	padding-top: 30px;
 }
 .footer-logo-img-dg{
 	width: max-content;
-	margin: auto;
-	display: table;
 }
 .icones-social-media-dg-imgs{
 	width: 20px;
@@ -816,7 +822,6 @@
 .icons-social-media-dg-footer{
 	padding-top: 30px;
 	width: max-content;
-	margin: auto;
 	cursor: pointer;
 }
 .text-menu-item-footer{
@@ -878,7 +883,6 @@
 	font-family: PoppinsRegular !important;
 }
 .seocontent ul{
-
 	padding-left: 0px !important;
 }
 .readmore-btn{
@@ -940,9 +944,55 @@
 .what-we-do-mobile-slider{
 	display: none;
 }
-
-
+.chat-section-item{
+	color: #fff;
+	margin-bottom: 0px !important;
+	font-family: PoppinsRegular !important;
+}
+.atag-link{
+	display: block !important;
+	color: #fff;
+	text-decoration: none;
+}
+.half-address-svg{
+	display: flex !important;
+	align-items: center;
+}
+.half-icon-imge{
+	width: 20px;
+	height: 20px;
+	margin-right: 18px;
+}
+.brdr-chat{
+	padding-left: 20px;
+	border-left: 1px solid #c7c2c2;
+}
+.full-contents-dg{
+	display: flex;
+	align-items: center;
+	padding-top: 20px;
+}
+.half-full-icon-svg{
+	padding-top: 10px;
+}
 /* responsive  */
+@media (min-width:1600px){
+	.lets-discuss-main-dg{
+		width: 75% !important;
+		margin: auto;
+	}
+}
+@media (min-width:1500px){
+	.lets-discuss-main-dg{
+		width: 85% !important;
+		margin: auto;
+	}
+}
+@media (max-width:1400px){
+	.brtag{
+		display: none;
+	}
+}
 @media (max-width:1090px){
 	.title-wrapper-dg {
     font-size: 37px;
@@ -1206,7 +1256,6 @@
 		margin-top: 40px;
 		margin-bottom: 40px;
 	}
-
 }
 .mobile-clietns-section-slider{
 	display: none;
@@ -1239,9 +1288,7 @@
     padding-bottom: 0px;
 	}
 	.half-address-svg {
-    width: 90%;
-    display: block;
-    justify-content: space-between;
+   
 	}
 	.half-icon-img {
     display: block;

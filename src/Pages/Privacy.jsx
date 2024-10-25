@@ -13,10 +13,6 @@ const Privacy = () => {
 							<p>This Privacy Policy applies to Haris&Co. (“us”, “we”, or “our”) and how we use and protect the data the user (“you” or “your”) provides to us when you visit and use harisandco.</p>
 							<p>We reserve the right to change this policy at any given time, of which you will be promptly updated. If you want to make sure that you are up to date with the latest changes, we advise you to frequently visit this page.							</p>
 							<p>Haris&Co. r​ecognises the importance of maintaining your privacy. We value your privacy and appreciate your trust in us. This Policy describes how we treat user information we collect on harisandco and other offline sources. This Privacy Policy applies to current and former visitors to our website and to our online customers. By visiting and/or using our website, you agree to this Privacy Policy.</p>
-						
-						
-						
-						
 						<h5 className='bld'>User Data We Collect</h5>
 						<p>When you visit our site, we may collect the following data,</p>
 						<ul>
@@ -25,13 +21,6 @@ const Privacy = () => {
 							<li>Other information such as interests and preferences.</li>
 							<li>Other information such as interests and preferences.Data profile regarding your online behaviour on our blog.</li>
 						</ul>
-						
-						
-						
-						
-						
-						
-						
 						<h5 className='bld'>Why We Collect User Data</h5>
 						<p>We may collect your data for the following reasons:</p>
 						<ul>

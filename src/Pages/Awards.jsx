@@ -20,9 +20,9 @@ const Awards = () => {
 						<div className="col-lg-6">
 							<div className="awards-main-box">
 								<div className="awwards-box">
-									<div className="count-awards">
+									{/* <div className="count-awards">
 										<h3 className='awards-count-text'>01.</h3>
-									</div>
+									</div> */}
 									<div className="name-awards">
 										<h2 className='awards-name-text'>Afaqs! startup <br /> brands Silver </h2>
 										<img src={awardimage} className='award-image-img' alt="Award" />
@@ -43,9 +43,9 @@ const Awards = () => {
 						<div className="col-lg-6">
 							<div className="awards-main-box">
 								<div className="awwards-box">
-									<div className="count-awards">
+									{/* <div className="count-awards">
 										<h3 className='awards-count-text'>02.</h3>
-									</div>
+									</div> */}
 									<div className="name-awards">
 										<h2 className='awards-name-text'>Afaqs! startup <br /> brands Silver </h2>
 										<img src={awardimage} className='award-image-img' alt="Award" />
@@ -66,9 +66,9 @@ const Awards = () => {
 						<div className="col-lg-6">
 							<div className="awards-main-box">
 								<div className="awwards-box">
-									<div className="count-awards">
+									{/* <div className="count-awards">
 										<h3 className='awards-count-text'>03.</h3>
-									</div>
+									</div> */}
 									<div className="name-awards">
 										<h2 className='awards-name-text'>Afaqs! startup <br /> brands Silver </h2>
 										<img src={awardimage} className='award-image-img' alt="Award" />
@@ -90,9 +90,9 @@ const Awards = () => {
 						<div className="col-lg-6">
 							<div className="awards-main-box">
 								<div className="awwards-box">
-									<div className="count-awards">
+									{/* <div className="count-awards">
 										<h3 className='awards-count-text'>04.</h3>
-									</div>
+									</div> */}
 									<div className="name-awards">
 										<h2 className='awards-name-text'>Pepper Awards -    <br /> Silver </h2>
 										<img src={award1} className='award-image-img sccc' alt="Award" />
@@ -113,9 +113,9 @@ const Awards = () => {
 						<div className="col-lg-6">
 							<div className="awards-main-box">
 								<div className="awwards-box">
-									<div className="count-awards">
+									{/* <div className="count-awards">
 										<h3 className='awards-count-text'>05.</h3>
-									</div>
+									</div> */}
 									<div className="name-awards">
 										<h2 className='awards-name-text'>Brand Storyz 
 										  <br />- Bronze </h2>
@@ -139,9 +139,9 @@ const Awards = () => {
 						<div className="col-lg-6">
 							<div className="awards-main-box">
 								<div className="awwards-box">
-									<div className="count-awards">
+									{/* <div className="count-awards">
 										<h3 className='awards-count-text'>06.</h3>
-									</div>
+									</div> */}
 									<div className="name-awards">
 										<h2 className='awards-name-text'>Afaqs! Startup Brands       <br />- Bronze</h2>
 										<img src={award2} className='award-image-img' alt="Award" />

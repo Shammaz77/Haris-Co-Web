@@ -227,7 +227,9 @@
 
 }
 
-
+.footer-main-bg input:focus{
+	background-color: #000;
+}
 
 
 

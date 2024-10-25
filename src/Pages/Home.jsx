@@ -387,14 +387,7 @@ const Home = () => {
 									<p className='sub-text-work'>We partnered up with Tata Consultancy Services (TCS) for the design and copy for their TCS Sustainathon 2024.</p>
 								</div>
 							</div>
-							<div className="home-work-service hover-effect">
-								<img src={mfive} className='service-image-work' alt="service image" />
-								<div className="work-details-right">
-									<h2 className='work-number-text-color'>2.</h2>
-									<p className='sub-text-work-hide'> Skyrocketing sales with Walkaroo!</p>
-									<p className='sub-text-work'>We helped Walkaroo, one of India’s popular footwear brands, scale their revenue to ₹10M+ in just 6 months!</p>
-								</div>
-							</div>
+							
 							<div className="home-work-service hover-effect">
 								<img src={popees} className='service-image-work' alt="service image" />
 								<div className="work-details-right">

@@ -81,7 +81,7 @@ import { Container } from 'react-bootstrap';
 
 import Accordion from 'react-bootstrap/Accordion';
 
-const DigitalMarketing = () => {
+const AgencyDubai = () => {
 
 	const [isSecondImageVisible, setIsSecondImageVisible] = useState(false);
 
@@ -92,7 +92,6 @@ const DigitalMarketing = () => {
 
 
 	const [selectedService, setSelectedService] = useState('SEO');
-
 
 	const getTeamImage = () => {
 		switch (selectedService) {
@@ -275,14 +274,17 @@ const DigitalMarketing = () => {
 	}, [images.length]);
 
 
+
+
+
 	return (
 
 		<div className='digitalmarketing-page font-page'>
 			<div className="navbar-full-dg">
 				<Helmet>
-					<title>Revenue Focused Digital Marketing Agency in Kerala | Haris&Co</title>
-					<meta name="description" content="Grow your business with the best digital marketing agency in Kerala. We, at Haris&Co.offer all the essential digital marketing services to boost your business revenue." />
-					<link rel="canonical" href="https://harisand.co/digital-marketing-agency-in-kerala" />
+					<title>Revenue Focused Digital Marketing Agency in Dubai | Haris&Co</title>
+					<meta name="description" content="Grow your business with the best digital marketing agency in Dubai. We, at Haris&Co.offer all the essential digital marketing services to boost your business revenue." />
+					<link rel="canonical" href="https://harisand.co/digital-marketing-agency-in-dubai" />
 				</Helmet>
 				<div className="container-main">
 					<div className="navbar-dg">
@@ -309,10 +311,9 @@ const DigitalMarketing = () => {
 				<div className="row">
 					<div className="col-lg-7 ">
 						<div className="home-wrapper-dg">
-							<h1 className='title-wrapper-dg'>An <span>Award-winning</span> Digital <br /> Marketing Agency in Kerala</h1>
+							<h1 className='title-wrapper-dg'>An <span>Award-winning</span> Digital <br /> Marketing Agency in Dubai</h1>
 							<h4 className='sub-title-wrapper-dgs'>A digital marketing company that’s on the course of powering </h4>
 							<h4 className='sub-title-wrapper-dg'>up brands with the power of marketing, design and tech. </h4>
-
 							<div className="buttons-dv-dg">
 								<div className="comn-main">
 									<Link to='/contact' className='btn-proposal-dg'>GET A PROPOSAL <img src={arroww} className='arrow-icon-white-btn' alt="Icon" /></Link>
@@ -334,11 +335,11 @@ const DigitalMarketing = () => {
 								</div>
 								<div className="srvc-one-dg border-dg">
 									<h4 className='servc-text-dg'>150+</h4>
-									<p className='servc-sub-text-dg'> Clients</p>
+									<p className='servc-sub-text-dg'>Clients</p>
 								</div>
 								<div className="srvc-one-dg border-dg">
 									<h4 className='servc-text-dg'>1000+</h4>
-									<p className='servc-sub-text-dg'> Projects</p>
+									<p className='servc-sub-text-dg'>Projects</p>
 								</div>
 								<div className="srvc-one-dg">
 									<h4 className='servc-text-dg'>05</h4>
@@ -379,11 +380,11 @@ const DigitalMarketing = () => {
 								<div className="row-show-mobile">
 									<div className="srvc-one-dg-mobil-show border-dgr">
 										<h4 className='servc-text-dg'>150+</h4>
-										<p className='servc-sub-text-dg'> Clients</p>
+										<p className='servc-sub-text-dg'>Clients</p>
 									</div>
 									<div className="srvc-one-dg-mobil-show  right-padding">
 										<h4 className='servc-text-dg'>1000+</h4>
-										<p className='servc-sub-text-dg'> Projects</p>
+										<p className='servc-sub-text-dg'>Projects</p>
 									</div>
 								</div>
 							</div>
@@ -453,9 +454,6 @@ const DigitalMarketing = () => {
 			</div>
 
 
-
-
-
 			{/* fearless section  */}
 			<div className="fearless-main-dg">
 				<div className="container-main">
@@ -463,7 +461,7 @@ const DigitalMarketing = () => {
 						<div className="col-lg-8">
 							<div className="inner-fearless-dg">
 								<h3 className='fearles-title-dg'>Fearless & Authentic Digital Marketing Since Birth.</h3>
-								<p className='fearless-sub-dg'>We've come a long way ever since we started our journey in 2020 as a digital marketing agency in kerala with just 6 members and a handful of clients. Today, we're 100+ members strong, organised into 8 departments, with a huge (and satisfied) clientele. The work culture, results and innovation are at the core of who we are.</p>
+								<p className='fearless-sub-dg'>We are a Digital Marketing agency in Dubai providing everything Digital Marketing to let your brand multiply revenue and conquer the competition. We started operating in India in 2020 serving top brands over the years. Having analysed the GCC landscape, we have expanded to Dubai with our committed team and a broad portfolio that explains our capability.								</p>
 								<div className="buttons-dg-fearless comn-main hide-mob-btn">
 									<Link to='/about' className='btn-proposal-dg'>Learn More About Us <img src={arroww} className='arrow-icon-white-btn' alt="Icon" /></Link>
 								</div>
@@ -476,7 +474,7 @@ const DigitalMarketing = () => {
 									<p className='sub-title-dgg'>Established Year</p>
 								</div>
 								<div className="yaer-dg">
-									<h3 className='number-txt-dgg'>100+ </h3>
+									<h3 className='number-txt-dgg'>150+ </h3>
 									<p className='sub-title-dgg'>Employees</p>
 								</div>
 								<div className="yaer-dg">
@@ -647,7 +645,7 @@ const DigitalMarketing = () => {
 
 
 			<div className="white-section-dg">
-				<div className="container-main">
+				{/* <div className="container-main">
 					<div className="row">
 						<div className="col-lg-12">
 							<div className="headlines-main-dv-dg">
@@ -688,7 +686,7 @@ const DigitalMarketing = () => {
 							</div>
 						</div>
 					</Slider>
-				</div>
+				</div> */}
 				{/* discuss  */}
 				<div className="discuss-dg-main">
 					<div className="container-main">
@@ -1211,28 +1209,29 @@ const DigitalMarketing = () => {
 						<div className="col-lg-6">
 							<div className="chat-inner-box-dv-dg">
 								<h3 className='lets-chat-title-dg'>Let's Have a Chat</h3>
-								<p className='lets-chat-sub-title-dg'>Give us a call or email us to learn more about our services. Need a face-to-face discussion? Feel free to visit us. </p>
+								<p className='lets-chat-sub-title-dg'>Give us a call or email us to learn more about our digital marketing services in Dubai. Need a face-to-face discussion? Feel free to visit us. 								</p>
 								<div className="address-details-div">
 									<div className="half-full-icon-svg">
 										<div className="half-address-svg">
 											<img src={p} className='half-icon-imge' alt="" />
 											<div className="brdr-chat">
 												<p className='chat-section-item'>For More Enquires</p>
-												<Link className='atag-link'>+91 8075 040 330</Link>
+												<Link className='atag-link'>+971 55 490 8107</Link>
 											</div>
 										</div>
 										<div className="half-address-svg">
 											<img src={m} className='half-icon-imge' alt="" />
 											<div className="brdr-chat">
 												<p className='chat-section-item'>Email Us At</p>
-												<Link className='atag-link'>bd@harisand.co</Link>
+												<Link className='atag-link'>haris@harisand.co</Link>
 											</div>
 										</div>
 									</div>
 									<div className="full-contents-dg">
-									<img src={l} className='half-icon-imge' alt="" />
+										<img src={l} className='half-icon-imge' alt="" />
 										<div className="brdr-chat">
-											<p className='chat-section-item'>2nd floor, 4 WING Avenue ,Panniyankara, 673003  Kozhikode, Kerala</p>
+											<p className='chat-section-item'>Abdulla Kamber Business Center, Room No 103, First Floor,  Abu Baker Al Siddique St, Deira - Dubai
+											</p>
 										</div>
 									</div>
 								</div>
@@ -1311,71 +1310,116 @@ const DigitalMarketing = () => {
 								<Accordion defaultActiveKey="0" flush>
 
 									<Accordion.Item eventKey="0">
-										<Accordion.Header>What are the types of businesses for which you provide digital marketing services?
+										<Accordion.Header> Do you provide digital marketing for D2C businesses in Dubai, UAE?
 										</Accordion.Header>
 										<Accordion.Body>
-											We focus mainly on D2C, B2B and B2C companies. Get in touch with us to learn how we can help your business thrive.
+											Of course, we have various clients from the D2C sector that have driven successful results with us. We also provide our digital marketing services in Dubai to B2B and B2C companies as well. Contact us to learn how we can help your business thrive.
 										</Accordion.Body>
 									</Accordion.Item>
 
 									<Accordion.Item eventKey="1">
 										<Accordion.Header>Where are most of your clients from?</Accordion.Header>
 										<Accordion.Body>
-											Our clients are majorly based in India, Bahrain, Kuwait, Oman, Qatar, Saudi Arabia and the UAE. And, yes we have plans to expand our presence. Reach us for digital marketing consulting from any corner of the world and our team will be at your service!
+											Most of our clients are based in the UAE, Saudi and India. Our clientele also has businesses from Bahrain, Qatar, Kuwait and Oman as well. We’ve been serving UAE-based since our commencement. In fact, a few of our first clients were from the UAE.
 										</Accordion.Body>
 									</Accordion.Item>
 
 									<Accordion.Item eventKey="2">
-										<Accordion.Header> How can I measure the success of my digital marketing campaigns?										</Accordion.Header>
+										<Accordion.Header>  How do I know if my digital marketing campaigns are successful?
+										</Accordion.Header>
 										<Accordion.Body>
-											Some common metrics that help you measure success include website traffic, lead generation, conversions (sales), engagement on social media, and return on investment (ROI). At Haris&Co., we help you track your results and make adjustments to your campaigns as needed.
+											Website traffic, lead generation, conversions (sales), engagement on social media, and return on investment (ROI) are some common metrics you can check to measure success. However, with Haris&Co., you need not worry about this part. We sent detailed reports periodically to help you get an outline of how our marketing efforts are panning out.
+
 										</Accordion.Body>
 									</Accordion.Item>
 
 									<Accordion.Item eventKey="3">
-										<Accordion.Header>  What type of marketing will I need for my business?
+										<Accordion.Header>  What digital marketing technique would be the best for my business?
 										</Accordion.Header>
 										<Accordion.Body>
-											The digital marketing strategy for your business can vary according to the type of your business, industry and current brand awareness. You may not need every service. Sometimes, just Social Media Marketing would do and at times you might want to invest in SEO as well. In short, it all depends. We recommend consulting with us before you make a decision.
+											There is no definite answer for this. The mode of marketing depends on the type of your business, your industry, your current brand awareness and your business goals.
+											In some instances, just Social Media should suffice. In some cases, you will have to integrate Performance Marketing as well to boost the results. It’s better to consult with us before so that we can provide the right recommendations.
+
 										</Accordion.Body>
 									</Accordion.Item>
 
 									<Accordion.Item eventKey="4">
-										<Accordion.Header> Can I see results quickly with digital marketing?
+										<Accordion.Header> Will there be instant results?
 										</Accordion.Header>
 										<Accordion.Body>
-											Some aspects of digital marketing, like performance marketing (digital ads), can deliver relatively quick results. However, SEO and content marketing take time to build authority and organic traffic. We'll set realistic expectations and track your progress towards your goals.
+											Some aspects of digital marketing, like performance marketing (digital ads), may deliver relatively quick results. However, SEO and content marketing take time to build authority and organic traffic. We'll set realistic expectations and track your progress towards your goals.
 										</Accordion.Body>
 									</Accordion.Item>
 
 
 									<Accordion.Item eventKey="5">
-										<Accordion.Header> What are the industries you have experience in working with?
+										<Accordion.Header>  What industries do you serve?
 										</Accordion.Header>
 										<Accordion.Body>
 											Over the years, we have worked with brands from the following industries:
+
 											Architecture,
-											Landscaping,
-											Vacation Rental,
-											Footwear,
-											Furniture,
 											Automobile,
-											Petroleum,
-											Technology,
+											Construction,
 											Consultancy,
 											Ed-tech,
-											Kidswear,
 											FMCG,
-											Skincare,
-											Packaging,
+											Footwear,
+											Furniture,
 											Healthcare,
 											Hotel,
+											Jewellery,
+											Kidswear,
+											Landscaping,
 											Logistics,
+											Packaging,
+											Petroleum,
+											Pharmaceutical,
 											Plywood,
-											Construction,
-											Jewellery
+											SaaS,
+											Skincare,
+											Technology
 
 
+
+										</Accordion.Body>
+									</Accordion.Item>
+
+									<Accordion.Item eventKey="6">
+										<Accordion.Header> Is Digital Marketing in demand in Dubai?
+										</Accordion.Header>
+										<Accordion.Body>
+											Indeed, Digital Marketing is highly sought-after in Dubai due to the increased number of internet users, social media and search engines. Here are some statistics from DataReportal that show the significance of Digital Marketing in Dubai:
+
+
+											<ul>
+												<li>9.5 million individuals use the internet in the UAE												</li>
+												<li>96% of internet users own a smartphone</li>
+												<li>95% of the internet users use social media</li>
+												<li>On average, people spend 8 hours and 11 minutes daily on the internet												</li>
+												<li>Social media and search engines are top-visited sites with 99% of the internet users visiting the former and 88% visiting the latter. </li>
+												<li>51% of internet users use Social networks to research brands and products												</li>
+												<li>64% of internet users purchase a product each week</li>
+												<li>Search engines (33% of users) and social media (34% of users) are the top sources of brand discovery. 												</li>
+											</ul>
+
+
+										</Accordion.Body>
+									</Accordion.Item>
+
+									<Accordion.Item eventKey="7">
+										<Accordion.Header> Is it worth paying for Digital Marketing in Dubai?
+										</Accordion.Header>
+										<Accordion.Body>
+											The digital landscape of Dubai is thriving with 9.5 million internet users. With many companies already investing in Digital Marketing, it’s a must to pay for Digital Marketing in Dubai to stay ahead of the competition.
+										</Accordion.Body>
+									</Accordion.Item>
+
+									<Accordion.Item eventKey="8">
+										<Accordion.Header>  Is it worth hiring a Digital Marketing agency in Dubai?
+										</Accordion.Header>
+										<Accordion.Body>
+											Yes! To get the best out of your Digital Marketing efforts, you need strategies backed by data and proper market study. And for that, you need experts. When you hire a Digital Marketing agency like Haris&Co., you get a team that has proven experience and expertise in the field.
 										</Accordion.Body>
 									</Accordion.Item>
 
@@ -1390,65 +1434,74 @@ const DigitalMarketing = () => {
 			<div className='seocontent'>
 				<Container>
 					<div className='headcontent'>
-						<h2 className='hd'>A Leading Revenue-focused Digital Marketing
-							Agency in Kerala
-						</h2>
-						<p className='txt'>We understand that getting likes and shares is great, but at Haris&Co, our focus is on driving real results for your business – increased revenue.</p>
+						<h2 className='hd'>Best Digital Marketing Agency in Dubai Focused on Revenue Generation						</h2>
+						<p className='txt'>Likes, shares, traffic and all are great. But, what matters for a business is revenue, right? Well, that’s what our strategies also focus on. The Digital marketing services in Dubai we offer at Haris&Co. may be the same as other digital marketing companies in Dubai offer, but the key difference is our approach where our tactics are optimized with a laser focus on boosting your return on investment.
+						</p>
 
-						<p className='txt'>We achieve this by offering all the comprehensive digital marketing services you'd expect from a leading digital marketing company in Kerala but with a key difference:  a laser focus on maximising your return on investment (ROI).</p>
-
-						<p className='txt'>To date, we have generated more than ₹600 Million for our clients including top brands such as Walkaroo, Skin Bae, BOSQ, Afyun Plywood, Femisafe, Million Dots, Algate, Visa Guy, Francis Alukkas and many more.</p>
+						<p className='txt'>Thus far, we have driven more than ₹600 Million for our clients including top brands such as Visa Guy, Walkaroo, Skin Bae, BOSQ, Afyun Plywood, Femisafe, Milliondots, Algate, Francis Alukkas and many more.
+						</p>
 					</div>
 					<div className='headcontent'>
-						<h2 className='twohd'>Why Us As Your Digital Marketing Company
+						<h2 className='twohd'>Why Opt for Us As Your Digital Marketing Company in Dubai
 						</h2>
 
 						<ul>
 							<li>
-								A Compelling Portfolio: Our proven track record speaks for itself. We've helped businesses of all sizes and industries achieve significant growth through our data-driven marketing strategies. Check out our portfolio to see real-world examples of our success.
+								A Compelling Portfolio: Our works and results explain what we are and what we are capable of. Regardless of the type, size or industry, we have lent a hand to businesses to grow to the next level without data-oriented digital marketing strategies. Check out the portfolio to see the results for yourself
+
 							</li>
 							<li>
-								Experienced Team: Our team is comprised of passionate and experienced digital marketing experts. We stay ahead of the curve with the latest trends and technologies to ensure your campaigns are cutting-edge and effective.
+								Experienced Team: Our team is comprised of passionate and experienced digital marketing experts. We stay ahead of the curve with the latest trends and technologies to ensure your campaigns are innovative and effective.
+
 							</li>
 
 							{showFullContent ? (
 								<>
 									<li>
-										ROI-focused Approach: As a digital marketing company in Kerala, we believe in transparency and accountability. That's why we focus on measurable results that directly impact your bottom line. We'll work closely with you to define your goals and develop a customised strategy that delivers a strong ROI.
+										ROI-focused Approach:  As one of the best digital marketing agencies in Dubai, UAE, we believe in transparency and accountability. That's why we focus on measurable results that directly impact your bottom line. We'll work closely with you to define your goals and develop a customised strategy that delivers a strong ROI.
+
 									</li>
 									<li>
 										Client-Centric: We take the time to understand your unique business needs and target audience. This ensures our campaigns are tailored to resonate with your ideal customers and achieve your specific goals.
+
 									</li>
 									<li>
 										Data-Driven Decisions: We are not fans of guesswork. Every decision we make is backed by data and analytics, allowing us to constantly optimise your campaigns for maximum impact.
+
 									</li>
 									<li>
-										Long-Term Partnerships: We believe in building long-term partnerships with our clients. We're here to help you achieve sustainable growth, not just a quick fix.
+										Long-Term Partnerships:: We believe in building long-term partnerships with our clients. We're here to help you achieve sustainable growth, not just a quick fix.
 									</li>
-									<p className='txt'>So, when you choose Haris&Co as your digital marketing agency in Kerala, you're gaining a trusted partner dedicated to driving real revenue for your business. Sounds awesome, right?</p>
+									<p className='txt'>So, when you choose Haris&Co as your digital marketing agency in Dubai, you're gaining a trusted partner dedicated to driving real revenue for your business. Sounds awesome, right?									</p>
 									<div className='headcontent  headcontent-sub'>
 										<h2 className='threehd'>Bagging Awards On the Way
 										</h2>
-										<p className='txt'>Haris&co. isn't just another digital marketing agency in Kerala. We put our heart into everything we do, be it SEO activities, Social Media campaigns or Performance Marketing campaigns. Over the years, we have delivered a shedload of projects to our clients and we have won awards for many of our works. Here is the list of awards we have won thus far:
+										<p className='txt'>Haris&co. isn't just another digital marketing agency in Dubai, UAE. We do everything passionately, be it SEO activities, Social Media campaigns or Performance Marketing campaigns. Over the years, we have delivered a shedload of projects to our clients and we have won awards for our work. Here is the list of awards we have won thus far:
+
 										</p>
 										<ul>
 											<li>
-												A Compelling Portfolio: Our proven track record speaks for itself. We've helped businesses of all sizes and industries achieve significant growth through our data-driven marketing strategies. Check out our portfolio to see real-world examples of our success.
+												1. afaqs! Startup Brands Award - Best Use of Video on Social Media
 											</li>
 											<li>
-												Experienced Team: Our team is comprised of passionate and experienced digital marketing experts. We stay ahead of the curve with the latest trends and technologies to ensure your campaigns are cutting-edge and effective.
+												2. afaqs! Startup Brands Award - Best Branded Content
+
 											</li>
 											<li>
-												ROI-focused Approach: As a digital marketing company in Kerala, we believe in transparency and accountability. That's why we focus on measurable results that directly impact your bottom line. We'll work closely with you to define your goals and develop a customised strategy that delivers a strong ROI.
+												3. afaqs! Startup Brands Award - Best Moment Marketing
+
 											</li>
 											<li>
-												Client-Centric: We take the time to understand your unique business needs and target audience. This ensures our campaigns are tailored to resonate with your ideal customers and achieve your specific goals.
+												4. afaqs! Startup Brands Award - Best Social Media Campaign
+
 											</li>
 											<li>
-												Data-Driven Decisions: We are not fans of guesswork. Every decision we make is backed by data and analytics, allowing us to constantly optimise your campaigns for maximum impact.
+												5. Pepper Awards - Best Single Online Video
+
 											</li>
 											<li>
-												Long-Term Partnerships: We believe in building long-term partnerships with our clients. We're here to help you achieve sustainable growth, not just a quick fix.
+												6. afaqs! Brand Storyz Award - Best Lead Generation Campaign
+
 											</li>
 										</ul>
 									</div>
@@ -1509,17 +1562,18 @@ const DigitalMarketing = () => {
 								<ul className='footer-icondnd'>
 									<li><Link to='/'>
 										<img src={callfooter} className='footer-item-box-img-icon-dg' alt="Icons" />
-										+91 8075 040 330</Link>
+										+971 55 490 8107
+									</Link>
 									</li>
 
 									<li><Link to='/'>
 										<img src={emailfooter} className='footer-item-box-img-icon-dg' alt="Icons" />
-										bd@harisand.co</Link>
+										haris@harisand.co
+									</Link>
 									</li>
-
 									<li><Link to='/'>
 										<img src={locationf} className='footer-item-box-img-icon-dg' alt="Icons" />
-										2nd floor, 4 WING Avenue ,Panniyankara, 673003 Kozhikode, Kerala</Link>
+										Abdulla Kamber Business Center, Room No 103, First Floor,  Abu Baker Al Siddique St, Deira - Dubai</Link>
 									</li>
 								</ul>
 							</div>
@@ -1542,4 +1596,4 @@ const DigitalMarketing = () => {
 		</div>
 	)
 }
-export default DigitalMarketing;	
+export default AgencyDubai;	

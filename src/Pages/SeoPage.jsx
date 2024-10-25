@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import '../components/css/Digital.css';
+import '../components/css/Seo.css';
 import { Link } from 'react-router-dom';
 import logo from '../Assets/navlogo.png'
-import founder from '../Assets/fo.png'
+import founder from '../Assets/DigitalMarketing/founderhero.png'
 import clients from '../Assets/DigitalMarketing/Clients.svg'
 import clients2 from '../Assets/DigitalMarketing/clients-pending.svg'
 import amna from '../Assets/DigitalMarketing/amna.png'
@@ -75,6 +76,13 @@ import s11 from '../Assets/DigitalMarketing/s11.svg'
 import p from '../Assets/DigitalMarketing/p.png'
 import l from '../Assets/DigitalMarketing/l.png'
 import m from '../Assets/DigitalMarketing/m.png'
+import hero from '../Assets/SeoCompony/hero-image.png'
+import seoteam from '../Assets/SeoCompony/SeoTeam.png'
+import believeimg from '../Assets/SeoCompony/believe-image.png'
+import freebox from '../Assets/SeoCompony/free.png'
+
+
+
 
 
 import { Container } from 'react-bootstrap';
@@ -264,15 +272,8 @@ const DigitalMarketing = () => {
 	};
 
 
-	const [activeIndex, setActiveIndex] = useState(0);
-	const images = [founder, aw2, aw3];
 
-	useEffect(() => {
-		const interval = setInterval(() => {
-			setActiveIndex((prevIndex) => (prevIndex + 1) % images.length);
-		}, 3000);
-		return () => clearInterval(interval);
-	}, [images.length]);
+
 
 
 	return (
@@ -309,54 +310,36 @@ const DigitalMarketing = () => {
 				<div className="row">
 					<div className="col-lg-7 ">
 						<div className="home-wrapper-dg">
-							<h1 className='title-wrapper-dg'>An <span>Award-winning</span> Digital <br /> Marketing Agency in Kerala</h1>
-							<h4 className='sub-title-wrapper-dgs'>A digital marketing company that’s on the course of powering </h4>
-							<h4 className='sub-title-wrapper-dg'>up brands with the power of marketing, design and tech. </h4>
-
-							<div className="buttons-dv-dg">
+							<h4 className='sub-title-wrapper-seo'>A Rapidly Growing SEO Company in Kerala</h4>
+							<h1 className='title-wrapper-dg'>Rank. Reach. Revenue</h1>
+							<h4 className='sub-title-wrapper-seos'>A digital marketing company that’s on the course of powering up brands <br /> with the power of marketing, design and tech. </h4>
+							<div className="buttons-dv-seo">
 								<div className="comn-main">
 									<Link to='/contact' className='btn-proposal-dg'>GET A PROPOSAL <img src={arroww} className='arrow-icon-white-btn' alt="Icon" /></Link>
 								</div>
 								<div className="comn-main">
-									<Link
-										to="#"
-										className='btn-proposal-dg-no-bg'
-										onClick={() => window.location.href = 'https://wa.me/918075040330'}
-									>
-										Consult with Us <img src={arroww} className='arrow-icon-white-btn' alt="Icon" />
-									</Link>
+									<Link to='/contact' className='btn-proposal-dg-no-bg'>View Our Results<img src={arroww} className='arrow-icon-white-btn' alt="Icon" /></Link>
 								</div>
 							</div>
-							<div className="services-count-dg">
-								<div className="srvc-one-dg border-dg">
-									<h4 className='servc-text-dg'>600M+</h4>
-									<p className='servc-sub-text-dg'>Revenue <br /> Generated</p>
+							<div className="services-count-seo">
+								<div className="srvc-one-seo border-dg">
+									<h4 className='servc-text-seo'>10,000+</h4>
+									<p className='servc-sub-text-dg'>Top 10 Keywords  <br /> on Google</p>
 								</div>
-								<div className="srvc-one-dg border-dg">
-									<h4 className='servc-text-dg'>150+</h4>
-									<p className='servc-sub-text-dg'> Clients</p>
+								<div className="srvc-one-seo border-dg leftspacee">
+									<h4 className='servc-text-seo'>50,000+</h4>
+									<p className='servc-sub-text-dg'>Leads <br /> Generated</p>
 								</div>
-								<div className="srvc-one-dg border-dg">
-									<h4 className='servc-text-dg'>1000+</h4>
-									<p className='servc-sub-text-dg'> Projects</p>
-								</div>
-								<div className="srvc-one-dg">
-									<h4 className='servc-text-dg'>05</h4>
-									<p className='servc-sub-text-dg'>National-level  <br /> Awards</p>
+								<div className="srvc-one-seo leftspacee">
+									<h4 className='servc-text-seo'>8 M+ </h4>
+									<p className='servc-sub-text-dg'>Total Website   <br /> Clicks</p>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div className="col-lg-5">
 						<div className="founder-image-dg">
-							{images.map((img, index) => (
-								<img
-									key={index}
-									src={img}
-									className={`founder-img-dg ${index === activeIndex ? 'active' : ''}`}
-									alt=""
-								/>
-							))}
+							<img src={hero} className='hero-img-seo' alt="" />
 						</div>
 					</div>
 				</div>
@@ -454,97 +437,44 @@ const DigitalMarketing = () => {
 
 
 
-
-
-			{/* fearless section  */}
-			<div className="fearless-main-dg">
+			<div className="seo-company-div-main">
 				<div className="container-main">
 					<div className="row">
-						<div className="col-lg-8">
-							<div className="inner-fearless-dg">
-								<h3 className='fearles-title-dg'>Fearless & Authentic Digital Marketing Since Birth.</h3>
-								<p className='fearless-sub-dg'>We've come a long way ever since we started our journey in 2020 as a digital marketing agency in kerala with just 6 members and a handful of clients. Today, we're 100+ members strong, organised into 8 departments, with a huge (and satisfied) clientele. The work culture, results and innovation are at the core of who we are.</p>
-								<div className="buttons-dg-fearless comn-main hide-mob-btn">
-									<Link to='/about' className='btn-proposal-dg'>Learn More About Us <img src={arroww} className='arrow-icon-white-btn' alt="Icon" /></Link>
-								</div>
+						<div className="col-lg-7">
+							<h2 className='seo-company-text-title'>The SEO Company That </h2>
+							<h2 className='seo-company-text-title'>Drives Leads, Sales and </h2>
+							<h2 className='seo-company-text-title'>Revenue for Your Business</h2>
+						</div>
+						<div className="col-lg-5">
+							<div className="inner-box-seocompany">
+								<p className='sub-title-seo-company'>As a result-oriented SEO company in Kerala, we help you rise to the forefront of the search results and bring more sales-qualified visitors to your website. The best part is we have dedicated experts for everything SEO.</p>
 							</div>
 						</div>
-						<div className="col-lg-4">
-							<div className="about-count-dg">
-								<div className="yaer-dg">
-									<h3 className='number-txt-dgg'>2020 </h3>
-									<p className='sub-title-dgg'>Established Year</p>
-								</div>
-								<div className="yaer-dg">
-									<h3 className='number-txt-dgg'>100+ </h3>
-									<p className='sub-title-dgg'>Employees</p>
-								</div>
-								<div className="yaer-dg">
-									<h3 className='number-txt-dgg'>08 </h3>
-									<p className='sub-title-dgg'>Departments</p>
-								</div>
-							</div>
-							<div className="buttons-dg-fearless comn-main no-showww full-width">
-								<Link to='/about' className='btn-proposal-dg full-width text-center'>Learn More About Us <img src={arroww} className='arrow-icon-white-btn' alt="Icon" /></Link>
+						<div className="col-lg-12">
+							<div className="team-banner-div-seo">
+								<img src={seoteam} className='team-banner-img-seo' alt="" />
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div className="wall-of-fame-dg">
-				<div className="container-main">
-					<div className="row">
-						<div className="col-lg-8">
-							<div className="fame-inner-dg">
-								<h3 className='fame-title-dg'>The Wall of Fame</h3>
-								<p className='awards-sub-dg'>Our awards and recognitions</p>
-								<div className="awards-images-dg">
-									<Slider {...settings}>
-										<div className="award-image-dg">
-											<img src={award1} className='award-img-pc' alt="Awards" />
-											<p className="award-subtext-dg">afaqs! Startup Brands Award - Best Use of Video on Social Media
-											</p> {/* Subtext */}
-										</div>
-										<div className="award-image-dg">
-											<img src={award2} className='award-img-pc' alt="Awards" />
-											<p className="award-subtext-dg"> Pepper Awards - Best Single Online Video</p> {/* Subtext */}
-										</div>
-										<div className="award-image-dg">
-											<img src={award3} className='award-img-pc' alt="Awards" />
-											<p className="award-subtext-dg">afaqs! Brand Storyz Award - Best Lead Generation Campaign</p> {/* Subtext */}
-										</div>
-										<div className="award-image-dg">
-											<img src={award1} className='award-img-pc' alt="Awards" />
-											<p className="award-subtext-dg">afaqs! Startup Brands Award - Best Branded Content
-											</p> {/* Subtext */}
-										</div>
-										<div className="award-image-dg">
-											<img src={b} className='award-img-pc' alt="Awards" />
-											<p className="award-subtext-dg">afaqs! Startup Brands Award - Best Social Media Campaign</p> {/* Subtext */}
-										</div>
-										<div className="award-image-dg">
-											<img src={award3} className='award-img-pc' alt="Awards" />
-											<p className="award-subtext-dg">afaqs! Startup Brands Award - Best Moment Marketing</p> {/* Subtext */}
-										</div>
-									</Slider>
-								</div>
-							</div>
-						</div>
-						<div className="col-lg-4">
-							<div className="fame-inner-dg-right">
-								<img src={amna} className='amna-img-dg' alt="Award" />
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+
+
+
+
+
+
+
+
+
+
 			{/* what we  */}
 			<div className="what-we-dg">
 				<div className="container-main">
 					<div className="row">
 						<div className="col-lg-12">
 							<div className="what-we-do-dg">
-								<h3 className='what-we-text-dgg'>What We Have for You</h3>
+								<h3 className='what-we-text-dgg'>Our SEO Toolkit</h3>
 								<div className="main-srvcs-team-dg">
 									<div className="left-services-main-dg">
 										{services.map((service) => (
@@ -578,13 +508,6 @@ const DigitalMarketing = () => {
 					</div>
 				</div>
 			</div>
-
-
-
-
-
-
-
 			<div className="what-we-do-mobile-slider">
 				<div className="container-main">
 					<div className="row">
@@ -646,7 +569,60 @@ const DigitalMarketing = () => {
 
 
 
+			<div className="believeus-main">
+				<div className="container-main">
+					<div className="row">
+						<div className="col-lg-12">
+							<div className="beieve-us-dv">
+								<h2 className='believe-titile-text'>Don't Believe Us? </h2>
+								<h2 className='believe-sub-titile-text'>You Can Believe Our Results</h2>
+							</div>
+						</div>
+						<div className="col-lg-12">
+							<div className="img-belive">
+								<img src={believeimg} className='imgbelieve' alt="" />
+							</div>
+						</div>
+						<div className="col-lg-12">
+							<div className="button-dv-main-seo-belive">
+								<div className="comn-main">
+									<Link to='/contact' className='btn-proposal-dg-no-bg'>Check Out Our Case Studies<img src={arroww} className='arrow-icon-white-btn' alt="Icon" /></Link>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+
+
+
+
+
+
+
+
 			<div className="white-section-dg">
+				<div className="get-a-free-main">
+					<div className="container-main">
+						<div className="row">
+							<div className="col-lg-12">
+								<div className="free-box-div">
+									<h2 className='free-title-main-seo'>Get a Free SEO Audit & Proposal</h2>
+									<p className='free-subtitle-main-seo'>Get an overview of your website’s SEO performance and a proposal </p>
+									<p className='free-subtitle-main-seo bottom-space-s'> including our detailed SEO plan. </p>
+									<div className="form-button">
+										<div className="buttons-dg comn-main">
+											<button class="btn-proposal-dg btn font-noraml" type="submit"> Get it <img src={arroww} className='arrow-icon-white-btn' alt="" /></button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 				<div className="container-main">
 					<div className="row">
 						<div className="col-lg-12">
@@ -1230,7 +1206,7 @@ const DigitalMarketing = () => {
 										</div>
 									</div>
 									<div className="full-contents-dg">
-									<img src={l} className='half-icon-imge' alt="" />
+										<img src={l} className='half-icon-imge' alt="" />
 										<div className="brdr-chat">
 											<p className='chat-section-item'>2nd floor, 4 WING Avenue ,Panniyankara, 673003  Kozhikode, Kerala</p>
 										</div>
@@ -1385,8 +1361,6 @@ const DigitalMarketing = () => {
 					</div>
 				</div>
 			</div>
-
-
 			<div className='seocontent'>
 				<Container>
 					<div className='headcontent'>
@@ -1463,7 +1437,6 @@ const DigitalMarketing = () => {
 
 				</Container>
 			</div>
-
 			<div className="footer-main-dg-page">
 				<div className="container-main">
 					<div className="row">

@@ -63,14 +63,14 @@ const Navbar = () => {
                 Awards
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link
                 to='/'
                 className={location.pathname === '/blogs' ? 'active-link' : ''}
               >
                 Blogs
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link
                 to='/about'
@@ -105,7 +105,7 @@ const Navbar = () => {
             <Link to='/works' onClick={toggleCart}><li>Works </li></Link>
             <Link to='/clients' onClick={toggleCart}><li>Clients</li> </Link>
             <Link to='/awards' onClick={toggleCart}><li>Awards </li></Link>
-            <Link to='/blog' onClick={toggleCart}><li>Blogs </li></Link>
+            {/* <Link to='/blog' onClick={toggleCart}><li>Blogs </li></Link> */}
             <Link to='/about' onClick={toggleCart}><li>About us </li></Link>
             <Link to='/career' onClick={toggleCart}><li>Careers</li> </Link>
           </ul>

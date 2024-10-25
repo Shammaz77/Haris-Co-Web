@@ -21,6 +21,10 @@ import SocialMedia from '../Pages/SocialMedia';
 import Production from '../Pages/Production';
 import Contact from '.././Pages/Contact';
 import Privacy from '../Pages/Privacy';
+import SeoPage from '../Pages/SeoPage';
+import AgencyDubai from '../Pages/AgencyDubai';
+import AgencySharjah from '../Pages/AgencySharjah';
+import AgencyAbudhabi from '../Pages/AgencyAbudhabi';
 const Router = () => {
   return (
     <Routes>
@@ -33,7 +37,7 @@ const Router = () => {
         <Route path="career" element={<Career />} />
         <Route path="works" element={<Works />} />
         <Route path="workone" element={<WorkOne />} />
-        <Route path="awards" element={<Awards />} />
+        <Route path="awards" element={<Awards />} /> 
         <Route path="privacy" element={<Privacy />} />
         <Route path="about" element={<About />} />
         <Route path="services" element={<Services />} />
@@ -47,6 +51,10 @@ const Router = () => {
         <Route path="contact" element={<Contact />} />
       </Route>
       <Route path="digital-marketing-agency-in-kerala" element={<DigitalMarketing />} />
+      <Route path="digital-marketing-agency-in-dubai" element={<AgencyDubai />} />
+      <Route path="digital-marketing-agency-in-sharjah" element={<AgencySharjah />} />
+      <Route path="digital-marketing-agency-in-abudhabi" element={<AgencyAbudhabi />} />
+      <Route path="seo-company-in-kerala" element={<SeoPage />} />
     </Routes>
   );
 };
