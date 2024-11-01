@@ -96,7 +96,7 @@
 	background-repeat: no-repeat;
 	background-image: url('../../Assets/SeoCompony/free.png');
 }
-.free-title-main-seo{
+.free-title-main-seo{ 
 	color: #fff;
 	text-align: center;
 	font-family: Abrobold;
@@ -124,9 +124,102 @@
 .bottom-space-s{
 	padding-bottom: 30px;
 }
+.show-mobile-seo{
+	display: none !important;
+}
+.title-srvc-seeo	 {
+	font-size: 24px;
+	color: #fff;
+	font-family: Abroreguler;
+}
+.sub-title-srvc-seo{
+	color: rgb(192, 192, 192);
+	font-size: 16px;
+	width: 75%;
+	margin: auto;
+	padding-top: 20px;
+	margin-bottom: 0px !important;
+	font-family: PoppinsRegular;
+}
 
 
 
+
+
+@media (max-width:991px){
+	.buttons-dv-seo .btn-proposal-dg{
+		display: block !important;
+		text-align: center !important;
+		margin-bottom: 20px !important;
+	}
+	.btn-proposal-dg-no-bg{
+		text-align: center !important;
+		display: block !important;
+	}
+	.services-count-seo{
+		display: none;
+	}
+	.hero-img-seo {
+    width: 100%;
+		padding-top: 30px;
+		padding-bottom: 20px;
+	}
+	.seo-wrapper{
+		padding-top: 0px !important;
+	}
+	.srvc-one-dg-mobil-show-last{
+		width: max-content !important;
+		margin: auto !important;
+		display: table !important;
+	}
+	.hide-mobile-seo{
+		display: none;
+	}
+	.show-mobile-seo{
+		display: block !important;
+		padding-top: 40px;
+	}
+	.seo-company-text-title {
+    font-size: 31px;
+	}
+	.sub-title-seo-company {
+    font-size: 15px;
+    width: 93%;
+    margin-left: unset;
+    padding-top: 15px;
+	}
+	.seo-company-div-main {
+    padding-bottom: 0px;
+	}
+	.seo-white-section{
+		padding-top: 30px !important;
+	}
+}
+@media (max-width:600px){
+	.believe-titile-text {
+    font-size: 33px;
+	}
+	.believe-sub-titile-text {
+    font-size: 32px;
+	}
+	.free-box-div {
+    margin-top: 0px;
+	}
+	.free-title-main-seo {
+    font-size: 26px;
+		padding-bottom: 0px !important;
+	}
+	.free-box-div {
+    padding: 20px 20px 30px 20px;
+	}
+	.free-subtitle-main-seo {
+    font-size: 14px;
+    width: 100%;
+	}
+	.form-button .btn-proposal-dg {
+    padding: 10px 14px !important;
+	}
+}
 
 
 

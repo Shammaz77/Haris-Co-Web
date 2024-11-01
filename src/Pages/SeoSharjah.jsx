@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import '../components/css/Digital.css';
+import '../components/css/Seo.css';
 import { Link } from 'react-router-dom';
-import { Link as ScrollLink } from 'react-scroll';
 import logo from '../Assets/navlogo.png'
-import founder from '../Assets/DigitalMarketing/copy.png'
+import founder from '../Assets/DigitalMarketing/founderhero.png'
 import clients from '../Assets/DigitalMarketing/Clients.svg'
 import clients2 from '../Assets/DigitalMarketing/clients-pending.svg'
 import amna from '../Assets/DigitalMarketing/amna.png'
@@ -76,13 +76,20 @@ import s11 from '../Assets/DigitalMarketing/s11.svg'
 import p from '../Assets/DigitalMarketing/p.png'
 import l from '../Assets/DigitalMarketing/l.png'
 import m from '../Assets/DigitalMarketing/m.png'
+import hero from '../Assets/SeoCompony/hero-image.png'
+import seoteam from '../Assets/SeoCompony/SeoTeam.png'
+import believeimg from '../Assets/SeoCompony/believe-image.png'
+import freebox from '../Assets/SeoCompony/free.png'
+
+
+
 
 
 import { Container } from 'react-bootstrap';
 
 import Accordion from 'react-bootstrap/Accordion';
 
-const AgencyDubai = () => {
+const 	SeoSharjah = () => {
 
 	const [isSecondImageVisible, setIsSecondImageVisible] = useState(false);
 
@@ -93,6 +100,7 @@ const AgencyDubai = () => {
 
 
 	const [selectedService, setSelectedService] = useState('SEO');
+
 
 	const getTeamImage = () => {
 		switch (selectedService) {
@@ -263,30 +271,15 @@ const AgencyDubai = () => {
 		setShowFullContent(!showFullContent);
 	};
 
-
-	const [activeIndex, setActiveIndex] = useState(0);
-	const images = [founder, aw2, aw3];
-
-	useEffect(() => {
-		const interval = setInterval(() => {
-			setActiveIndex((prevIndex) => (prevIndex + 1) % images.length);
-		}, 3000);
-		return () => clearInterval(interval);
-	}, [images.length]);
-
-
-
-
-
 	return (
 
 		<div className='digitalmarketing-page font-page'>
 			<div className="navbar-full-dg">
 				<Helmet>
-					<title>ROI-focused Digital Marketing Agency in Dubai | Haris&Co</title>
-					<meta name="description" content="We are an award-winning digital marketing agency in Dubai that considers revenue generation first, and everything else second." />
-					<link rel="canonical" href="https://harisand.co/ae/digital-marketing-agency-in-dubai" />
-				</Helmet>
+					<title>ROI-focused SEO Company in Sharjah | Haris&Co</title>
+					<meta name="description" content="We are an SEO company in Sharjah that prioritises lead generation over ranks, and website visitors." />
+					<link rel="canonical" href="https://harisand.co/ae/seo-company-in-sharjah" />
+				</Helmet>  
 				<div className="container-main">
 					<div className="navbar-dg">
 						<div className="logo-dg">
@@ -303,9 +296,7 @@ const AgencyDubai = () => {
 							</ul>
 						</div>
 						<div className="buttons-dg comn-main">
-							<ScrollLink to="chatsection" smooth={true} duration={100} className='btn-proposal-dg'>
-								GET A PROPOSAL <img src={arroww} className='arrow-icon-white-btn' alt="Icon" />
-							</ScrollLink>
+							<Link to='/contact' className='btn-proposal-dg'>  GET A PROPOSAL <img src={arroww} className='arrow-icon-white-btn' alt="Icon" /></Link>
 						</div>
 					</div>
 				</div>
@@ -314,52 +305,36 @@ const AgencyDubai = () => {
 				<div className="row">
 					<div className="col-lg-7 ">
 						<div className="home-wrapper-dg">
-							<h1 className='title-wrapper-dg hide-mob-title'>An <span>Award-winning</span> Digital <br /> Marketing Agency in Dubai</h1>
-							<h2 className='title-wrapper-dg mob-title'>An <span>Award-winning</span> Digital  Marketing Agency in Dubai</h2>
-							<h4 className='sub-title-wrapper-dgs hide-mob-title'>A digital marketing company that’s on the course of powering </h4>
-							<h4 className='sub-title-wrapper-dg hide-mob-title'>up brands with the power of marketing, design and tech. </h4>
-							<h4 className='sub-title-wrapper-dg mob-title'>A digital marketing company that’s on the course of powering  up brands with the power of marketing, design and tech. </h4>
-
-
-
-							<div className="buttons-dv-dg">
+							<h4 className='sub-title-wrapper-seo'>Best ROI-focused SEO Company in Sharjah</h4>
+							<h1 className='title-wrapper-dg'>Rank. Reach. Revenue</h1>
+							<h4 className='sub-title-wrapper-seos'>99% of SEO companies in Sharjah give you ranks. Just 1% brings you revenue-inspiring results. We fall in the second category.</h4>
+							<div className="buttons-dv-seo">
 								<div className="comn-main">
-									<ScrollLink to="chatsection" smooth={true} duration={500} className='btn-proposal-dg'>
-										GET A PROPOSAL <img src={arroww} className='arrow-icon-white-btn' alt="Icon" />
-									</ScrollLink>
+									<Link to='/contact' className='btn-proposal-dg'>GET A PROPOSAL <img src={arroww} className='arrow-icon-white-btn' alt="Icon" /></Link>
 								</div>
-								
+								<div className="comn-main">
+									<Link to='/contact' className='btn-proposal-dg-no-bg'>View Our Results<img src={arroww} className='arrow-icon-white-btn' alt="Icon" /></Link>
+								</div>
 							</div>
-							<div className="services-count-dg">
-								<div className="srvc-one-dg border-dg">
-									<h4 className='servc-text-dg'>600M+</h4>
-									<p className='servc-sub-text-dg'>Revenue <br /> Generated</p>
+							<div className="services-count-seo">
+								<div className="srvc-one-seo border-dg">
+									<h4 className='servc-text-seo'>8 M+</h4>
+									<p className='servc-sub-text-dg'>Total Website  <br /> Clicks</p>
 								</div>
-								<div className="srvc-one-dg border-dg">
-									<h4 className='servc-text-dg'>150+</h4>
-									<p className='servc-sub-text-dg'>Clients</p>
+								<div className="srvc-one-seo border-dg leftspacee">
+									<h4 className='servc-text-seo'>10,000+</h4>
+									<p className='servc-sub-text-dg'>Top 10 Keywords <br /> on Google</p>
 								</div>
-								<div className="srvc-one-dg border-dg">
-									<h4 className='servc-text-dg'>1000+</h4>
-									<p className='servc-sub-text-dg'>Projects</p>
-								</div>
-								<div className="srvc-one-dg">
-									<h4 className='servc-text-dg'>05</h4>
-									<p className='servc-sub-text-dg'>National-level  <br /> Awards</p>
+								<div className="srvc-one-seo leftspacee">
+									<h4 className='servc-text-seo'>50, 000+ </h4>
+									<p className='servc-sub-text-dg'>Leads    <br /> Generated</p>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div className="col-lg-5">
 						<div className="founder-image-dg">
-							{images.map((img, index) => (
-								<img
-									key={index}
-									src={img}
-									className={`founder-img-dg ${index === activeIndex ? 'active' : ''}`}
-									alt=""
-								/>
-							))}
+							<img src={hero} className='hero-img-seo' alt="" />
 						</div>
 					</div>
 				</div>
@@ -382,11 +357,11 @@ const AgencyDubai = () => {
 								<div className="row-show-mobile">
 									<div className="srvc-one-dg-mobil-show border-dgr">
 										<h4 className='servc-text-dg'>150+</h4>
-										<p className='servc-sub-text-dg'>Clients</p>
+										<p className='servc-sub-text-dg'> Clients</p>
 									</div>
 									<div className="srvc-one-dg-mobil-show  right-padding">
-										<h4 className='servc-text-dg'>500+</h4>
-										<p className='servc-sub-text-dg'>Projects</p>
+										<h4 className='servc-text-dg'>1000+</h4>
+										<p className='servc-sub-text-dg'> Projects</p>
 									</div>
 								</div>
 							</div>
@@ -456,95 +431,46 @@ const AgencyDubai = () => {
 			</div>
 
 
-			{/* fearless section  */}
-			<div className="fearless-main-dg">
+
+			<div className="seo-company-div-main">
 				<div className="container-main">
 					<div className="row">
-						<div className="col-lg-8">
-							<div className="inner-fearless-dg">
-								<h3 className='fearles-title-dg'>Fearless & Authentic Digital Marketing Since Birth.</h3>
-								<p className='fearless-sub-dg'>We are a Digital Marketing agency in Dubai providing everything Digital Marketing to let your brand multiply revenue and conquer the competition. We started operating in India in 2020 serving top brands over the years. Having analysed the GCC landscape, we have expanded to Dubai with our committed team and a broad portfolio that explains our capability.								</p>
-								<div className="buttons-dg-fearless comn-main hide-mob-btn">
-									<Link to='/about' className='btn-proposal-dg'>Learn More About Us <img src={arroww} className='arrow-icon-white-btn' alt="Icon" /></Link>
-								</div>
+						<div className="col-lg-7">
+							<h2 className='seo-company-text-title'>The SEO Company That </h2>
+							<h2 className='seo-company-text-title'>Drives Leads, Sales and </h2>
+							<h2 className='seo-company-text-title'>Revenue for Your Business</h2>
+						</div>
+						<div className="col-lg-5">
+							<div className="inner-box-seocompany">
+								<p className='sub-title-seo-company'>As a result-oriented SEO agency in Sharjah, we help you rise to the forefront of the search results and bring more sales-qualified visitors to your website. The best part is that we have dedicated experts for everything SEO.
+								</p>
 							</div>
 						</div>
-						<div className="col-lg-4">
-							<div className="about-count-dg">
-								<div className="yaer-dg">
-									<h3 className='number-txt-dgg'>2020 </h3>
-									<p className='sub-title-dgg'>Established Year</p>
-								</div>
-								<div className="yaer-dg">
-									<h3 className='number-txt-dgg'>150+ </h3>
-									<p className='sub-title-dgg'>Employees</p>
-								</div>
-								<div className="yaer-dg">
-									<h3 className='number-txt-dgg'>08 </h3>
-									<p className='sub-title-dgg'>Departments</p>
-								</div>
-							</div>
-							<div className="buttons-dg-fearless comn-main no-showww full-width">
-								<Link to='/about' className='btn-proposal-dg full-width text-center'>Learn More About Us <img src={arroww} className='arrow-icon-white-btn' alt="Icon" /></Link>
+						<div className="col-lg-12">
+							<div className="team-banner-div-seo">
+								<img src={seoteam} className='team-banner-img-seo' alt="" />
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div className="wall-of-fame-dg">
-				<div className="container-main">
-					<div className="row">
-						<div className="col-lg-8">
-							<div className="fame-inner-dg">
-								<h3 className='fame-title-dg'>The Wall of Fame</h3>
-								<p className='awards-sub-dg'>Our awards and recognitions</p>
-								<div className="awards-images-dg">
-								<Slider {...settings}>
-										<div className="award-image-dg">
-											<img src={award1} className='award-img-pc' alt="Awards" />
-											<p className="award-subtext-dg">afaqs! Startup Brands Award <span className='hidemobilename'> - Best Use of Video on Social Media</span>
-											</p> {/* Subtext */}
-										</div>
-										<div className="award-image-dg">
-											<img src={award2} className='award-img-pc' alt="Awards" />
-											<p className="award-subtext-dg"> Pepper Awards  <span className='hidemobilename'>- Best Single Online Video</span> </p> {/* Subtext */}
-										</div>
-										<div className="award-image-dg">
-											<img src={award3} className='award-img-pc' alt="Awards" />
-											<p className="award-subtext-dg">afaqs! Brand Storyz Award  <span className='hidemobilename'>- Best Lead Generation Campaign</span> </p> {/* Subtext */}
-										</div>
-										<div className="award-image-dg">
-											<img src={award1} className='award-img-pc' alt="Awards" />
-											<p className="award-subtext-dg">afaqs! Startup Brands Award   <span className='hidemobilename'> - Best Branded Content</span>
-											</p> {/* Subtext */}
-										</div>
-										<div className="award-image-dg">
-											<img src={b} className='award-img-pc' alt="Awards" />
-											<p className="award-subtext-dg">afaqs! Startup Brands Award   <span className='hidemobilename'> - Best Social Media Campaign</span></p> {/* Subtext */}
-										</div>
-										<div className="award-image-dg">
-											<img src={award3} className='award-img-pc' alt="Awards" />
-											<p className="award-subtext-dg">afaqs! Startup Brands Award    <span className='hidemobilename'>  - Best Moment Marketing</span></p> {/* Subtext */}
-										</div>
-									</Slider>
-								</div>
-							</div>
-						</div>
-						<div className="col-lg-4">
-							<div className="fame-inner-dg-right">
-								<img src={amna} className='amna-img-dg' alt="Award" />
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+
+
+
+
+
+
+
+
+
+
 			{/* what we  */}
 			<div className="what-we-dg">
 				<div className="container-main">
 					<div className="row">
 						<div className="col-lg-12">
 							<div className="what-we-do-dg">
-								<h3 className='what-we-text-dgg'>What We Have for You</h3>
+								<h3 className='what-we-text-dgg'>Our SEO Toolkit</h3>
 								<div className="main-srvcs-team-dg">
 									<div className="left-services-main-dg">
 										{services.map((service) => (
@@ -571,21 +497,13 @@ const AgencyDubai = () => {
 									</div>
 								</div>
 								<div className="comn-main">
-									<Link to='/services' className='btn-proposal-dg'>View More <img src={arroww} className='arrow-icon-white-btn' alt="Icon" /></Link>
+									<Link to='/contact' className='btn-proposal-dg'>View More <img src={arroww} className='arrow-icon-white-btn' alt="Icon" /></Link>
 								</div>
-
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-
-
-
-
-
-
-
 			<div className="what-we-do-mobile-slider">
 				<div className="container-main">
 					<div className="row">
@@ -647,8 +565,62 @@ const AgencyDubai = () => {
 
 
 
+			<div className="believeus-main">
+				<div className="container-main">
+					<div className="row">
+						<div className="col-lg-12">
+							<div className="beieve-us-dv">
+								<h2 className='believe-titile-text'>Don't Believe Us? </h2>
+								<h2 className='believe-sub-titile-text'>You Can Believe Our Results</h2>
+							</div>
+						</div>
+						<div className="col-lg-12">
+							<div className="img-belive">
+								<img src={believeimg} className='imgbelieve' alt="" />
+							</div>
+						</div>
+						<div className="col-lg-12">
+							<div className="button-dv-main-seo-belive">
+								<div className="comn-main">
+									<Link to='/contact' className='btn-proposal-dg-no-bg'>Check Out Our Case Studies<img src={arroww} className='arrow-icon-white-btn' alt="Icon" /></Link>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+
+
+
+
+
+
+
+
 			<div className="white-section-dg">
-				{/* <div className="container-main">
+				<div className="get-a-free-main">
+					<div className="container-main">
+						<div className="row">
+							<div className="col-lg-12">
+								<div className="free-box-div">
+									<h2 className='free-title-main-seo'>Get a Free SEO Audit & Proposal</h2>
+									<p className='free-subtitle-main-seo'>Get an overview of your website’s SEO performance and a proposal
+									</p>
+									<p className='free-subtitle-main-seo bottom-space-s'> including our detailed SEO plan. </p>
+									<div className="form-button">
+										<div className="buttons-dg comn-main">
+											<button class="btn-proposal-dg btn font-noraml" type="submit"> Get it <img src={arroww} className='arrow-icon-white-btn' alt="" /></button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div className="container-main">
 					<div className="row">
 						<div className="col-lg-12">
 							<div className="headlines-main-dv-dg">
@@ -689,7 +661,7 @@ const AgencyDubai = () => {
 							</div>
 						</div>
 					</Slider>
-				</div> */}
+				</div>
 				{/* discuss  */}
 				<div className="discuss-dg-main">
 					<div className="container-main">
@@ -1206,13 +1178,13 @@ const AgencyDubai = () => {
 				</div>
 			</div>
 			{/* chat-section */}
-			<div className="chat-section-digital" id='chatsection'>
+			<div className="chat-section-digital">
 				<div className="container-main">
 					<div className="row">
 						<div className="col-lg-6">
 							<div className="chat-inner-box-dv-dg">
 								<h3 className='lets-chat-title-dg'>Let's Have a Chat</h3>
-								<p className='lets-chat-sub-title-dg'>Give us a call or email us to learn more about our digital marketing services in Dubai. Need a face-to-face discussion? Feel free to visit us. 								</p>
+								<p className='lets-chat-sub-title-dg'>Give us a call or email us to learn more about our digital marketing services in Sharjah. Need a face-to-face discussion? Feel free to visit us. 	</p>
 								<div className="address-details-div">
 									<div className="half-full-icon-svg">
 										<div className="half-address-svg">
@@ -1281,7 +1253,7 @@ const AgencyDubai = () => {
 											<div className="buttons-social-media comn-main flx-spabtw">
 												<button class="btn-proposal-dg btn font-noraml" type="submit"> Submit Now <img src={arroww} className='arrow-icon-white-btn' alt="" /></button>
 												<div className="icons-social-media-dg">
-												<Link to='https://www.linkedin.com/company/harisand-co/mycompany/verification/'>	<img src={facebook} className='icones-social-media-dg-img' alt="" /></Link>
+													<Link to='https://www.linkedin.com/company/harisand-co/mycompany/verification/'>	<img src={facebook} className='icones-social-media-dg-img' alt="" /></Link>
 													<Link to='https://www.facebook.com/harisandconsulting'> <img src={instagram} className='icones-social-media-dg-img' alt="" />  </Link>
 													<Link to='https://www.instagram.com/harisand.co/?hl=en'><img src={twitter} className='icones-social-media-dg-img' alt="" />  </Link>
 													<Link to='https://x.com/harisand_co'><img src={linkedin} className='icones-social-media-dg-img right-no' alt="" /></Link>
@@ -1313,117 +1285,65 @@ const AgencyDubai = () => {
 								<Accordion defaultActiveKey="0" flush>
 
 									<Accordion.Item eventKey="0">
-										<Accordion.Header> Do you provide digital marketing for D2C businesses in Dubai, UAE?
-										</Accordion.Header>
+										<Accordion.Header>What is SEO?</Accordion.Header>
 										<Accordion.Body>
-											Of course, we have various clients from the D2C sector that have driven successful results with us. We also provide our digital marketing services in Dubai to B2B and B2C companies as well. Contact us to learn how we can help your business thrive.
+											SEO is the technique by which you can make your website appear on top of the search engine results when someone makes a search. Consequently, this can lead to an increase in website visitors and lead generation.
 										</Accordion.Body>
 									</Accordion.Item>
 
 									<Accordion.Item eventKey="1">
-										<Accordion.Header>Where are most of your clients from?</Accordion.Header>
+										<Accordion.Header>Why is SEO important for my business?
+										</Accordion.Header>
 										<Accordion.Body>
-											Most of our clients are based in the UAE, Saudi and India. Our clientele also has businesses from Bahrain, Qatar, Kuwait and Oman as well. We’ve been serving UAE-based since our commencement. In fact, a few of our first clients were from the UAE.
+											DataReportal's study states that nearly 50% of internet users use search engines to learn more about brands. So, being there on the top when they search is truly important. They can potentially become your next customer.
 										</Accordion.Body>
 									</Accordion.Item>
 
 									<Accordion.Item eventKey="2">
-										<Accordion.Header>  How do I know if my digital marketing campaigns are successful?
-										</Accordion.Header>
+										<Accordion.Header> How long does SEO take to show results?</Accordion.Header>
 										<Accordion.Body>
-											Website traffic, lead generation, conversions (sales), engagement on social media, and return on investment (ROI) are some common metrics you can check to measure success. However, with Haris&Co., you need not worry about this part. We sent detailed reports periodically to help you get an outline of how our marketing efforts are panning out.
-
-										</Accordion.Body>
+											SEO is an ongoing and organic process, but you can expect to see initial results within 3-6 months with consistent effort. Long-term SEO strategy yields sustainable results.</Accordion.Body>
 									</Accordion.Item>
 
 									<Accordion.Item eventKey="3">
-										<Accordion.Header>  What digital marketing technique would be the best for my business?
+										<Accordion.Header>  How will you measure the success of your SEO strategy?
 										</Accordion.Header>
 										<Accordion.Body>
-											There is no definite answer for this. The mode of marketing depends on the type of your business, your industry, your current brand awareness and your business goals.
-											In some instances, just Social Media should suffice. In some cases, you will have to integrate Performance Marketing as well to boost the results. It’s better to consult with us before so that we can provide the right recommendations.
+											We use tools like Google Search Console, SEMrush and Ubersuggest to track website traffic keyword ranking, leads generated, and conversions.
+											Apart from that, we use tools like Microsoft Clarity and Hotjar to analyse how the users are scrolling through your website, where they are clicking and how much content they are reading. This helps us to tweak the UX and the content if required.
 
 										</Accordion.Body>
 									</Accordion.Item>
 
 									<Accordion.Item eventKey="4">
-										<Accordion.Header> Will there be instant results?
+										<Accordion.Header> How can my website speed affect SEO?
 										</Accordion.Header>
 										<Accordion.Body>
-											Some aspects of digital marketing, like performance marketing (digital ads), may deliver relatively quick results. However, SEO and content marketing take time to build authority and organic traffic. We'll set realistic expectations and track your progress towards your goals.
+											Basically, when your website is slow to load, the visitor will bounce off. This can increase the bounce rate, which is something Google doesn't encourage.
+
+											Hence, this can affect your SEO efforts adversely. This is the reason why we do Technical SEO and sort every technical issue at the initial stage of our SEO projects.
 										</Accordion.Body>
 									</Accordion.Item>
 
 
 									<Accordion.Item eventKey="5">
-										<Accordion.Header>  What industries do you serve?
+										<Accordion.Header> Why should I hire an SEO agency in Sharjah? Can’t I do it myself?
 										</Accordion.Header>
 										<Accordion.Body>
-											Over the years, we have worked with brands from the following industries:
+										You can certainly do SEO yourself, but it's like managing your own investments – time-consuming and requiring constant learning. 
 
-											Architecture,
-											Automobile,
-											Construction,
-											Consultancy,
-											Ed-tech,
-											FMCG,
-											Footwear,
-											Furniture,
-											Healthcare,
-											Hotel,
-											Jewellery,
-											Kidswear,
-											Landscaping,
-											Logistics,
-											Packaging,
-											Petroleum,
-											Pharmaceutical,
-											Plywood,
-											SaaS,
-											Skincare,
-											Technology
-
-
+However, when you have an expert SEO company that stays on top of the latest algorithms, you can worry less about the SEO part and concentrate more on your business.
 
 										</Accordion.Body>
 									</Accordion.Item>
+
+
 
 									<Accordion.Item eventKey="6">
-										<Accordion.Header> Is Digital Marketing in demand in Dubai?
+										<Accordion.Header>How will you maintain the results?
 										</Accordion.Header>
 										<Accordion.Body>
-											Indeed, Digital Marketing is highly sought-after in Dubai due to the increased number of internet users, social media and search engines. Here are some statistics from DataReportal that show the significance of Digital Marketing in Dubai:
-
-
-											<ul>
-												<li>9.5 million individuals use the internet in the UAE												</li>
-												<li>96% of internet users own a smartphone</li>
-												<li>95% of the internet users use social media</li>
-												<li>On average, people spend 8 hours and 11 minutes daily on the internet												</li>
-												<li>Social media and search engines are top-visited sites with 99% of the internet users visiting the former and 88% visiting the latter. </li>
-												<li>51% of internet users use Social networks to research brands and products												</li>
-												<li>64% of internet users purchase a product each week</li>
-												<li>Search engines (33% of users) and social media (34% of users) are the top sources of brand discovery. 												</li>
-											</ul>
-
-
-										</Accordion.Body>
-									</Accordion.Item>
-
-									<Accordion.Item eventKey="7">
-										<Accordion.Header> Is it worth paying for Digital Marketing in Dubai?
-										</Accordion.Header>
-										<Accordion.Body>
-											The digital landscape of Dubai is thriving with 9.5 million internet users. With many companies already investing in Digital Marketing, it’s a must to pay for Digital Marketing in Dubai to stay ahead of the competition.
-										</Accordion.Body>
-									</Accordion.Item>
-
-									<Accordion.Item eventKey="8">
-										<Accordion.Header>  Is it worth hiring a Digital Marketing agency in Dubai?
-										</Accordion.Header>
-										<Accordion.Body>
-											Yes! To get the best out of your Digital Marketing efforts, you need strategies backed by data and proper market study. And for that, you need experts. When you hire a Digital Marketing agency like Haris&Co., you get a team that has proven experience and expertise in the field.
-										</Accordion.Body>
+										SEO is an ongoing process. Once you stop it, you can lose your ranks. Hence, in order to maintain the results, we consistently keep our work rolling and tweak the strategies to make good results great over time.</Accordion.Body>
 									</Accordion.Item>
 
 								</Accordion>
@@ -1432,80 +1352,87 @@ const AgencyDubai = () => {
 					</div>
 				</div>
 			</div>
-
-
 			<div className='seocontent'>
 				<Container>
 					<div className='headcontent'>
-						<h2 className='hd'>Best Digital Marketing Agency in Dubai Focused on Revenue Generation						</h2>
-						<p className='txt'>Likes, shares, traffic and all are great. But, what matters for a business is revenue, right? Well, that’s what our strategies also focus on. The Digital marketing services in Dubai we offer at Haris&Co. may be the same as other digital marketing companies in Dubai offer, but the key difference is our approach where our tactics are optimized with a laser focus on boosting your return on investment.
+						<h2 className='hd'>An SEO Company in Sharjah That Focus on Boosting Revenue</h2>
+						<p className='txt'>Ranks and traffic are good but what matters the most is generating leads and boosting revenue. 						</p>
+
+						<p className='txt'>As an ROI-focused SEO agency in Sharjah, we formulate strategies based on your specific audience and industry. We combine in-depth keyword research,  strategic on-page optimisation, well-thought-out content strategy and effective link building to get your website noticed by the right people.
 						</p>
 
-						<p className='txt'>Thus far, we have driven more than ₹600 Million for our clients including top brands such as Visa Guy, Walkaroo, Skin Bae, BOSQ, Afyun Plywood, Femisafe, Milliondots, Algate, Francis Alukkas and many more.
-						</p>
+						<p className='txt'>Though we excel in boosting website traffic, we mainly focus on generating sales-qualified leads for your website through SEO. In other words, you rank for keywords that matter to your business from a sales perspective. </p>
+						<p className='txt'>Stop waiting for customers to find you. Get our best SEO services in Sharjah  and generate leads.</p>
+
 					</div>
 					<div className='headcontent'>
-						<h2 className='twohd'>Why Opt for Us As Your Digital Marketing Company in Dubai
-						</h2>
+						<h2 className='twohd'>Why You Should Invest in Our SEO</h2>
 
 						<ul>
 							<li>
-								A Compelling Portfolio: Our works and results explain what we are and what we are capable of. Regardless of the type, size or industry, we have lent a hand to businesses to grow to the next level without data-oriented digital marketing strategies. Check out the portfolio to see the results for yourself
-
-							</li>
+							Reach more interested customers: We bring people who are already searching for what you offer. They're high-quality leads compared to those seeing a random ad.	</li>
 							<li>
-								Experienced Team: Our team is comprised of passionate and experienced digital marketing experts. We stay ahead of the curve with the latest trends and technologies to ensure your campaigns are innovative and effective.
-
-							</li>
+							Boost website traffic: As an SEO company in Sharjah, we help your website rank higher in search results, meaning more people will find you naturally.</li>
 
 							{showFullContent ? (
 								<>
 									<li>
-										ROI-focused Approach:  As one of the best digital marketing agencies in Dubai, UAE, we believe in transparency and accountability. That's why we focus on measurable results that directly impact your bottom line. We'll work closely with you to define your goals and develop a customised strategy that delivers a strong ROI.
-
+									Improve brand awareness: Higher rankings and organic traffic lead to more brand recognition and establish you as an authority.
 									</li>
 									<li>
-										Client-Centric: We take the time to understand your unique business needs and target audience. This ensures our campaigns are tailored to resonate with your ideal customers and achieve your specific goals.
-
+									Get a better return on investment: Our SEO is a cost-effective way to generate leads and sales since our strategy ultimately focuses on bringing you better ROI.
 									</li>
 									<li>
-										Data-Driven Decisions: We are not fans of guesswork. Every decision we make is backed by data and analytics, allowing us to constantly optimise your campaigns for maximum impact.
+									Long-term benefits: Unlike ads, SEO results are long-lasting. Once you rank well, you'll continue to see traffic for months or even years and we will make sure by tweaking the strategies if needed.	</li>
 
-									</li>
-									<li>
-										Long-Term Partnerships:: We believe in building long-term partnerships with our clients. We're here to help you achieve sustainable growth, not just a quick fix.
-									</li>
-									<p className='txt'>So, when you choose Haris&Co as your digital marketing agency in Dubai, you're gaining a trusted partner dedicated to driving real revenue for your business. Sounds awesome, right?									</p>
 									<div className='headcontent  headcontent-sub'>
-										<h2 className='threehd'>Bagging Awards On the Way
+										<h2 className='threehd'>A Streamlined SEO Company in Sharjah
 										</h2>
-										<p className='txt'>Haris&co. isn't just another digital marketing agency in Dubai, UAE. We do everything passionately, be it SEO activities, Social Media campaigns or Performance Marketing campaigns. Over the years, we have delivered a shedload of projects to our clients and we have won awards for our work. Here is the list of awards we have won thus far:
-
-										</p>
+										<p className='txt'>
+										Most of our projects pan out successfully because we have a clear plan. We know what we are doing right from the beginning. Here is what our process looks like:	</p>
 										<ul>
 											<li>
-												1. afaqs! Startup Brands Award - Best Use of Video on Social Media
+											Brand Understanding
+											: This is where we understand your brand from top to bottom including your goals, target audience, and unique selling propositions (USP).
 											</li>
 											<li>
-												2. afaqs! Startup Brands Award - Best Branded Content
-
+											Industry & Competitor Research
+											: We study your industry, analyse your competitors' SEO strategies, and identify potential opportunities for your website.
 											</li>
 											<li>
-												3. afaqs! Startup Brands Award - Best Moment Marketing
-
+											Website Audit :We conduct a comprehensive technical audit of your website to identify any SEO roadblocks and areas for improvement.
 											</li>
 											<li>
-												4. afaqs! Startup Brands Award - Best Social Media Campaign
-
+											Keyword Research: We research relevant keywords with high search volume and low competition to attract qualified traffic.</li>
+											<li>
+											Creating the SEO Plan
+											: Based on our findings, we craft a customised SEO plan outlining specific strategies, timelines, and deliverables.
 											</li>
 											<li>
-												5. Pepper Awards - Best Single Online Video
-
+											Executing the Plan
+											: We implement the SEO plan, including on-page optimisation, off-page activities, content creation, link building, and technical SEO improvements.	</li>
+										
+											<li>
+											Tracking the Results
+											: We closely monitor website traffic, keyword rankings, and other key metrics to measure progress
 											</li>
 											<li>
-												6. afaqs! Brand Storyz Award - Best Lead Generation Campaign
-
+											Reporting to the Client
+											: We provide regular reports with clear visualisations, keeping you informed of the campaign's performance.
 											</li>
+											<li>
+											Tweaking the Plan
+											: SEO is an ongoing process. We continuously analyse data and adjust the plan as needed to optimise for search engine algorithms.
+											</li>
+											<li>
+											Maintaining the Results
+											: We focus on long-term SEO strategies to ensure your website maintains its high ranking and organic visibility.
+											</li>
+										
+										
+										
+										
+										
 										</ul>
 									</div>
 								</>
@@ -1519,7 +1446,6 @@ const AgencyDubai = () => {
 
 				</Container>
 			</div>
-
 			<div className="footer-main-dg-page">
 				<div className="container-main">
 					<div className="row">
@@ -1599,4 +1525,4 @@ const AgencyDubai = () => {
 		</div>
 	)
 }
-export default AgencyDubai;	
+export default SeoSharjah;	

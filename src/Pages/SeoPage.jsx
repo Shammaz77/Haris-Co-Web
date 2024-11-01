@@ -104,15 +104,15 @@ const DigitalMarketing = () => {
 
 	const getTeamImage = () => {
 		switch (selectedService) {
-			case 'SEO':
+			case 'On-Page SEO':
 				return o1;
-			case 'Performance Marketing':
+			case 'Off-Page SEO':
 				return team2;
-			case 'Social Media':
+			case 'Technical SEO':
 				return team3;
-			case 'Web Development':
+			case 'UI/UX Design':
 				return team4;
-			case 'Branding':
+			case 'Conversion Rate Optimisation':
 				return team5;
 			default:
 				return award3;
@@ -120,11 +120,11 @@ const DigitalMarketing = () => {
 	};
 
 	const services = [
-		{ name: 'SEO', logo: logos, description: 'To appear on top of Google search results and get more website visitors, leads and revenue.' },
-		{ name: 'Performance Marketing', logo: logo4, description: 'To gain measurable results that drive conversions and maximise your ROI with Digital Ads.' },
-		{ name: 'Social Media', logo: logo2, description: 'To build brand awareness, retain customers, and generate more leads on Social Media.' },
-		{ name: 'Web Development', logo: logo3, description: 'For a website that combines engaging UI, scroll-stopping content and user-friendliness. .' },
-		{ name: 'Branding', logo: logo5, description: 'To help you change the face of your brand, set a new standard and stand out from the crowd. ' },
+		{ name: 'On-Page SEO', logo: logos, description: 'To appear on top of Google search results and get more website visitors, leads and revenue.' },
+		{ name: 'Off-Page SEO', logo: logo4, description: 'To gain measurable results that drive conversions and maximise your ROI with Digital Ads.' },
+		{ name: 'Technical SEO', logo: logo2, description: 'To build brand awareness, retain customers, and generate more leads on Social Media.' },
+		{ name: 'UI/UX Design', logo: logo3, description: 'For a website that combines engaging UI, scroll-stopping content and user-friendliness. .' },
+		{ name: 'Conversion Rate Optimisation', logo: logo5, description: 'To help you change the face of your brand, set a new standard and stand out from the crowd. ' },
 	];
 
 
@@ -283,7 +283,7 @@ const DigitalMarketing = () => {
 				<Helmet>
 					<title>Revenue Focused Digital Marketing Agency in Kerala | Haris&Co</title>
 					<meta name="description" content="Grow your business with the best digital marketing agency in Kerala. We, at Haris&Co.offer all the essential digital marketing services to boost your business revenue." />
-					<link rel="canonical" href="https://harisand.co/digital-marketing-agency-in-kerala" />
+					<link rel="canonical" href="https://harisand.co/seo-company-in-kerala" />
 				</Helmet>
 				<div className="container-main">
 					<div className="navbar-dg">
@@ -311,7 +311,7 @@ const DigitalMarketing = () => {
 					<div className="col-lg-7 ">
 						<div className="home-wrapper-dg">
 							<h4 className='sub-title-wrapper-seo'>A Rapidly Growing SEO Company in Kerala</h4>
-							<h1 className='title-wrapper-dg'>Rank. Reach. Revenue</h1>
+							<h1 className='title-wrapper-dg seo-wrapper'>Rank. Reach. Revenue</h1>
 							<h4 className='sub-title-wrapper-seos'>A digital marketing company that’s on the course of powering up brands <br /> with the power of marketing, design and tech. </h4>
 							<div className="buttons-dv-seo">
 								<div className="comn-main">
@@ -351,22 +351,18 @@ const DigitalMarketing = () => {
 							<div className="services-count-dg-mobile-show">
 								<div className="row-show-mobile">
 									<div className="srvc-one-dg-mobil-show border-dgr">
-										<h4 className='servc-text-dg'>600M+</h4>
-										<p className='servc-sub-text-dg'>Revenue <br /> Generated</p>
+										<h4 className='servc-text-dg'>10,000+</h4>
+										<p className='servc-sub-text-dg'>Top 10 Keywords <br /> on Google</p>
 									</div>
 									<div className="srvc-one-dg-mobil-show right-padding">
-										<h4 className='servc-text-dg'>05</h4>
-										<p className='servc-sub-text-dg'>National-level  <br /> Awards</p>
+										<h4 className='servc-text-dg'>50,000+										</h4>
+										<p className='servc-sub-text-dg'>Leads  <br /> Generated</p>
 									</div>
 								</div>
 								<div className="row-show-mobile">
-									<div className="srvc-one-dg-mobil-show border-dgr">
-										<h4 className='servc-text-dg'>150+</h4>
-										<p className='servc-sub-text-dg'> Clients</p>
-									</div>
-									<div className="srvc-one-dg-mobil-show  right-padding">
-										<h4 className='servc-text-dg'>1000+</h4>
-										<p className='servc-sub-text-dg'> Projects</p>
+									<div className="srvc-one-dg-mobil-show-last ">
+										<h4 className='servc-text-dg'>8 M+										</h4>
+										<p className='servc-sub-text-dg'>Total Website<br /> Clicks</p>
 									</div>
 								</div>
 							</div>
@@ -434,16 +430,23 @@ const DigitalMarketing = () => {
 					</div>
 				</div>
 			</div>
-
-
-
 			<div className="seo-company-div-main">
 				<div className="container-main">
 					<div className="row">
 						<div className="col-lg-7">
-							<h2 className='seo-company-text-title'>The SEO Company That </h2>
-							<h2 className='seo-company-text-title'>Drives Leads, Sales and </h2>
-							<h2 className='seo-company-text-title'>Revenue for Your Business</h2>
+							<div className="hide-mobile-seo">
+								<h2 className='seo-company-text-title'>The SEO Company That </h2>
+								<h2 className='seo-company-text-title'>Drives Leads, Sales and </h2>
+								<h2 className='seo-company-text-title'>Revenue for Your Business</h2>
+							</div>
+						</div>
+						<div className="col-lg-7 show-mobile-seo">
+							<div className="show-mobile-seo">
+								<h2 className='seo-company-text-title'>The SEO Company  </h2>
+								<h2 className='seo-company-text-title'>That Drives Leads, </h2>
+								<h2 className='seo-company-text-title'>Sales and Revenue</h2>
+								<h2 className='seo-company-text-title'>for Your Business</h2>
+							</div>
 						</div>
 						<div className="col-lg-5">
 							<div className="inner-box-seocompany">
@@ -458,16 +461,6 @@ const DigitalMarketing = () => {
 					</div>
 				</div>
 			</div>
-
-
-
-
-
-
-
-
-
-
 			{/* what we  */}
 			<div className="what-we-dg">
 				<div className="container-main">
@@ -485,11 +478,8 @@ const DigitalMarketing = () => {
 											>
 												<img src={service.logo} className='icon-servc-dg' alt={service.name} />
 												<div className="srvcs-details-text-dv">
-													<h4 className='title-srvc-dg'>{service.name}</h4>
-													{/* Conditionally render the description based on the selected service */}
-													{selectedService === service.name && (
-														<p className='sub-title-srvc-dg'>{service.description}</p>
-													)}
+													<h4 className='title-srvc-seeo'>{service.name}</h4>
+
 												</div>
 											</div>
 										))}
@@ -498,6 +488,14 @@ const DigitalMarketing = () => {
 									<div className="right-services-main-dg">
 										{/* Display the team image based on selected service */}
 										<img src={getTeamImage()} className='team-img-dg' alt={`${selectedService} Team`} />
+
+										{services.map((service) => (
+											// Conditionally render the description based on the selected service
+											selectedService === service.name && (
+												<p key={service.name} className='sub-title-srvc-seo'>{service.description}</p>
+											)
+										))}
+
 									</div>
 								</div>
 								<div className="comn-main">
@@ -565,10 +563,6 @@ const DigitalMarketing = () => {
 					</div>
 				</div>
 			</div>
-
-
-
-
 			<div className="believeus-main">
 				<div className="container-main">
 					<div className="row">
@@ -593,18 +587,7 @@ const DigitalMarketing = () => {
 					</div>
 				</div>
 			</div>
-
-
-
-
-
-
-
-
-
-
-
-			<div className="white-section-dg">
+			<div className="white-section-dg seo-white-section">
 				<div className="get-a-free-main">
 					<div className="container-main">
 						<div className="row">
@@ -664,30 +647,6 @@ const DigitalMarketing = () => {
 							</div>
 						</div>
 					</Slider>
-				</div>
-				{/* discuss  */}
-				<div className="discuss-dg-main">
-					<div className="container-main">
-						<div className="row">
-							<div className="col-lg-12">
-								<div className="lets-discuss-main-dg">
-									<div className="half-dg-discss">
-										<h3 className='discuss-title-dg'>Let's Discuss How We Can Grow </h3>
-										<h3 className='discuss-title-dg'> Your Business</h3>
-
-									</div>
-									<div className="righthalf-dg-discss comn-main">
-										<Link
-											to="#"
-											className='btn-proposal-dg'
-											onClick={() => window.location.href = 'https://wa.me/918075040330'}
-										>
-											Consult Us <img src={arroww} className='arrow-icon-white-btn' alt="Icon" />
-										</Link>									</div>
-								</div>
-							</div>
-						</div>
-					</div>
 				</div>
 				{/* case study  */}
 				<div className="casestudy-main-div-dg">
@@ -1476,21 +1435,23 @@ const DigitalMarketing = () => {
 								</ul>
 							</div>
 						</div>
+
 						<div className="col-lg-3">
 							<div className="footer-box-dg-main flx-link">
 								<h3 className='text-menu-item-footer'>Get In Touch</h3>
 								<ul className='footer-icondnd'>
 									<li><Link to='/'>
 										<img src={callfooter} className='footer-item-box-img-icon-dg' alt="Icons" />
-										+91 8075 040 330</Link>
+										+91 8075 040 330
+									</Link>
 									</li>
 
 									<li><Link to='/'>
 										<img src={emailfooter} className='footer-item-box-img-icon-dg' alt="Icons" />
-										bd@harisand.co</Link>
+										bd@harisand.co
+									</Link>
 									</li>
-
-									<li><Link to='/'>
+									<li><Link to='/' className='flex-linkk'>
 										<img src={locationf} className='footer-item-box-img-icon-dg' alt="Icons" />
 										2nd floor, 4 WING Avenue ,Panniyankara, 673003 Kozhikode, Kerala</Link>
 									</li>

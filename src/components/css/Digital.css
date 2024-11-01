@@ -87,6 +87,12 @@
 	font-size: 41px;
 	font-family: Abrobold;
 }
+.title-wrapper-dg-abu{
+	color: #fff;
+	line-height: 1.5;
+	font-size: 38px;
+	font-family: Abrobold;
+}
 .title-wrapper-dg span{
 	color: #7744D5;
 }
@@ -211,10 +217,20 @@
 	line-height: 1.3;
 	font-size: 41px;
 }
+.buttons-dv-dg{
+	cursor: pointer;
+}
+.flex-linkk img{
+	margin-top: 11px !important;
+}
 .fearless-sub-dg{
 	font-size: 16px;
 	font-family: PoppinsRegular;
 	color: rgb(192, 192, 192);;
+}
+.flex-linkk{
+	display: flex;
+	align-items: flex-start;
 }
 .buttons-dg-fearless{
 	padding-top: 30px;
@@ -351,6 +367,7 @@
 .srvcs-details-text-dv{
 	padding-left: 30px;
 }
+
 .team-img-dg{
 	width: 100%;
 }
@@ -360,7 +377,7 @@
 }
 .white-section-dg{
 	background-color: #fff;
-	padding-top: 40px;
+	padding-top: 70px;
 	padding-bottom: 110px;
 }
 .headline-title-dg{
@@ -634,6 +651,7 @@
 .userimage-main-dg{
 	width: 50px;
 	height: 50px;
+	border-radius: 50%;
 }
 .rev-title-main-dg{
 	color: #ffff;
@@ -975,6 +993,30 @@
 .half-full-icon-svg{
 	padding-top: 10px;
 }
+.mob-title{
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* responsive  */
 @media (min-width:1600px){
 	.lets-discuss-main-dg{
@@ -984,7 +1026,7 @@
 }
 @media (min-width:1500px){
 	.lets-discuss-main-dg{
-		width: 85% !important;
+		width: 100% !important;
 		margin: auto;
 	}
 }
@@ -1004,6 +1046,9 @@
 @media (max-width:991px){
 	.itemss-dg{
 		display: none;
+	}
+	.comn-main {
+    display: unset;
 	}
 	.headlines-main-dvv-dg .slick-center .bgcolor-dg{
 		/* display: none !important; */
@@ -1088,6 +1133,7 @@
 	.row-show-mobile{
 		display: flex;
 		width: 100%;
+		justify-content: center;
 		margin-bottom: 30px;
 	}
 	.full-width{
@@ -1136,7 +1182,7 @@
 		line-height: 1.4;
 	}
 	.about-count-dg{
-		padding-top: 60px;
+		padding-top: 15px;
 	}
 	.sub-title-dgg {
     color: #acacac;
@@ -1266,8 +1312,31 @@
 @media (max-width:600px){
 	.fearles-title-dg {
 		padding-top: 40px;
-		font-size: 35px;
+		font-size: 33px;
 		padding-bottom: 30px;
+	}
+	.items-what-we-do-main p{
+		font-size: 17px;
+		padding-bottom: 35px;
+	}
+	.fame-inner-dg .award-subtext-dg{
+		font-size: 14px !important;
+		line-height: 1.4 !important;
+	}
+	.hidemobilename{
+		display: none !important;
+	}
+	.fame-inner-dg{
+		margin-top: 10px !important;
+	}
+	.comn-main {
+    /* display: unset; */
+	}
+	.hide-mob-title{
+		display: none;
+	}
+	.mob-title{
+		display: block;
 	}
 	.fearless-sub-dg {
     font-size: 18px;
@@ -1287,9 +1356,15 @@
 	.white-section-dg {
     padding-bottom: 0px;
 	}
-	.half-address-svg {
-   
+	.rttt{
+		margin-right: 23px;
 	}
+	    .half-address-svg {
+        margin-bottom: 20px;
+    }
+		.full-contents-dg {
+			padding-top: 00px;
+		}
 	.half-icon-img {
     display: block;
 		margin-bottom: 30px;
@@ -1308,7 +1383,10 @@
 		margin-top: -30px;
 	}
 	.fearless-sub-dg{
-		text-align: justify;
+		text-align: unset;
+	}
+	.fearless-sub-dg {
+		font-size: 16px;
 	}
 	.discuss-title-dg {
 		line-height: 1.1;
@@ -1332,11 +1410,23 @@
 	.form-get-call-back-dg label {
 		font-family: PoppinsRegular;
 	}
+	.buttons-dv-dg {
+    padding-bottom: 50px;
+	}
+	.services-count-dg-mobile-show {
+		padding-top: 90px;
+	}	
+	.fearless-sub-dg {
+		padding-bottom: 25px;
+	}	
 }
 @media (max-width:500px){
 	.founder-img-dg{
 		width: 90%;
 		margin: auto;
+	}
+	.title-wrapper-dg {
+		font-size: 33px;
 	}
 }
 @media (max-width:410px){
@@ -1350,7 +1440,7 @@
 }
 @media (max-width:390px){
 	.title-wrapper-dg {
-		font-size: 30px;
+		font-size: 27px;
 		padding-top: 65px;
 	}
 	.discuss-title-dg {

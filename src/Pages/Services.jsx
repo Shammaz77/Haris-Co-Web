@@ -56,64 +56,64 @@ const Services = () => {
 					</div>
 					<div className="row">
 						<div className="col-lg-3">
-						<Link to='/socialmedia'>
-						<div className="services-box bluish-purple">
-							<img src={icon} className='icon-service' alt="icon" />
-							<div className="service-details-dv">
-								<h5 className='service-number'>01.</h5>
-								<h3 className='service-name'>Social Media <img src={arrow} className='rotate-icon' alt="icon" /> </h3>
-								<div className="hover-div">
-									<div className="border-hover"></div>
-									<p>See the difference with us! Our strategic and creative social media content and campaigns help you better connect with your audience.</p>
+							<Link to='/socialmedia'>
+								<div className="services-box bluish-purple">
+									<img src={icon} className='icon-service' alt="icon" />
+									<div className="service-details-dv">
+										<h5 className='service-number'>01.</h5>
+										<h3 className='service-name'>Social Media <img src={arrow} className='rotate-icon' alt="icon" /> </h3>
+										<div className="hover-div">
+											<div className="border-hover"></div>
+											<p>See the difference with us! Our strategic and creative social media content and campaigns help you better connect with your audience.</p>
+										</div>
 									</div>
-							</div>
-						</div>
-						</Link>
+								</div>
+							</Link>
 						</div>
 						<div className="col-lg-3">
-						<Link to='/perfomance'>
-						<div className="services-box sunglow">
-							<img src={icontwo} className='icon-service' alt="icon" />
-							<div className="service-details-dv">
-								<h5 className='service-number'>02.</h5>
-								<h3 className='service-name'>Performance <br /> Marketing <img src={arrow} className='rotate-icon' alt="icon" /></h3>
-								<div className="hover-div">
-									<div className="border-hover"></div>
-									<p>See the difference with us! Our strategic and creative social media content and campaigns help you better connect with your audience.</p>
+							<Link to='/perfomance'>
+								<div className="services-box sunglow">
+									<img src={icontwo} className='icon-service' alt="icon" />
+									<div className="service-details-dv">
+										<h5 className='service-number'>02.</h5>
+										<h3 className='service-name'>Performance <br /> Marketing <img src={arrow} className='rotate-icon' alt="icon" /></h3>
+										<div className="hover-div">
+											<div className="border-hover"></div>
+											<p>See the difference with us! Our strategic and creative social media content and campaigns help you better connect with your audience.</p>
+										</div>
 									</div>
-							</div>
-						</div>
-						</Link>
+								</div>
+							</Link>
 						</div>
 						<div className="col-lg-3">
-						<Link to='/production'>
-						<div className="services-box mint-green">
-							<img src={iconthree} className='icon-service' alt="icon" />
-							<div className="service-details-dv">
-								<h5 className='service-number'>03.</h5>
-								<h3 className='service-name'>Production <img src={arrow} className='rotate-icon' alt="icon" /></h3>
-								<div className="hover-div">
-									<div className="border-hover"></div>
-									<p>From concept to creation, our production team delivers visually stunning and captivating content for your brand.</p>
+							<Link to='/production'>
+								<div className="services-box mint-green">
+									<img src={iconthree} className='icon-service' alt="icon" />
+									<div className="service-details-dv">
+										<h5 className='service-number'>03.</h5>
+										<h3 className='service-name'>Production <img src={arrow} className='rotate-icon' alt="icon" /></h3>
+										<div className="hover-div">
+											<div className="border-hover"></div>
+											<p>From concept to creation, our production team delivers visually stunning and captivating content for your brand.</p>
+										</div>
 									</div>
-							</div>
-						</div>
-						</Link>
+								</div>
+							</Link>
 						</div>
 						<div className="col-lg-3">
-						<Link to='/creative'>
-					<div className="services-box light-blue">
-							<img src={iconfour} className='icon-service ' alt="icon" />
-							<div className="service-details-dv">
-								<h5 className='service-number'>04.</h5>
-								<h3 className='service-name'>Creative <img src={arrow} className='rotate-icon' alt="icon" /></h3>
-								<div className="hover-div">
-									<div className="border-hover"></div>
-									<p>Our creative minds at Haris & Co. help craft captivating and never-before-seen ideas for your brand to drive exceptional results.</p>
+							<Link to='/creative'>
+								<div className="services-box light-blue">
+									<img src={iconfour} className='icon-service ' alt="icon" />
+									<div className="service-details-dv">
+										<h5 className='service-number'>04.</h5>
+										<h3 className='service-name'>Creative <img src={arrow} className='rotate-icon' alt="icon" /></h3>
+										<div className="hover-div">
+											<div className="border-hover"></div>
+											<p>Our creative minds at Haris & Co. help craft captivating and never-before-seen ideas for your brand to drive exceptional results.</p>
+										</div>
 									</div>
-							</div>
-						</div>
-					</Link>
+								</div>
+							</Link>
 						</div>
 						<div className="col-lg-3">
 							<Link to='/pr'>
@@ -125,7 +125,7 @@ const Services = () => {
 										<div className="hover-div">
 											<div className="border-hover"></div>
 											<p>Our creative minds at Haris & Co. help craft captivating and never-before-seen ideas for your brand to drive exceptional results.</p>
-											</div>
+										</div>
 									</div>
 								</div>
 							</Link>
@@ -140,7 +140,7 @@ const Services = () => {
 										<div className="hover-div">
 											<div className="border-hover"></div>
 											<p>Make your mark with a visually captivating and engaging web design. Our UI/UX experts deliver designs that are functionally superior and drive traffic.</p>
-											</div>
+										</div>
 									</div>
 								</div>
 							</Link>
@@ -155,7 +155,7 @@ const Services = () => {
 										<div className="hover-div">
 											<div className="border-hover"></div>
 											<p>Stay on top with our strategic SEO solutions. Our tailored strategies help you dominate results and drive organic traffic.</p>
-											</div>
+										</div>
 									</div>
 								</div>
 							</Link>
@@ -170,7 +170,7 @@ const Services = () => {
 										<div className="hover-div">
 											<div className="border-hover"></div>
 											<p>Speak your truth with our branding solutions. We help tell a brand story that resonates, captivates, and converts. </p>
-											</div>
+										</div>
 									</div>
 								</div>
 							</Link>

@@ -25,6 +25,10 @@ import SeoPage from '../Pages/SeoPage';
 import AgencyDubai from '../Pages/AgencyDubai';
 import AgencySharjah from '../Pages/AgencySharjah';
 import AgencyAbudhabi from '../Pages/AgencyAbudhabi';
+import SeoDubai from '../Pages/SeoDubai';
+import SeoAbudhabi from '../Pages/SeoAbudhabi';
+import SeoSharjah from '../Pages/SeoSharjah';
+
 const Router = () => {
   return (
     <Routes>
@@ -55,6 +59,10 @@ const Router = () => {
       <Route path="digital-marketing-agency-in-sharjah" element={<AgencySharjah />} />
       <Route path="digital-marketing-agency-in-abudhabi" element={<AgencyAbudhabi />} />
       <Route path="seo-company-in-kerala" element={<SeoPage />} />
+      <Route path="seo-company-in-dubai" element={<SeoDubai />} />
+      <Route path="seo-company-in-abudhabi" element={<SeoAbudhabi />} />
+      <Route path="seo-company-in-sharjah" element={<SeoSharjah />} />
+			
     </Routes>
   );
 };

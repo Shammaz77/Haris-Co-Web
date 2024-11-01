@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import '../components/css/Digital.css';
 import { Link } from 'react-router-dom';
 import logo from '../Assets/navlogo.png'
-import founder from '../Assets/fo.png'
+import founder from '../Assets/DigitalMarketing/copy.png'
 import clients from '../Assets/DigitalMarketing/Clients.svg'
 import clients2 from '../Assets/DigitalMarketing/clients-pending.svg'
 import amna from '../Assets/DigitalMarketing/amna.png'
@@ -37,6 +37,7 @@ import footerlogo from '../Assets/DigitalMarketing/footer-logo.svg'
 import google from '../Assets/DigitalMarketing/google.png'
 import callfooter from '../Assets/DigitalMarketing/callfooter.svg'
 import emailfooter from '../Assets/DigitalMarketing/emailfooter.svg'
+import { Link as ScrollLink } from 'react-scroll';
 import locationf from '../Assets/DigitalMarketing/locationf.svg'
 import b from '../Assets/DigitalMarketing/b.png'
 import f1 from '../Assets/DigitalMarketing/f1.png'
@@ -282,9 +283,9 @@ const AgencyAbudhabi = () => {
 		<div className='digitalmarketing-page font-page'>
 			<div className="navbar-full-dg">
 				<Helmet>
-					<title>Revenue Focused Digital Marketing Agency in Abu Dhabi | Haris&Co</title>
-					<meta name="description" content="Grow your business with the best digital marketing agency in Dubai. We, at Haris&Co.offer all the essential digital marketing services to boost your business revenue." />
-					<link rel="canonical" href="https://harisand.co/digital-marketing-agency-in-abudhabi" />
+					<title>ROI-focused Digital Marketing Agency in Abu Dhabi | Haris&Co</title>
+					<meta name="description" content="Haris&Co. is an award-winning digital marketing agency in Abu Dhabi that considers revenue generation first, and everything else second." />
+					<link rel="canonical" href="https://harisand.co/ae/digital-marketing-agency-in-abudhabi" />
 				</Helmet>
 				<div className="container-main">
 					<div className="navbar-dg">
@@ -302,7 +303,9 @@ const AgencyAbudhabi = () => {
 							</ul>
 						</div>
 						<div className="buttons-dg comn-main">
-							<Link to='/contact' className='btn-proposal-dg'>  GET A PROPOSAL <img src={arroww} className='arrow-icon-white-btn' alt="Icon" /></Link>
+							<ScrollLink to="chatsection" smooth={true} duration={100} className='btn-proposal-dg'>
+								GET A PROPOSAL <img src={arroww} className='arrow-icon-white-btn' alt="Icon" />
+							</ScrollLink>
 						</div>
 					</div>
 				</div>
@@ -311,22 +314,18 @@ const AgencyAbudhabi = () => {
 				<div className="row">
 					<div className="col-lg-7 ">
 						<div className="home-wrapper-dg">
-							<h1 className='title-wrapper-dg'>An <span>Award-winning</span> Digital <br /> Marketing Agency in Abu Dhabi</h1>
-							<h4 className='sub-title-wrapper-dgs'>A digital marketing company that’s on the course of powering </h4>
-							<h4 className='sub-title-wrapper-dg'>up brands with the power of marketing, design and tech. </h4>
+							<h1 className='title-wrapper-dg-abu hide-mob-title'>An <span>Award-winning</span> Digital <br /> Marketing Agency in Abu Dhabi</h1>
+							<h2 className='title-wrapper-dg mob-title'>An <span>Award-winning</span> Digital  Marketing Agency in Abu Dhabi</h2>
+							<h4 className='sub-title-wrapper-dgs hide-mob-title'>A digital marketing company that’s on the course of powering </h4>
+							<h4 className='sub-title-wrapper-dg hide-mob-title'>up brands with the power of marketing, design and tech. </h4>
+							<h4 className='sub-title-wrapper-dg mob-title'>A digital marketing company that’s on the course of powering  up brands with the power of marketing, design and tech. </h4>
 							<div className="buttons-dv-dg">
 								<div className="comn-main">
-									<Link to='/contact' className='btn-proposal-dg'>GET A PROPOSAL <img src={arroww} className='arrow-icon-white-btn' alt="Icon" /></Link>
+									<ScrollLink to="chatsection" smooth={true} duration={500} className='btn-proposal-dg'>
+										GET A PROPOSAL <img src={arroww} className='arrow-icon-white-btn' alt="Icon" />
+									</ScrollLink>
 								</div>
-								<div className="comn-main">
-									<Link
-										to="#"
-										className='btn-proposal-dg-no-bg'
-										onClick={() => window.location.href = 'https://wa.me/918075040330'}
-									>
-										Consult with Us <img src={arroww} className='arrow-icon-white-btn' alt="Icon" />
-									</Link>
-								</div>
+								
 							</div>
 							<div className="services-count-dg">
 								<div className="srvc-one-dg border-dg">
@@ -338,7 +337,7 @@ const AgencyAbudhabi = () => {
 									<p className='servc-sub-text-dg'>Clients</p>
 								</div>
 								<div className="srvc-one-dg border-dg">
-									<h4 className='servc-text-dg'>1000+</h4>
+									<h4 className='servc-text-dg'>500+</h4>
 									<p className='servc-sub-text-dg'>Projects</p>
 								</div>
 								<div className="srvc-one-dg">
@@ -383,7 +382,7 @@ const AgencyAbudhabi = () => {
 										<p className='servc-sub-text-dg'>Clients</p>
 									</div>
 									<div className="srvc-one-dg-mobil-show  right-padding">
-										<h4 className='servc-text-dg'>1000+</h4>
+										<h4 className='servc-text-dg'>500+</h4>
 										<p className='servc-sub-text-dg'>Projects</p>
 									</div>
 								</div>
@@ -498,32 +497,32 @@ const AgencyAbudhabi = () => {
 								<h3 className='fame-title-dg'>The Wall of Fame</h3>
 								<p className='awards-sub-dg'>Our awards and recognitions</p>
 								<div className="awards-images-dg">
-									<Slider {...settings}>
+								<Slider {...settings}>
 										<div className="award-image-dg">
 											<img src={award1} className='award-img-pc' alt="Awards" />
-											<p className="award-subtext-dg">afaqs! Startup Brands Award - Best Use of Video on Social Media
+											<p className="award-subtext-dg">afaqs! Startup Brands Award <span className='hidemobilename'> - Best Use of Video on Social Media</span>
 											</p> {/* Subtext */}
 										</div>
 										<div className="award-image-dg">
 											<img src={award2} className='award-img-pc' alt="Awards" />
-											<p className="award-subtext-dg"> Pepper Awards - Best Single Online Video</p> {/* Subtext */}
+											<p className="award-subtext-dg"> Pepper Awards  <span className='hidemobilename'>- Best Single Online Video</span> </p> {/* Subtext */}
 										</div>
 										<div className="award-image-dg">
 											<img src={award3} className='award-img-pc' alt="Awards" />
-											<p className="award-subtext-dg">afaqs! Brand Storyz Award - Best Lead Generation Campaign</p> {/* Subtext */}
+											<p className="award-subtext-dg">afaqs! Brand Storyz Award  <span className='hidemobilename'>- Best Lead Generation Campaign</span> </p> {/* Subtext */}
 										</div>
 										<div className="award-image-dg">
 											<img src={award1} className='award-img-pc' alt="Awards" />
-											<p className="award-subtext-dg">afaqs! Startup Brands Award - Best Branded Content
+											<p className="award-subtext-dg">afaqs! Startup Brands Award   <span className='hidemobilename'> - Best Branded Content</span>
 											</p> {/* Subtext */}
 										</div>
 										<div className="award-image-dg">
 											<img src={b} className='award-img-pc' alt="Awards" />
-											<p className="award-subtext-dg">afaqs! Startup Brands Award - Best Social Media Campaign</p> {/* Subtext */}
+											<p className="award-subtext-dg">afaqs! Startup Brands Award   <span className='hidemobilename'> - Best Social Media Campaign</span></p> {/* Subtext */}
 										</div>
 										<div className="award-image-dg">
 											<img src={award3} className='award-img-pc' alt="Awards" />
-											<p className="award-subtext-dg">afaqs! Startup Brands Award - Best Moment Marketing</p> {/* Subtext */}
+											<p className="award-subtext-dg">afaqs! Startup Brands Award    <span className='hidemobilename'>  - Best Moment Marketing</span></p> {/* Subtext */}
 										</div>
 									</Slider>
 								</div>
@@ -570,8 +569,9 @@ const AgencyAbudhabi = () => {
 									</div>
 								</div>
 								<div className="comn-main">
-									<Link to='/contact' className='btn-proposal-dg'>View More <img src={arroww} className='arrow-icon-white-btn' alt="Icon" /></Link>
+									<Link to='/services' className='btn-proposal-dg'>View More <img src={arroww} className='arrow-icon-white-btn' alt="Icon" /></Link>
 								</div>
+
 							</div>
 						</div>
 					</div>
@@ -1204,7 +1204,7 @@ const AgencyAbudhabi = () => {
 				</div>
 			</div>
 			{/* chat-section */}
-			<div className="chat-section-digital">
+			<div className="chat-section-digital" id='chatsection'>
 				<div className="container-main">
 					<div className="row">
 						<div className="col-lg-6">
@@ -1217,21 +1217,22 @@ const AgencyAbudhabi = () => {
 											<img src={p} className='half-icon-imge' alt="" />
 											<div className="brdr-chat">
 												<p className='chat-section-item'>For More Enquires</p>
-												<Link className='atag-link'>+91 8075 040 330</Link>
+												<Link className='atag-link'>+971 55 490 8107</Link>
 											</div>
 										</div>
 										<div className="half-address-svg">
 											<img src={m} className='half-icon-imge' alt="" />
 											<div className="brdr-chat">
 												<p className='chat-section-item'>Email Us At</p>
-												<Link className='atag-link'>bd@harisand.co</Link>
+												<Link className='atag-link'>haris@harisand.co</Link>
 											</div>
 										</div>
 									</div>
 									<div className="full-contents-dg">
-										<img src={l} className='half-icon-imge' alt="" />
+										<img src={l} className='half-icon-imge rttt' alt="" />
 										<div className="brdr-chat">
-											<p className='chat-section-item'>2nd floor, 4 WING Avenue ,Panniyankara, 673003  Kozhikode, Kerala</p>
+											<p className='chat-section-item'>Abdulla Kamber Business Center, Room No 103, First Floor,  Abu Baker Al Siddique St, Deira - Dubai
+											</p>
 										</div>
 									</div>
 								</div>
@@ -1251,7 +1252,7 @@ const AgencyAbudhabi = () => {
 											</div>
 										</div>
 										<div className="col-lg-6">
-											<div class="form-group">
+											<div class="form-group">	
 												<label for="exampleInputEmail1">Company/Organization*</label>
 												<input type="text" name='Company/Organization*' class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required />
 											</div>
@@ -1278,10 +1279,10 @@ const AgencyAbudhabi = () => {
 											<div className="buttons-social-media comn-main flx-spabtw">
 												<button class="btn-proposal-dg btn font-noraml" type="submit"> Submit Now <img src={arroww} className='arrow-icon-white-btn' alt="" /></button>
 												<div className="icons-social-media-dg">
-													<Link to='https://www.facebook.com/harisandconsulting'>	<img src={facebook} className='icones-social-media-dg-img' alt="" /></Link>
-													<Link to='https://www.instagram.com/harisand.co/?hl=en'><img src={instagram} className='icones-social-media-dg-img' alt="" /></Link>
-													<Link to='https://x.com/harisand_co'><img src={twitter} className='icones-social-media-dg-img' alt="" /></Link>
-													<Link to='https://www.linkedin.com/company/harisand-co/mycompany/verification/'><img src={linkedin} className='icones-social-media-dg-img right-no' alt="" /></Link>
+												<Link to='https://www.linkedin.com/company/harisand-co/mycompany/verification/'>	<img src={facebook} className='icones-social-media-dg-img' alt="" /></Link>
+													<Link to='https://www.facebook.com/harisandconsulting'> <img src={instagram} className='icones-social-media-dg-img' alt="" />  </Link>
+													<Link to='https://www.instagram.com/harisand.co/?hl=en'><img src={twitter} className='icones-social-media-dg-img' alt="" />  </Link>
+													<Link to='https://x.com/harisand_co'><img src={linkedin} className='icones-social-media-dg-img right-no' alt="" /></Link>
 												</div>
 											</div>
 										</div>
@@ -1294,7 +1295,7 @@ const AgencyAbudhabi = () => {
 			</div>
 			{/* map section  */}
 			<div className="map-section-dg-main">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3913.4842961959225!2d75.78925767424488!3d11.22574075074702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba6592e5bc6ffbb%3A0xbd15f0508abb882b!2sHaris%26Co!5e0!3m2!1sen!2sin!4v1727755974041!5m2!1sen!2sin" width="100" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14431.96499292783!2d55.31342625617982!3d25.270879844095365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5daecba2846d%3A0xbe655d3f8333934!2sHARIS%26CO.%20ACADEMY%20DUBAI!5e0!3m2!1sen!2sin!4v1729926197228!5m2!1sen!2sin" width="100" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 			</div>
 			{/* faq secton  */}
 			<div className="faq-section-dg">
@@ -1387,7 +1388,7 @@ const AgencyAbudhabi = () => {
 										<Accordion.Header> Is Digital Marketing in demand in Abu Dhabi?
 										</Accordion.Header>
 										<Accordion.Body>
-										Indeed, Digital Marketing is highly sought-after in Abu Dhabi due to the increased number of internet users, social media and search engines. Here are some statistics from DataReportal that show the significance of Digital Marketing in Abu Dhabi: 
+											Indeed, Digital Marketing is highly sought-after in Abu Dhabi due to the increased number of internet users, social media and search engines. Here are some statistics from DataReportal that show the significance of Digital Marketing in Abu Dhabi:
 											<ul>
 												<li>9.5 million individuals use the internet in the UAE												</li>
 												<li>96% of internet users own a smartphone</li>
@@ -1408,7 +1409,7 @@ const AgencyAbudhabi = () => {
 
 										</Accordion.Header>
 										<Accordion.Body>
-										The digital landscape of Abu Dhabi is thriving with 9.5 million internet users. With many companies already investing in Digital Marketing, it’s a must to pay for Digital Marketing in Abu Dhabi to stay ahead of the competition. 
+											The digital landscape of Abu Dhabi is thriving with 9.5 million internet users. With many companies already investing in Digital Marketing, it’s a must to pay for Digital Marketing in Abu Dhabi to stay ahead of the competition.
 										</Accordion.Body>
 									</Accordion.Item>
 
@@ -1416,7 +1417,7 @@ const AgencyAbudhabi = () => {
 										<Accordion.Header>   Is it worth hiring a Digital Marketing agency in Abu Dhabi?
 										</Accordion.Header>
 										<Accordion.Body>
-										Yes! To get the best out of your Digital Marketing efforts, you need strategies backed by data and proper market study. And for that, you need experts. When you hire a Digital Marketing agency like Haris&Co., you get a team that has proven experience and expertise in the field.	</Accordion.Body>
+											Yes! To get the best out of your Digital Marketing efforts, you need strategies backed by data and proper market study. And for that, you need experts. When you hire a Digital Marketing agency like Haris&Co., you get a team that has proven experience and expertise in the field.	</Accordion.Body>
 									</Accordion.Item>
 
 								</Accordion>
@@ -1558,17 +1559,18 @@ const AgencyAbudhabi = () => {
 								<ul className='footer-icondnd'>
 									<li><Link to='/'>
 										<img src={callfooter} className='footer-item-box-img-icon-dg' alt="Icons" />
-										+91 8075 040 330</Link>
+										+971 55 490 8107
+									</Link>
 									</li>
 
 									<li><Link to='/'>
 										<img src={emailfooter} className='footer-item-box-img-icon-dg' alt="Icons" />
-										bd@harisand.co</Link>
+										haris@harisand.co
+									</Link>
 									</li>
-
-									<li><Link to='/'>
+									<li><Link to='/' className='flex-linkk'>
 										<img src={locationf} className='footer-item-box-img-icon-dg' alt="Icons" />
-										2nd floor, 4 WING Avenue ,Panniyankara, 673003 Kozhikode, Kerala</Link>
+										Abdulla Kamber Business Center, Room No 103, First Floor,  Abu Baker Al Siddique St, Deira - Dubai</Link>
 									</li>
 								</ul>
 							</div>
