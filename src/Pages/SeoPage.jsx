@@ -971,43 +971,52 @@ const SeoPage = () => {
 			<div className="footer-main-dg-page">
 				<div className="container-main">
 					<div className="row">
-						<div className="col-lg-3">
+						<div className="col-lg-2">
 							<div className="footer-box-dg-main">
 								<img src={footerlogo} className='footer-logo-img-dg' alt="Logo Footer" />
 								<img src={google} className='google-logo' alt="Icons" />
 								<div className="icons-social-media-dg-footer">
-									<img src={instagram} className='icones-social-media-dg-imgs' alt="Icons" />
-									<img src={twitter} className='icones-social-media-dg-imgs' alt="Icons" />
-									<img src={facebook} className='icones-social-media-dg-imgs' alt="Icons" />
-									<img src={linkedin} className='icones-social-media-dg-imgs right-no' alt="Icons" />
+								<Link to='https://www.linkedin.com/company/harisand-co/mycompany/verification/'>	<img src={facebook} className='icones-social-media-dg-img' alt="" /></Link>
+													<Link to='https://www.facebook.com/harisandconsulting'> <img src={instagram} className='icones-social-media-dg-img' alt="" />  </Link>
+													<Link to='https://www.instagram.com/harisand.co/?hl=en'><img src={twitter} className='icones-social-media-dg-img' alt="" />  </Link>
+													<Link to='https://x.com/harisand_co'><img src={linkedin} className='icones-social-media-dg-img right-no' alt="" /></Link>
 								</div>
 							</div>
 						</div>
-						<div className="col-lg-3">
+						<div className="col-lg-2">
 							<div className="footer-box-dg-main">
 								<h3 className='text-menu-item-footer'>Menu</h3>
 								<ul>
 									<li><Link to='/'>Home</Link></li>
-									<li><Link to='/'>Services</Link></li>
-									<li><Link to='/'>Culture</Link></li>
-									<li><Link to='/'>Case Studies</Link></li>
-									<li><Link to='/'>Contacts</Link></li>
+									<li><Link to='/services'>Services</Link></li>
+									<li><Link to='/career'>Career</Link></li>
+									<li><Link to='/works'>Case Studies</Link></li>
+									<li><Link to='/contact'>Contacts</Link></li>
+								</ul>
+							</div>
+						</div>
+						<div className="col-lg-2">
+							<div className="footer-box-dg-main">
+								<h3 className='text-menu-item-footer'>Important Links</h3>
+								<ul>
+									<li><Link to='/digital-marketing-agency-in-kerala'>Digital Marketing</Link></li>
+									<li><Link to='/seo-company-in-kerala'>SEO</Link></li>
+									<li><Link to='/perfomance'>Lead Generation</Link></li>
+									<li><Link to='/socialmedia'>Social Media</Link></li>
 								</ul>
 							</div>
 						</div>
 						<div className="col-lg-3">
 							<div className="footer-box-dg-main">
-								<h3 className='text-menu-item-footer'>Important Links</h3>
+								<h3 className='text-menu-item-footer'>Locations We Served</h3>
 								<ul>
-									<li><Link to='/'>Case Studies</Link></li>
-									<li><Link to='/'>SEO</Link></li>
-									<li><Link to='/'>E-commerce Marketing</Link></li>
-									<li><Link to='/'>Lead Generation</Link></li>
-									<li><Link to='/'>Social Media Marketing</Link></li>
+									<li><Link to='/seo-company-in-kerala'>SEO Company in Kerala</Link></li>
+									<li><Link to='/ae/seo-company-in-dubai'>SEO Company in Dubai</Link></li>
+									<li><Link to='/ae/seo-company-in-sharjah'>SEO Company in Sharjah</Link></li>
+									<li><Link to='/ae/seo-company-in-abudhabi'>SEO Company in Abu Dhabi</Link></li>
 								</ul>
 							</div>
 						</div>
-
 						<div className="col-lg-3">
 							<div className="footer-box-dg-main flx-link">
 								<h3 className='text-menu-item-footer'>Get In Touch</h3>
@@ -1034,10 +1043,11 @@ const SeoPage = () => {
 							<div className="footer-main-copy-right">
 								<img src={google} className='google-logo hide-footer-mob topmargin' alt="" />
 								<div className="icons-social-media-dg-footer hide-footer-mob">
-									<img src={instagram} className='icones-social-media-dg-imgs' alt="Icons" />
-									<img src={twitter} className='icones-social-media-dg-imgs' alt="Icons" />
-									<img src={facebook} className='icones-social-media-dg-imgs' alt="Icons" />
-									<img src={linkedin} className='icones-social-media-dg-imgs right-no' alt="Icons" />
+									<Link to='https://www.linkedin.com/company/harisand-co/mycompany/verification/'>	<img src={facebook} className='icones-social-media-dg-img' alt="" /></Link>
+									<Link to='https://www.facebook.com/harisandconsulting'> <img src={instagram} className='icones-social-media-dg-img' alt="" />  </Link>
+									<Link to='https://www.instagram.com/harisand.co/?hl=en'><img src={twitter} className='icones-social-media-dg-img' alt="" />  </Link>
+									<Link to='https://x.com/harisand_co'><img src={linkedin} className='icones-social-media-dg-img right-no' alt="" /></Link>
+
 								</div>
 								<p className='text-copy-dg'>Copyrights © 2024 by Team Haris&Co.</p>
 							</div>

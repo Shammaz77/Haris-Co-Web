@@ -55,13 +55,13 @@ const Router = () => {
         <Route path="contact" element={<Contact />} />
       </Route>
       <Route path="digital-marketing-agency-in-kerala" element={<DigitalMarketing />} />
-      <Route path="digital-marketing-agency-in-dubai" element={<AgencyDubai />} />
-      <Route path="digital-marketing-agency-in-sharjah" element={<AgencySharjah />} />
-      <Route path="digital-marketing-agency-in-abudhabi" element={<AgencyAbudhabi />} />
+      <Route path="/ae/digital-marketing-agency-in-dubai" element={<AgencyDubai />} />
+      <Route path="/ae/digital-marketing-agency-in-sharjah" element={<AgencySharjah />} />
+      <Route path="/ae/digital-marketing-agency-in-abudhabi" element={<AgencyAbudhabi />} />
       <Route path="seo-company-in-kerala" element={<SeoPage />} />
-      <Route path="seo-company-in-dubai" element={<SeoDubai />} />
-      <Route path="seo-company-in-abudhabi" element={<SeoAbudhabi />} />
-      <Route path="seo-company-in-sharjah" element={<SeoSharjah />} />
+      <Route path="/ae/seo-company-in-dubai" element={<SeoDubai />} />
+      <Route path="/ae/seo-company-in-abudhabi" element={<SeoAbudhabi />} />
+      <Route path="/ae/seo-company-in-sharjah" element={<SeoSharjah />} />
 			
     </Routes>
   );

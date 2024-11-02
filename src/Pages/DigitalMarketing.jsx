@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom';
 import { Link as ScrollLink } from 'react-scroll';
 import { CSSTransition } from 'react-transition-group';
 import logo from '../Assets/navlogo.png'
-import founder from '../Assets/DigitalMarketing/copy.png'
 import clients from '../Assets/DigitalMarketing/Clients.svg'
 import clients2 from '../Assets/DigitalMarketing/clients-pending.svg'
 import amna from '../Assets/DigitalMarketing/amna.png'
@@ -20,14 +19,14 @@ import logo2 from '../Assets/DigitalMarketing/logo2.png'
 import logo3 from '../Assets/DigitalMarketing/logo3.png'
 import logo4 from '../Assets/DigitalMarketing/logo4.png'
 import logo5 from '../Assets/DigitalMarketing/logo5.png'
-import o1 from '../Assets/DigitalMarketing/1.png'
+import o1 from '../Assets/DigitalMarketing/1.webp'
 import arrowhover from '../Assets/DigitalMarketing/arrow.svg'
 import case1 from '../Assets/DigitalMarketing/case1.png'
 import case2 from '../Assets/DigitalMarketing/case2.png'
 import case3 from '../Assets/DigitalMarketing/case3.png'
 import clock from '../Assets/DigitalMarketing/clock.png'
 import review from '../Assets/DigitalMarketing/rev.png'
-import userimg from '../Assets/DigitalMarketing/user.png'
+import userimg from '../Assets/DigitalMarketing/skillbuss.svg'
 import call from '../Assets/DigitalMarketing/Call.svg'
 import Email from '../Assets/DigitalMarketing/Email.svg'
 import Address from '../Assets/DigitalMarketing/Address.svg'
@@ -49,9 +48,9 @@ import team2 from '../Assets/DigitalMarketing/pt.webp'
 import team3 from '../Assets/DigitalMarketing/socialt.webp'
 import team4 from '../Assets/DigitalMarketing/webt.webp'
 import team5 from '../Assets/DigitalMarketing/bt.webp'
-import s1 from '../Assets/DigitalMarketing/seoc.webp'
-import s2 from '../Assets/DigitalMarketing/seoc2.webp'
-import s3 from '../Assets/DigitalMarketing/seoc3.webp'
+import s1 from '../Assets/DigitalMarketing/SeoPage/kairali new case 1.svg'
+import s2 from '../Assets/DigitalMarketing/SeoPage/seo casestudy bosq 1.svg'
+import s3 from '../Assets/DigitalMarketing/SeoPage/seo casestudy skinbae 1.svg'
 import p1 from '../Assets/DigitalMarketing/p1.webp'
 import p2 from '../Assets/DigitalMarketing/p2.webp'
 import p3 from '../Assets/DigitalMarketing/p3.webp'
@@ -67,8 +66,9 @@ import cr3 from '../Assets/DigitalMarketing/cr3.webp'
 import w1 from '../Assets/DigitalMarketing/w1.webp'
 import w2 from '../Assets/DigitalMarketing/w2.webp'
 import w3 from '../Assets/DigitalMarketing/w3.webp'
-import aw3 from '../Assets/DigitalMarketing/aw3.webp'
-import aw2 from '../Assets/DigitalMarketing/aw2.webp'
+import aw3 from '../Assets/DigitalMarketing/sl.webp'
+import aw2 from '../Assets/DigitalMarketing/sll.webp'
+import founder from '../Assets/DigitalMarketing/hh.webp'
 import arroww from '../Assets/DigitalMarketing/arroww.svg'
 import cl1 from '../Assets/DigitalMarketing/mobile-clients.svg'
 import cl2 from '../Assets/DigitalMarketing/mobile-clients2.svg'
@@ -90,11 +90,11 @@ import { Container } from 'react-bootstrap';
 import Accordion from 'react-bootstrap/Accordion';
 
 const DigitalMarketing = () => {
-  const [isSecondImageVisible, setIsSecondImageVisible] = useState(false);
+	const [isSecondImageVisible, setIsSecondImageVisible] = useState(false);
 
-  const toggleImageVisibility = () => {
-    setIsSecondImageVisible(prevState => !prevState);
-  };
+	const toggleImageVisibility = () => {
+		setIsSecondImageVisible(prevState => !prevState);
+	};
 
 
 
@@ -167,6 +167,7 @@ const DigitalMarketing = () => {
 		className: "center",
 		centerMode: true,
 		autoplay: true,
+		dots: true,
 		autoplaySpeed: 1000,
 		infinite: true,
 		centerPadding: "30%",
@@ -177,6 +178,7 @@ const DigitalMarketing = () => {
 				breakpoint: 768,
 				settings: {
 					centerPadding: "15%",
+					pauseOnHover: true,
 				},
 			},
 		],
@@ -227,7 +229,7 @@ const DigitalMarketing = () => {
 			userimg: s,
 		},
 		{
-			title: 'This is great ! ',
+			title: ' ',
 			subtitle: 'The professionalism, attention to detail, and the quality of service you have demonstrated have been instrumental in our success. It is a pleasure to work with this team that consistently goes above and beyond expectations,Thank you the exceptional work. We look forward to continuing our partnership and achieving even better results.',
 			username: 'Kevin Mohan',
 			userdesignation: 'Marketing Head of Katara limousine',
@@ -330,7 +332,7 @@ const DigitalMarketing = () => {
 										GET A PROPOSAL <img src={arroww} className='arrow-icon-white-btn' alt="Icon" />
 									</ScrollLink>
 								</div>
-							
+
 							</div>
 							<div className="services-count-dg">
 								<div className="srvc-one-dg border-dg">
@@ -1472,39 +1474,49 @@ const DigitalMarketing = () => {
 			<div className="footer-main-dg-page">
 				<div className="container-main">
 					<div className="row">
-						<div className="col-lg-3">
+						<div className="col-lg-2">
 							<div className="footer-box-dg-main">
 								<img src={footerlogo} className='footer-logo-img-dg' alt="Logo Footer" />
 								<img src={google} className='google-logo' alt="Icons" />
 								<div className="icons-social-media-dg-footer">
-									<img src={instagram} className='icones-social-media-dg-imgs' alt="Icons" />
-									<img src={twitter} className='icones-social-media-dg-imgs' alt="Icons" />
-									<img src={facebook} className='icones-social-media-dg-imgs' alt="Icons" />
-									<img src={linkedin} className='icones-social-media-dg-imgs right-no' alt="Icons" />
+								<Link to='https://www.linkedin.com/company/harisand-co/mycompany/verification/'>	<img src={facebook} className='icones-social-media-dg-img' alt="" /></Link>
+													<Link to='https://www.facebook.com/harisandconsulting'> <img src={instagram} className='icones-social-media-dg-img' alt="" />  </Link>
+													<Link to='https://www.instagram.com/harisand.co/?hl=en'><img src={twitter} className='icones-social-media-dg-img' alt="" />  </Link>
+													<Link to='https://x.com/harisand_co'><img src={linkedin} className='icones-social-media-dg-img right-no' alt="" /></Link>
 								</div>
 							</div>
 						</div>
-						<div className="col-lg-3">
+						<div className="col-lg-2">
 							<div className="footer-box-dg-main">
 								<h3 className='text-menu-item-footer'>Menu</h3>
 								<ul>
 									<li><Link to='/'>Home</Link></li>
-									<li><Link to='/'>Services</Link></li>
-									<li><Link to='/'>Culture</Link></li>
-									<li><Link to='/'>Case Studies</Link></li>
-									<li><Link to='/'>Contacts</Link></li>
+									<li><Link to='/services'>Services</Link></li>
+									<li><Link to='/career'>Career</Link></li>
+									<li><Link to='/works'>Case Studies</Link></li>
+									<li><Link to='/contact'>Contacts</Link></li>
+								</ul>
+							</div>
+						</div>
+						<div className="col-lg-2">
+							<div className="footer-box-dg-main">
+								<h3 className='text-menu-item-footer'>Important Links</h3>
+								<ul>
+									<li><Link to='/digital-marketing-agency-in-kerala'>Digital Marketing</Link></li>
+									<li><Link to='/seo-company-in-kerala'>SEO</Link></li>
+									<li><Link to='/perfomance'>Lead Generation</Link></li>
+									<li><Link to='/socialmedia'>Social Media</Link></li>
 								</ul>
 							</div>
 						</div>
 						<div className="col-lg-3">
 							<div className="footer-box-dg-main">
-								<h3 className='text-menu-item-footer'>Important Links</h3>
+								<h3 className='text-menu-item-footer'>Locations We Served</h3>
 								<ul>
-									<li><Link to='/'>Case Studies</Link></li>
-									<li><Link to='/'>SEO</Link></li>
-									<li><Link to='/'>E-commerce Marketing</Link></li>
-									<li><Link to='/'>Lead Generation</Link></li>
-									<li><Link to='/'>Social Media Marketing</Link></li>
+									<li><Link to='/digital-marketing-agency-in-dubai'>Digital Marketing Agency in Dubai</Link></li>
+									<li><Link to='/digital-marketing-agency-in-sharjah'>Digital Marketing Agency in Sharjah</Link></li>
+									<li><Link to='/digital-marketing-agency-in-abudhabi'>Digital Marketing Agency in Abu Dhabi</Link></li>
+									<li><Link to='/digital-marketing-agency-in-kerala'>Digital Marketing Agency in Kerala</Link></li>
 								</ul>
 							</div>
 						</div>
@@ -1514,18 +1526,18 @@ const DigitalMarketing = () => {
 								<ul className='footer-icondnd'>
 									<li><Link to='/'>
 										<img src={callfooter} className='footer-item-box-img-icon-dg' alt="Icons" />
-										+971 55 490 8107
+										+91 8075 040 330
 									</Link>
 									</li>
 
 									<li><Link to='/'>
 										<img src={emailfooter} className='footer-item-box-img-icon-dg' alt="Icons" />
-										haris@harisand.co
+										bd@harisand.co
 									</Link>
 									</li>
 									<li><Link to='/' className='flex-linkk'>
 										<img src={locationf} className='footer-item-box-img-icon-dg' alt="Icons" />
-										Abdulla Kamber Business Center, Room No 103, First Floor,  Abu Baker Al Siddique St, Deira - Dubai</Link>
+										2nd floor, 4 WING Avenue ,Panniyankara, 673003 Kozhikode, Kerala</Link>
 									</li>
 								</ul>
 							</div>
@@ -1534,10 +1546,11 @@ const DigitalMarketing = () => {
 							<div className="footer-main-copy-right">
 								<img src={google} className='google-logo hide-footer-mob topmargin' alt="" />
 								<div className="icons-social-media-dg-footer hide-footer-mob">
-									<img src={instagram} className='icones-social-media-dg-imgs' alt="Icons" />
-									<img src={twitter} className='icones-social-media-dg-imgs' alt="Icons" />
-									<img src={facebook} className='icones-social-media-dg-imgs' alt="Icons" />
-									<img src={linkedin} className='icones-social-media-dg-imgs right-no' alt="Icons" />
+									<Link to='https://www.linkedin.com/company/harisand-co/mycompany/verification/'>	<img src={facebook} className='icones-social-media-dg-img' alt="" /></Link>
+									<Link to='https://www.facebook.com/harisandconsulting'> <img src={instagram} className='icones-social-media-dg-img' alt="" />  </Link>
+									<Link to='https://www.instagram.com/harisand.co/?hl=en'><img src={twitter} className='icones-social-media-dg-img' alt="" />  </Link>
+									<Link to='https://x.com/harisand_co'><img src={linkedin} className='icones-social-media-dg-img right-no' alt="" /></Link>
+
 								</div>
 								<p className='text-copy-dg'>Copyrights © 2024 by Team Haris&Co.</p>
 							</div>

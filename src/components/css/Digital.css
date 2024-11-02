@@ -77,9 +77,15 @@
 }
 .navbar-full-dg{
 	border-bottom: 1px solid #454545;
+	position: fixed;
+	background-color: black;
+	top: 0;
+	width: 100%;
+	z-index: 100;
 }
+
 .home-wrapper-section-dg{
-	padding-top: 9%;	
+	padding-top: 17%;	
 }
 .title-wrapper-dg{
 	color: #fff;
@@ -633,12 +639,16 @@
 	padding: 60px 0px;
 	margin-top: 60px;
 	margin-bottom: 60px;
+	min-height: 419px;
 	box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 .clients-sub-text-dg{
 	font-size: 15px;
 	font-family: PoppinsRegular;
 	padding-bottom: 10px;
+}
+.icons-social-media-dg-footer a{
+	text-decoration: none !important;
 }
 .review-icon-dg{
 	width: 170px;
@@ -766,8 +776,8 @@
 	padding-bottom: 10px;
 }
 .icones-social-media-dg-img{
-	width: 25px;
-	height: 25px;
+	width: 23px;
+	height: 23px;
 	margin-right: 35px;
 }
 .hide-desktop{
@@ -861,7 +871,9 @@
 	padding-bottom: 16	px;
 }
 .footer-item-box-img-icon-dg{
-	padding-right: 25px;
+	margin-right: 21px;
+	width: 18px !important;
+	height: 18px !important;
 }
 .flx-link ul li{
 	display: flex;
@@ -996,7 +1008,11 @@
 .mob-title{
 	display: none;
 }
-
+.footer-main-dg-page .icones-social-media-dg-img{
+	margin-right: 15px !important;
+	width: 18px !important;
+	height: 18px !important;
+}
 
 
 
@@ -1076,7 +1092,9 @@
 		text-align: center;
 	}
 	.what-we-do-mobile-slider .row{
-		background-color: #151515;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-image: url('../../Assets/DigitalMarketing/gridmobile.svg');
 		border-radius: 30px;
 		padding: 40px 0px;
 	}
@@ -1314,6 +1332,9 @@
 		padding-top: 40px;
 		font-size: 33px;
 		padding-bottom: 30px;
+	}
+	.clients-reviews {
+    min-height: 765px;
 	}
 	.items-what-we-do-main p{
 		font-size: 17px;

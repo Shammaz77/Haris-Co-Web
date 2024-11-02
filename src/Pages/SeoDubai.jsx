@@ -48,11 +48,14 @@ import cl6 from '../Assets/DigitalMarketing/SeoPage/seo6.svg'
 import cl7 from '../Assets/DigitalMarketing/SeoPage/seo7.svg'
 import p from '../Assets/DigitalMarketing/p.png'
 import l from '../Assets/DigitalMarketing/l.png'
+import { Link as ScrollLink } from 'react-scroll';
 import k from '../Assets/DigitalMarketing/kevin.png'
 import m from '../Assets/DigitalMarketing/m.png'
 import hero from '../Assets/SeoCompony/hero-image.png'
 import seoteam from '../Assets/SeoCompony/SeoTeam.png'
 import believeimg from '../Assets/DigitalMarketing/SeoPage/beieve.svg'
+import seoreview from '../Assets/DigitalMarketing/seo-review.svg'
+
 
 import { Container } from 'react-bootstrap';
 
@@ -259,8 +262,9 @@ const SeoDubai = () => {
 							</ul>
 						</div>
 						<div className="buttons-dg comn-main">
-							<Link to='/contact' className='btn-proposal-dg'>  GET A PROPOSAL <img src={arroww} className='arrow-icon-white-btn' alt="Icon" /></Link>
-						</div>
+						<ScrollLink to="chatsection" smooth={true} duration={100} className='btn-proposal-dg'>
+								GET A PROPOSAL <img src={arroww} className='arrow-icon-white-btn' alt="Icon" />
+							</ScrollLink>								</div>
 					</div>
 				</div>
 			</div>
@@ -274,8 +278,9 @@ const SeoDubai = () => {
 							</h4>
 							<div className="buttons-dv-seo">
 								<div className="comn-main">
-									<Link to='/contact' className='btn-proposal-dg'>GET A PROPOSAL <img src={arroww} className='arrow-icon-white-btn' alt="Icon" /></Link>
-								</div>
+								<ScrollLink to="chatsection" smooth={true} duration={100} className='btn-proposal-dg'>
+								GET A PROPOSAL <img src={arroww} className='arrow-icon-white-btn' alt="Icon" />
+							</ScrollLink>										</div>
 								<div className="comn-main">
 									<Link to='/contact' className='btn-proposal-dg-no-bg'>View Our Results<img src={arroww} className='arrow-icon-white-btn' alt="Icon" /></Link>
 								</div>
@@ -680,7 +685,7 @@ const SeoDubai = () => {
 								<div className="clients-reviews-box-dg">
 									<h3 className='clients-text-dg'>Client Reviews</h3>
 									<p className='clients-sub-text-dg'>Here is what our clients have to say about our service</p>
-									<img src={review} className='review-icon-dg' alt="" />
+									<img src={seoreview} className='review-icon-dg' alt="" />
 								</div>
 							</div>
 							<div className="col-lg-7">
@@ -703,7 +708,7 @@ const SeoDubai = () => {
 				</div>
 			</div>
 			{/* chat-section */}
-			<div className="chat-section-digital">
+			<div className="chat-section-digital" id='chatsection'>
 				<div className="container-main">
 					<div className="row">
 						<div className="col-lg-6">
@@ -780,7 +785,7 @@ const SeoDubai = () => {
 												<div className="icons-social-media-dg">
 													<Link to='https://www.linkedin.com/company/harisand-co/mycompany/verification/'>	<img src={facebook} className='icones-social-media-dg-img' alt="" /></Link>
 													<Link to='https://www.facebook.com/harisandconsulting'> <img src={instagram} className='icones-social-media-dg-img' alt="" />  </Link>
-													<Link to='https://www.instagram.com/harisand.co/?hl=en'><img src={twitter} className='icones-social-media-dg-img' alt="" />  </Link>
+													<Link to='https://www.instagram.com/harisandco.ae/?hl=en'><img src={twitter} className='icones-social-media-dg-img' alt="" />  </Link>
 													<Link to='https://x.com/harisand_co'><img src={linkedin} className='icones-social-media-dg-img right-no' alt="" /></Link>
 												</div>
 											</div>
@@ -979,61 +984,71 @@ const SeoDubai = () => {
 			<div className="footer-main-dg-page">
 				<div className="container-main">
 					<div className="row">
-						<div className="col-lg-3">
+						<div className="col-lg-2">
 							<div className="footer-box-dg-main">
 								<img src={footerlogo} className='footer-logo-img-dg' alt="Logo Footer" />
 								<img src={google} className='google-logo' alt="Icons" />
 								<div className="icons-social-media-dg-footer">
-									<img src={instagram} className='icones-social-media-dg-imgs' alt="Icons" />
-									<img src={twitter} className='icones-social-media-dg-imgs' alt="Icons" />
-									<img src={facebook} className='icones-social-media-dg-imgs' alt="Icons" />
-									<img src={linkedin} className='icones-social-media-dg-imgs right-no' alt="Icons" />
+								<Link to='https://www.linkedin.com/company/harisand-co/mycompany/verification/'>	<img src={facebook} className='icones-social-media-dg-img' alt="" /></Link>
+								<Link to='https://www.facebook.com/harisandconsulting'> <img src={instagram} className='icones-social-media-dg-img' alt="" />  </Link>
+								<Link to='https://www.instagram.com/harisand.co/?hl=en'><img src={twitter} className='icones-social-media-dg-img' alt="" />  </Link>
+								<Link to='https://x.com/harisand_co'><img src={linkedin} className='icones-social-media-dg-img right-no' alt="" /></Link>
 								</div>
 							</div>
 						</div>
-						<div className="col-lg-3">
+						<div className="col-lg-2">
 							<div className="footer-box-dg-main">
 								<h3 className='text-menu-item-footer'>Menu</h3>
 								<ul>
 									<li><Link to='/'>Home</Link></li>
-									<li><Link to='/'>Services</Link></li>
-									<li><Link to='/'>Culture</Link></li>
-									<li><Link to='/'>Case Studies</Link></li>
-									<li><Link to='/'>Contacts</Link></li>
+									<li><Link to='/services'>Services</Link></li>
+									<li><Link to='/career'>Career</Link></li>
+									<li><Link to='/works'>Case Studies</Link></li>
+									<li><Link to='/contact'>Contacts</Link></li>
+								</ul>
+							</div>
+						</div>
+						<div className="col-lg-2">
+							<div className="footer-box-dg-main">
+								<h3 className='text-menu-item-footer'>Important Links</h3>
+								<ul>
+									<li><Link to='/ae/digital-marketing-agency-in-dubai'>Digital Marketing</Link></li>
+									<li><Link to='/ae/seo-company-in-dubai'>SEO</Link></li>
+									<li><Link to='/perfomance'>Lead Generation</Link></li>
+									<li><Link to='/socialmedia'>Social Media</Link></li>
 								</ul>
 							</div>
 						</div>
 						<div className="col-lg-3">
 							<div className="footer-box-dg-main">
-								<h3 className='text-menu-item-footer'>Important Links</h3>
+								<h3 className='text-menu-item-footer'>Locations We Served</h3>
 								<ul>
-									<li><Link to='/'>Case Studies</Link></li>
-									<li><Link to='/'>SEO</Link></li>
-									<li><Link to='/'>E-commerce Marketing</Link></li>
-									<li><Link to='/'>Lead Generation</Link></li>
-									<li><Link to='/'>Social Media Marketing</Link></li>
+									<li><Link to='/seo-company-in-kerala'>SEO Company in Kerala</Link></li>
+									<li><Link to='/ae/seo-company-in-dubai'>SEO Company in Dubai</Link></li>
+									<li><Link to='/ae/seo-company-in-sharjah'>SEO Company in Sharjah</Link></li>
+									<li><Link to='/ae/seo-company-in-abudhabi'>SEO Company in Abu Dhabi</Link></li>
 								</ul>
 							</div>
 						</div>
-
 						<div className="col-lg-3">
 							<div className="footer-box-dg-main flx-link">
 								<h3 className='text-menu-item-footer'>Get In Touch</h3>
 								<ul className='footer-icondnd'>
 									<li><Link to='/'>
 										<img src={callfooter} className='footer-item-box-img-icon-dg' alt="Icons" />
-										+91 8075 040 330
+										+971 55 490 8107
 									</Link>
 									</li>
 
 									<li><Link to='/'>
 										<img src={emailfooter} className='footer-item-box-img-icon-dg' alt="Icons" />
-										bd@harisand.co
+										<Link className='atag-link'>haris@harisand.co</Link>
+
 									</Link>
 									</li>
 									<li><Link to='/' className='flex-linkk'>
 										<img src={locationf} className='footer-item-box-img-icon-dg' alt="Icons" />
-										2nd floor, 4 WING Avenue ,Panniyankara, 673003 Kozhikode, Kerala</Link>
+										Abdulla Kamber Business Center, Room No 103, First Floor,  Abu Baker Al Siddique St, Deira - Dubai</Link>
 									</li>
 								</ul>
 							</div>
@@ -1042,10 +1057,11 @@ const SeoDubai = () => {
 							<div className="footer-main-copy-right">
 								<img src={google} className='google-logo hide-footer-mob topmargin' alt="" />
 								<div className="icons-social-media-dg-footer hide-footer-mob">
-									<img src={instagram} className='icones-social-media-dg-imgs' alt="Icons" />
-									<img src={twitter} className='icones-social-media-dg-imgs' alt="Icons" />
-									<img src={facebook} className='icones-social-media-dg-imgs' alt="Icons" />
-									<img src={linkedin} className='icones-social-media-dg-imgs right-no' alt="Icons" />
+									<Link to='https://www.linkedin.com/company/harisand-co/mycompany/verification/'>	<img src={facebook} className='icones-social-media-dg-img' alt="" /></Link>
+									<Link to='https://www.facebook.com/harisandconsulting'> <img src={instagram} className='icones-social-media-dg-img' alt="" />  </Link>
+									<Link to='https://www.instagram.com/harisand.co/?hl=en'><img src={twitter} className='icones-social-media-dg-img' alt="" />  </Link>
+									<Link to='https://x.com/harisand_co'><img src={linkedin} className='icones-social-media-dg-img right-no' alt="" /></Link>
+
 								</div>
 								<p className='text-copy-dg'>Copyrights © 2024 by Team Haris&Co.</p>
 							</div>
