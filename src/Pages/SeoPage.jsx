@@ -1,35 +1,26 @@
 import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import '../components/css/Digital.css';
-import '../components/css/Seo.css';
+import '../components/css/Seo.css';	
 import { Link } from 'react-router-dom';
 import logo from '../Assets/navlogo.png'
 import founder from '../Assets/DigitalMarketing/founderhero.png'
-import clients from '../Assets/DigitalMarketing/Clients.svg'
-import clients2 from '../Assets/DigitalMarketing/clients-pending.svg'
-import amna from '../Assets/DigitalMarketing/amna.png'
+import clients from '../Assets/DigitalMarketing/SeoPage/clientsseo1.svg'
+import clients2 from '../Assets/DigitalMarketing/SeoPage/clientsseo2.svg'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import award1 from '../Assets/DigitalMarketing/startup award.png'
-import award3 from '../Assets/DigitalMarketing/brand storyz.png'
-import award2 from '../Assets/DigitalMarketing/pepper award.png'
-import logos from '../Assets/DigitalMarketing/logo1.png'
-import logo2 from '../Assets/DigitalMarketing/logo2.png'
-import logo3 from '../Assets/DigitalMarketing/logo3.png'
-import logo4 from '../Assets/DigitalMarketing/logo4.png'
-import logo5 from '../Assets/DigitalMarketing/logo5.png'
-import o1 from '../Assets/DigitalMarketing/1.png'
+import logos from '../Assets/DigitalMarketing/SeoPage/seo1 1.png'
+import logo2 from '../Assets/DigitalMarketing/SeoPage/technical-support1 1.png'
+import logo3 from '../Assets/DigitalMarketing/SeoPage/uiux-icon.png'
+import logo4 from '../Assets/DigitalMarketing/SeoPage/off-page.png'
+import logo5 from '../Assets/DigitalMarketing/SeoPage/cro-icon.png'
+import logo55 from '../Assets/DigitalMarketing/SeoPage/content-icon.png'
+import o1 from '../Assets/DigitalMarketing/SeoPage/on page.png'
 import arrowhover from '../Assets/DigitalMarketing/arrow.svg'
-import case1 from '../Assets/DigitalMarketing/case1.png'
-import case2 from '../Assets/DigitalMarketing/case2.png'
-import case3 from '../Assets/DigitalMarketing/case3.png'
 import clock from '../Assets/DigitalMarketing/clock.png'
 import review from '../Assets/DigitalMarketing/rev.png'
-import userimg from '../Assets/DigitalMarketing/user.png'
-import call from '../Assets/DigitalMarketing/Call.svg'
-import Email from '../Assets/DigitalMarketing/Email.svg'
-import Address from '../Assets/DigitalMarketing/Address.svg'
+import userimg from '../Assets/DigitalMarketing/SeoPage/sahil.svg'
 import linkedin from '../Assets/DigitalMarketing/linkedin.svg'
 import facebook from '../Assets/DigitalMarketing/facebook.svg'
 import instagram from '../Assets/DigitalMarketing/instagram.svg'
@@ -39,57 +30,35 @@ import google from '../Assets/DigitalMarketing/google.png'
 import callfooter from '../Assets/DigitalMarketing/callfooter.svg'
 import emailfooter from '../Assets/DigitalMarketing/emailfooter.svg'
 import locationf from '../Assets/DigitalMarketing/locationf.svg'
-import b from '../Assets/DigitalMarketing/b.png'
-import f1 from '../Assets/DigitalMarketing/f1.png'
-import f2 from '../Assets/DigitalMarketing/f2.webp'
-import f3 from '../Assets/DigitalMarketing/f3.webp'
-import f4 from '../Assets/DigitalMarketing/f4.webp'
-import team2 from '../Assets/DigitalMarketing/pt.webp'
-import team3 from '../Assets/DigitalMarketing/socialt.webp'
-import team4 from '../Assets/DigitalMarketing/webt.webp'
-import team5 from '../Assets/DigitalMarketing/bt.webp'
-import s1 from '../Assets/DigitalMarketing/seoc.webp'
-import s2 from '../Assets/DigitalMarketing/seoc2.webp'
-import s3 from '../Assets/DigitalMarketing/seoc3.webp'
-import p1 from '../Assets/DigitalMarketing/p1.webp'
-import p2 from '../Assets/DigitalMarketing/p2.webp'
-import p3 from '../Assets/DigitalMarketing/p3.webp'
-import sm1 from '../Assets/DigitalMarketing/sm1.webp'
-import sm2 from '../Assets/DigitalMarketing/sm2.webp'
-import sm3 from '../Assets/DigitalMarketing/sm3.webp'
-import br1 from '../Assets/DigitalMarketing/br1.webp'
-import br2 from '../Assets/DigitalMarketing/br2.webp'
-import br3 from '../Assets/DigitalMarketing/br3.webp'
-import cr1 from '../Assets/DigitalMarketing/cr1.webp'
-import cr2 from '../Assets/DigitalMarketing/cr2.webp'
-import cr3 from '../Assets/DigitalMarketing/cr3.webp'
-import w1 from '../Assets/DigitalMarketing/w1.webp'
-import w2 from '../Assets/DigitalMarketing/w2.webp'
-import w3 from '../Assets/DigitalMarketing/w3.webp'
-import aw3 from '../Assets/DigitalMarketing/aw3.webp'
-import aw2 from '../Assets/DigitalMarketing/aw2.webp'
+import team2 from '../Assets/DigitalMarketing/SeoPage/off page.png'
+import team3 from '../Assets/DigitalMarketing/SeoPage/technical seo.png'
+import team4 from '../Assets/DigitalMarketing/SeoPage/ui-ux-illu.png'
+import team5 from '../Assets/DigitalMarketing/SeoPage/c.png'
+import team6 from '../Assets/DigitalMarketing/SeoPage/content.png'
+import s1 from '../Assets/DigitalMarketing/SeoPage/kairali new case 1.svg'
+import s2 from '../Assets/DigitalMarketing/SeoPage/seo casestudy bosq 1.svg'
+import s3 from '../Assets/DigitalMarketing/SeoPage/seo casestudy skinbae 1.svg'
 import arroww from '../Assets/DigitalMarketing/arroww.svg'
-import cl1 from '../Assets/DigitalMarketing/mobile-clients.svg'
-import cl2 from '../Assets/DigitalMarketing/mobile-clients2.svg'
-import cl3 from '../Assets/DigitalMarketing/mobile-clients3.svg'
-import s11 from '../Assets/DigitalMarketing/s11.svg'
+import cl1 from '../Assets/DigitalMarketing/SeoPage/seo1.svg'
+import cl2 from '../Assets/DigitalMarketing/SeoPage/seo2.svg'
+import cl3 from '../Assets/DigitalMarketing/SeoPage/seo3.svg'
+import cl4 from '../Assets/DigitalMarketing/SeoPage/seo4.svg'
+import cl5 from '../Assets/DigitalMarketing/SeoPage/seo5.svg'
+import cl6 from '../Assets/DigitalMarketing/SeoPage/seo6.svg'
+import cl7 from '../Assets/DigitalMarketing/SeoPage/seo7.svg'
 import p from '../Assets/DigitalMarketing/p.png'
+import k from '../Assets/DigitalMarketing/kevin.png'
 import l from '../Assets/DigitalMarketing/l.png'
 import m from '../Assets/DigitalMarketing/m.png'
 import hero from '../Assets/SeoCompony/hero-image.png'
 import seoteam from '../Assets/SeoCompony/SeoTeam.png'
-import believeimg from '../Assets/SeoCompony/believe-image.png'
-import freebox from '../Assets/SeoCompony/free.png'
-
-
-
-
+import believeimg from '../Assets/DigitalMarketing/SeoPage/beieve.svg'
 
 import { Container } from 'react-bootstrap';
 
 import Accordion from 'react-bootstrap/Accordion';
 
-const DigitalMarketing = () => {
+const SeoPage = () => {
 
 	const [isSecondImageVisible, setIsSecondImageVisible] = useState(false);
 
@@ -99,7 +68,7 @@ const DigitalMarketing = () => {
 
 
 
-	const [selectedService, setSelectedService] = useState('SEO');
+	const [selectedService, setSelectedService] = useState('On-Page SEO');
 
 
 	const getTeamImage = () => {
@@ -114,17 +83,20 @@ const DigitalMarketing = () => {
 				return team4;
 			case 'Conversion Rate Optimisation':
 				return team5;
+			case 'Content Development':
+				return team6;
 			default:
-				return award3;
+				return o1;
 		}
 	};
 
 	const services = [
-		{ name: 'On-Page SEO', logo: logos, description: 'To appear on top of Google search results and get more website visitors, leads and revenue.' },
-		{ name: 'Off-Page SEO', logo: logo4, description: 'To gain measurable results that drive conversions and maximise your ROI with Digital Ads.' },
-		{ name: 'Technical SEO', logo: logo2, description: 'To build brand awareness, retain customers, and generate more leads on Social Media.' },
+		{ name: 'On-Page SEO', logo: logos, description: 'Our team expertly shortlists the right keywords, optimises the URLs, corrects the title tags, and optimises other elements on the website to tidy up in total.' },
+		{ name: 'Off-Page SEO', logo: logo4, description: 'We post blogs on PR sites, list on directories, list on business listing sites and more to build your website reputation online.' },
+		{ name: 'Technical SEO', logo: logo2, description: 'Our specialists audit & sort technical aspects of your website such as the load speed, security, server performance, website architecture and more to ensure optimal performance. ' },
 		{ name: 'UI/UX Design', logo: logo3, description: 'For a website that combines engaging UI, scroll-stopping content and user-friendliness. .' },
 		{ name: 'Conversion Rate Optimisation', logo: logo5, description: 'To help you change the face of your brand, set a new standard and stand out from the crowd. ' },
+		{ name: 'Content Development', logo: logo55, description: 'To help you change the face of your brand, set a new standard and stand out from the crowd. ' },
 	];
 
 
@@ -221,31 +193,17 @@ const DigitalMarketing = () => {
 
 	const reviews = [
 		{
-			title: 'Natya hit the great milestone',
-			subtitle: 'We achieved 10 lakh revenue in the last month. Really happy to work with Haris aboobacker, Adarsh and team, really happy to work with you dear. We should fly together more heights,Thankfully',
-			username: 'Kalamandalam Sivaprasad',
-			userdesignation: 'Founder of Natya Arts Learning App',
-			userimg: userimg,
-		},
-		{
 			title: 'This is great ! ',
 			subtitle: 'The professionalism, attention to detail, and the quality of service you have demonstrated have been instrumental in our success. It is a pleasure to work with this team that consistently goes above and beyond expectations,Thank you the exceptional work. We look forward to continuing our partnership and achieving even better results.',
 			username: 'Kevin Mohan',
 			userdesignation: 'Marketing Head of Katara limousine',
-			userimg: userimg,
+			userimg: k,
 		},
 		{
-			title: 'Hi team,',
-			subtitle: 'Last 2 days we collected almost 2 lakhs from admission and we are spending just 15k per day,Great work team Haris&Co',
-			username: 'Shijas',
-			userdesignation: 'SkillBuss',
-			userimg: userimg,
-		},
-		{
-			title: 'I’m in aww struck love with your creative team,',
-			subtitle: 'Kudos and keep the great good work up..I can see a rising stars soon to get hit for awards..Just merge and look forward for adding a spark of innovation and you are there my friends.',
-			username: 'Swetha',
-			userdesignation: 'Care n Cure',
+			title: '',
+			subtitle: 'Recently, most of them were quality leads. This month, we received lot of leads. The sales team was appreciating. Few were really good orders.',
+			username: 'Mohammed Sahil',
+			userdesignation: 'Marketing Head of Afyun Plywood',
 			userimg: userimg,
 		},
 
@@ -309,7 +267,7 @@ const DigitalMarketing = () => {
 			<div className="container-main home-wrapper-section-dg">
 				<div className="row">
 					<div className="col-lg-7 ">
-						<div className="home-wrapper-dg">
+						<div className="home-wrapper-seo">
 							<h4 className='sub-title-wrapper-seo'>A Rapidly Growing SEO Company in Kerala</h4>
 							<h1 className='title-wrapper-dg seo-wrapper'>Rank. Reach. Revenue</h1>
 							<h4 className='sub-title-wrapper-seos'>A digital marketing company that’s on the course of powering up brands <br /> with the power of marketing, design and tech. </h4>
@@ -327,7 +285,7 @@ const DigitalMarketing = () => {
 									<p className='servc-sub-text-dg'>Top 10 Keywords  <br /> on Google</p>
 								</div>
 								<div className="srvc-one-seo border-dg leftspacee">
-									<h4 className='servc-text-seo'>50,000+</h4>
+									<h4 className='servc-text-seo'>50,000+</	h4>
 									<p className='servc-sub-text-dg'>Leads <br /> Generated</p>
 								</div>
 								<div className="srvc-one-seo leftspacee">
@@ -348,7 +306,7 @@ const DigitalMarketing = () => {
 				<div className="row">
 					<div className="col-lg-12">
 						<div className="row">
-							<div className="services-count-dg-mobile-show">
+							<div className="services-count-dg-mobile-show seo-mobile-showw">
 								<div className="row-show-mobile">
 									<div className="srvc-one-dg-mobil-show border-dgr">
 										<h4 className='servc-text-dg'>10,000+</h4>
@@ -405,24 +363,24 @@ const DigitalMarketing = () => {
 					<div className="row">
 						<div className="col-lg-12">
 							<div className="inner-box-clients-section">
-								<p className="view-all-main-slider">
+								<p className="view-all-main-slider seo-top-viw-all">
 									Brands that believe in us. Brands that have gone the extra mile with us.{' '}
 								</p>
 								<Slider {...clientsSlider}>
 									<div className="image-slietnts-sliders">
-										<img src={cl1} className='sliderimageclients' alt="Clients" />
+										<img src={cl1} className='sliderimageclients seo-clients-image-logos' alt="Clients" />
+										<img src={cl2} className='sliderimageclients seo-clients-image-logos' alt="Clients" />
 									</div>
 									<div className="image-slietnts-sliders">
-										<img src={cl2} className='sliderimageclients' alt="Clients" />
+										<img src={cl3} className='sliderimageclients seo-clients-image-logos' alt="Clients" />
+										<img src={cl4} className='sliderimageclients seo-clients-image-logos' alt="Clients" />
 									</div>
 									<div className="image-slietnts-sliders">
-										<img src={cl3} className='sliderimageclients' alt="Clients" />
+										<img src={cl5} className='sliderimageclients seo-clients-image-logos' alt="Clients" />
+										<img src={cl6} className='sliderimageclients seo-clients-image-logos' alt="Clients" />
 									</div>
 									<div className="image-slietnts-sliders">
-										<img src={cl1} className='sliderimageclients' alt="Clients" />
-									</div>
-									<div className="image-slietnts-sliders">
-										<img src={cl2} className='sliderimageclients' alt="Clients" />
+										<img src={cl7} className='sliderimageclients seo-clients-image-logos' alt="Clients" />
 									</div>
 								</Slider>
 							</div>
@@ -476,7 +434,7 @@ const DigitalMarketing = () => {
 												className="srvc-name-dg-dv"
 												onClick={() => setSelectedService(service.name)}
 											>
-												<img src={service.logo} className='icon-servc-dg' alt={service.name} />
+												<img src={service.logo} className='icon-servc-seo' alt={service.name} />
 												<div className="srvcs-details-text-dv">
 													<h4 className='title-srvc-seeo'>{service.name}</h4>
 
@@ -495,12 +453,9 @@ const DigitalMarketing = () => {
 												<p key={service.name} className='sub-title-srvc-seo'>{service.description}</p>
 											)
 										))}
-
 									</div>
 								</div>
-								<div className="comn-main">
-									<Link to='/contact' className='btn-proposal-dg'>View More <img src={arroww} className='arrow-icon-white-btn' alt="Icon" /></Link>
-								</div>
+							
 							</div>
 						</div>
 					</div>
@@ -518,41 +473,51 @@ const DigitalMarketing = () => {
 							<div className="slider-item-mobile-what-we">
 								<Slider {...settingsWhatwedo}>
 									<div className="items-what-we-do-main">
-										<img src={s11} className='main-image-whatwedo' alt="Services" />
-										<h3>SEO</h3>
-										<p>To appear on top of Google search results and get more website visitors, leads and revenue.</p>
+										<img src={o1} className='main-image-whatwedo' alt="Services" />
+										<h3 className='title-seo-items'>On-Page SEO										</h3>
+										<p>Our team expertly shortlists the right keywords, optimises the URLs, corrects the title tags, and optimises other elements on the website to tidy up in total. 										</p>
 										<div className="btn-view-more-dv">
 											<Link to='/contact' className='btn-proposal-dg'>View More <img src={arroww} className='arrow-icon-white-btn' alt="Arrow" /></Link>
 										</div>
 									</div>
 									<div className="items-what-we-do-main">
 										<img src={team2} className='main-image-whatwedo' alt="Services" />
-										<h3>Performance Marketing</h3>
-										<p>To gain measurable results that drive conversions and maximise your ROI with Digital Ads.</p>
+										<h3 className='title-seo-items'>Off-Page SEO</h3>
+										<p>We post blogs on PR sites, list on directories, list on business listing sites and more to build your website's reputation online.										</p>
 										<div className="btn-view-more-dv">
 											<Link to='/contact' className='btn-proposal-dg'>View More <img src={arroww} className='arrow-icon-white-btn' alt="Arrow" /></Link>
 										</div>
 									</div>
 									<div className="items-what-we-do-main">
 										<img src={team3} className='main-image-whatwedo' alt="Services" />
-										<h3>Social Media</h3>
-										<p>To build brand awareness, retain customers, and generate more leads on Social Media.</p>
+										<h3 className='title-seo-items'>Technical SEO										</h3>
+										<p>Our specialists audit & sort technical aspects of your website such as the load speed, security, server performance, website architecture and more to ensure optimal performance. 										</p>
 										<div className="btn-view-more-dv">
 											<Link to='/contact' className='btn-proposal-dg'>View More <img src={arroww} className='arrow-icon-white-btn' alt="Arrow" /></Link>
 										</div>
 									</div>
 									<div className="items-what-we-do-main">
 										<img src={team4} className='main-image-whatwedo' alt="Services" />
-										<h3>Web Development</h3>
-										<p>For a website that combines engaging UI, scroll-stopping content and user-friendliness.</p>
+										<h3 className='title-seo-items'>UI/UX Design										</h3>
+										<p>Following a detailed analysis, our design team develops fonts, colours and layouts to make your website attractive and easy to navigate										</p>
 										<div className="btn-view-more-dv">
 											<Link to='/contact' className='btn-proposal-dg'>View More <img src={arroww} className='arrow-icon-white-btn' alt="Arrow" /></Link>
 										</div>
 									</div>
 									<div className="items-what-we-do-main">
 										<img src={team5} className='main-image-whatwedo' alt="Services" />
-										<h3>Branding</h3>
-										<p>To help you change the face of your brand, set a new standard and stand out from the crowd.</p>
+										<h3 className='title-seo-items'>Conversion Rate Optimisation										</h3>
+										<p>Our CRO experts examine the UI/UX, identifying the gaps and optimising the elements to increase the chance of converting visitors to customers.
+										</p>
+										<div className="btn-view-more-dv">
+											<Link to='/contact' className='btn-proposal-dg'>View More <img src={arroww} className='arrow-icon-white-btn' alt="Arrow" /></Link>
+										</div>
+									</div>
+									<div className="items-what-we-do-main">
+										<img src={team6} className='main-image-whatwedo' alt="Services" />
+										<h3 className='title-seo-items'>Content Development										</h3>
+										<p>Our content team creates awesome content that informs, entertains, engages and ultimately converts your visitors to customers.
+										</p>
 										<div className="btn-view-more-dv">
 											<Link to='/contact' className='btn-proposal-dg'>View More <img src={arroww} className='arrow-icon-white-btn' alt="Arrow" /></Link>
 										</div>
@@ -580,14 +545,14 @@ const DigitalMarketing = () => {
 						<div className="col-lg-12">
 							<div className="button-dv-main-seo-belive">
 								<div className="comn-main">
-									<Link to='/contact' className='btn-proposal-dg-no-bg'>Check Out Our Case Studies<img src={arroww} className='arrow-icon-white-btn' alt="Icon" /></Link>
+									<Link to='/works' className='btn-proposal-dg-no-bg'>Check Out Our Case Studies<img src={arroww} className='arrow-icon-white-btn' alt="Icon" /></Link>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div className="white-section-dg seo-white-section">
+			<div className="white-section-seo seo-white-section">
 				<div className="get-a-free-main">
 					<div className="container-main">
 						<div className="row">
@@ -596,60 +561,35 @@ const DigitalMarketing = () => {
 									<h2 className='free-title-main-seo'>Get a Free SEO Audit & Proposal</h2>
 									<p className='free-subtitle-main-seo'>Get an overview of your website’s SEO performance and a proposal </p>
 									<p className='free-subtitle-main-seo bottom-space-s'> including our detailed SEO plan. </p>
+									
+								<form className='form-seo-report'>
+									<div class="form-group">
+										<input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your Name"/>
+									</div>
+									<div class="form-group">
+										<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email"/>
+									</div>
+									<div class="form-group">
+										<input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Website"/>
+									</div>
+								</form>
+									
+									
+									
 									<div className="form-button">
 										<div className="buttons-dg comn-main">
 											<button class="btn-proposal-dg btn font-noraml" type="submit"> Get it <img src={arroww} className='arrow-icon-white-btn' alt="" /></button>
 										</div>
 									</div>
 								</div>
+							
 							</div>
 						</div>
 					</div>
 				</div>
-				<div className="container-main">
-					<div className="row">
-						<div className="col-lg-12">
-							<div className="headlines-main-dv-dg">
-								<h3 className='headline-title-dg'>Making Headlines</h3>
-								<p className='headline-subtitle-dg'>To get featured in multiple news articles gives us immense joy</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div className="headlines-main-dvv-dg">
-					<Slider {...settingsHeadlinesOne}>
-						<div className="featured-img-dv-main">
-							<div className="main-dv-for-img">
-								<img src={f1} className='dg-feature-img' alt="Featured Image" />
-								<div className="bgcolor-dg"></div>
-								<img src={arrowhover} className='hover-arrow-main-dg' alt="Arrow" />
-							</div>
-						</div>
-						<div className="featured-img-dv-main">
-							<div className="main-dv-for-img">
-								<img src={f2} className='dg-feature-img' alt="Featured Image" />
-								<div className="bgcolor-dg"></div>
-								<img src={arrowhover} className='hover-arrow-main-dg' alt="Arrow" />
-							</div>
-						</div>
-						<div className="featured-img-dv-main">
-							<div className="main-dv-for-img">
-								<img src={f3} className='dg-feature-img' alt="Featured Image" />
-								<div className="bgcolor-dg"></div>
-								<img src={arrowhover} className='hover-arrow-main-dg' alt="Arrow" />
-							</div>
-						</div>
-						<div className="featured-img-dv-main">
-							<div className="main-dv-for-img">
-								<img src={f4} className='dg-feature-img' alt="Featured Image" />
-								<div className="bgcolor-dg"></div>
-								<img src={arrowhover} className='hover-arrow-main-dg' alt="Arrow" />
-							</div>
-						</div>
-					</Slider>
-				</div>
+
 				{/* case study  */}
-				<div className="casestudy-main-div-dg">
+				<div className="casestudy-main-div-seo">
 					<div className="container-main">
 						<div className="row">
 							<div className="col-lg-12">
@@ -657,441 +597,63 @@ const DigitalMarketing = () => {
 									<h3 className="title-casestudy-dg-main">Our Case Studies</h3>
 									<p className="sub-title-casestudy-dg-main">Read in detail about our stories of victories.</p>
 
-									{/* Tabs */}
-									<div className="items-services-case-study-dg">
-										<p
-											className={`items-dg ${activeTab === 'Performance Marketing' ? 'active-dg-item' : ''}`}
-											onClick={() => handleTabClick('Performance Marketing')}
-										>
-											Performance Marketing
-										</p>
-										<p
-											className={`items-dg ${activeTab === 'SEO' ? 'active-dg-item' : ''}`}
-											onClick={() => handleTabClick('SEO')}
-										>
-											SEO
-										</p>
-										<p
-											className={`items-dg ${activeTab === 'PR & Communication' ? 'active-dg-item' : ''}`}
-											onClick={() => handleTabClick('PR & Communication')}
-										>
-											PR & Communication
-										</p>
-										<p
-											className={`items-dg ${activeTab === 'Social Media' ? 'active-dg-item' : ''}`}
-											onClick={() => handleTabClick('Social Media')}
-										>
-											Social Media
-										</p>
-										<p
-											className={`items-dg ${activeTab === 'Branding' ? 'active-dg-item' : ''}`}
-											onClick={() => handleTabClick('Branding')}
-										>
-											Branding
-										</p>
-										<p
-											className={`items-dg ${activeTab === 'Creative Strategy' ? 'active-dg-item' : ''}`}
-											onClick={() => handleTabClick('Creative Strategy')}
-										>
-											Creative Strategy
-										</p>
 
-										<p
-											className={`items-dg ${activeTab === 'Web Development' ? 'active-dg-item' : ''}`}
-											onClick={() => handleTabClick('Web Development')}
-										>
-											Web Development
+								</div>
+							</div>
+						</div>
+
+						<div className='row'>
+							<div className="col-lg-6">
+								<div className="casestudy-card-dg height-dg">
+									<img src={s1} className='casestudy-img-box' alt="Performance Marketing" />
+									<div className="details-case-dv-dv">
+										<h4 className="heading-casestudy-service-dg"> Website Visits Shot From 1K to a Massive 2 Lakhs+												</h4>
+										<div className="time-date-dg">
+											<img src={clock} className='clock-icon-dg' alt="Clock Icon" />
+											<p className="text-of-time">March 8, 2024</p>
+										</div>
+										<p className="description-service-dg">Read in detail the challenges Kairali TMT faced, what we did to address them and the results they achieved.
 										</p>
+									</div>
+								</div>
+							</div>
+							<div className="col-lg-6">
+								<div className="casestudy-card-dg">
+									<div className="sub-full-dv-dg">
+										<div className="img-box-dgg">
+											<img src={s2} className='casestudy-img-box' alt="" />
+										</div>
+										<div className="details-case-dv-dv">
+											<h4 className='heading-casestudy-service-dg-sub'>Generated 500+ Sales-qualified Leads in Just 6 Months
+											</h4>
+											<div className="time-date-dg">
+												<img src={clock} className='clock-icon-dg' alt="" />
+												<p className='text-of-time'>March 8, 2024</p>
+											</div>
+											<p className='description-service-dg grey-clr-fg'>Explore how we helped BOSQ increase organic lead generation and website visits.
+											</p>
+										</div>
+									</div>
+								</div>
+								<div className="casestudy-card-dg">
+									<div className="sub-full-dv-dg">
+										<div className="img-box-dgg">
+											<img src={s3} className='casestudy-img-box' alt="" />
+										</div>
+										<div className="details-case-dv-dv">
+											<h4 className='heading-casestudy-service-dg-sub'>Ranked a Skin Care Brand Above Giants Like Nykaa, Amazon, and Macaron</h4>
+											<div className="time-date-dg">
+												<img src={clock} className='clock-icon-dg' alt="" />
+												<p className='text-of-time'>March 8, 2024</p>
+											</div>
+											<p className='description-service-dg grey-clr-fg'>Read in detail the strategy we implemented to make Skin Bae stand out on Google.
+											</p>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-						{/* Conditional rendering based on activeTab */}
-						{activeTab === 'Performance Marketing' && (
-							<div className='row'>
-								<div className="col-lg-6">
-									<div className="casestudy-card-dg height-dg">
-										<img src={case1} className='casestudy-img-box' alt="Performance Marketing" />
-										<div className="details-case-dv-dv">
-											<h4 className="heading-casestudy-service-dg">From 0 to ₹6 Million Revenue per month (4+ ROAS)												</h4>
-											<div className="time-date-dg">
-												<img src={clock} className='clock-icon-dg' alt="Clock Icon" />
-												<p className="text-of-time">March 8, 2024</p>
-											</div>
-											<p className="description-service-dg">Explore how we transformed Bluetyga into a revenue-generating company from scratch. 												</p>
-										</div>
-									</div>
-								</div>
-								<div className="col-lg-6">
-									<div className="casestudy-card-dg">
-										<div className="sub-full-dv-dg">
-											<div className="img-box-dgg">
-												<img src={case2} className='casestudy-img-box' alt="CaseStudy" />
-											</div>
-											<div className="details-case-dv-dv">
-												<h4 className='heading-casestudy-service-dg-sub'>Generated a Massive ₹10 Million in 6 Months	</h4>
-												<div className="time-date-dg">
-													<img src={clock} className='clock-icon-dg' alt="Icon" />
-													<p className='text-of-time'>March 8, 2024</p>
-												</div>
-												<p className='description-service-dg grey-clr-fg'>Dive in to learn how we improved the online sales rate of Walkaroo - one of India's leading footwear brands.</p>
-											</div>
-										</div>
-									</div>
-									<div className="casestudy-card-dg">
-										<div className="sub-full-dv-dg">
-											<div className="img-box-dgg">
-												<img src={case3} className='casestudy-img-box' alt="" />
-											</div>
-											<div className="details-case-dv-dv">
-												<h4 className='heading-casestudy-service-dg-sub'> Boosted the Sales by 2x in Just 1 Month!
-												</h4>
-												<div className="time-date-dg">
-													<img src={clock} className='clock-icon-dg' alt="" />
-													<p className='text-of-time'>March 8, 2024</p>
-												</div>
-												<p className='description-service-dg grey-clr-fg'>Here is the detailed story of how we helped Strabo hurdle the challenges and increase their revenue. </p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						)}
-						{activeTab === 'SEO' && (
-							<div className='row'>
-								<div className="col-lg-6">
-									<div className="casestudy-card-dg height-dg">
-										<img src={s1} className='casestudy-img-box' alt="Performance Marketing" />
-										<div className="details-case-dv-dv">
-											<h4 className="heading-casestudy-service-dg"> Website Visits Shot From 1K to a Massive 2 Lakhs+												</h4>
-											<div className="time-date-dg">
-												<img src={clock} className='clock-icon-dg' alt="Clock Icon" />
-												<p className="text-of-time">March 8, 2024</p>
-											</div>
-											<p className="description-service-dg">Read in detail the challenges Kairali TMT faced, what we did to address them and the results they achieved.
-											</p>
-										</div>
-									</div>
-								</div>
-								<div className="col-lg-6">
-									<div className="casestudy-card-dg">
-										<div className="sub-full-dv-dg">
-											<div className="img-box-dgg">
-												<img src={s2} className='casestudy-img-box' alt="" />
-											</div>
-											<div className="details-case-dv-dv">
-												<h4 className='heading-casestudy-service-dg-sub'>Generated 500+ Sales-qualified Leads in Just 6 Months
-												</h4>
-												<div className="time-date-dg">
-													<img src={clock} className='clock-icon-dg' alt="" />
-													<p className='text-of-time'>March 8, 2024</p>
-												</div>
-												<p className='description-service-dg grey-clr-fg'>Explore how we helped BOSQ increase organic lead generation and website visits.
-												</p>
-											</div>
-										</div>
-									</div>
-									<div className="casestudy-card-dg">
-										<div className="sub-full-dv-dg">
-											<div className="img-box-dgg">
-												<img src={s3} className='casestudy-img-box' alt="" />
-											</div>
-											<div className="details-case-dv-dv">
-												<h4 className='heading-casestudy-service-dg-sub'>Ranked a Skin Care Brand Above Giants Like Nykaa, Amazon, and Macaron</h4>
-												<div className="time-date-dg">
-													<img src={clock} className='clock-icon-dg' alt="" />
-													<p className='text-of-time'>March 8, 2024</p>
-												</div>
-												<p className='description-service-dg grey-clr-fg'>Read in detail the strategy we implemented to make Skin Bae stand out on Google.
-												</p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						)}
 
-						{activeTab === 'PR & Communication' && (
-							<div className='row'>
-								<div className="col-lg-6">
-									<div className="casestudy-card-dg height-dg">
-										<img src={p1} className='casestudy-img-box' alt="Performance Marketing" />
-										<div className="details-case-dv-dv">
-											<h4 className="heading-casestudy-service-dg">1 Campaign -  1.8 Million Views and 157000+ Likes!
-
-											</h4>
-											<div className="time-date-dg">
-												<img src={clock} className='clock-icon-dg' alt="Clock Icon" />
-												<p className="text-of-time">March 8, 2024</p>
-											</div>
-											<p className="description-service-dg">This campaign's case study shows how enormous the results can be with influencer marketing.
-											</p>
-										</div>
-									</div>
-								</div>
-								<div className="col-lg-6">
-									<div className="casestudy-card-dg">
-										<div className="sub-full-dv-dg">
-											<div className="img-box-dgg">
-												<img src={p3} className='casestudy-img-box' alt="" />
-											</div>
-											<div className="details-case-dv-dv">
-												<h4 className='heading-casestudy-service-dg-sub'>Garnered 6M Views for JBL’s Vishu Campaign
-												</h4>
-												<div className="time-date-dg">
-													<img src={clock} className='clock-icon-dg' alt="" />
-													<p className='text-of-time'>March 8, 2024</p>
-												</div>
-												<p className='description-service-dg grey-clr-fg'>This case study about the Vishu campaign for JBL shows the power of influencer marketing.
-												</p>
-											</div>
-										</div>
-									</div>
-									<div className="casestudy-card-dg">
-										<div className="sub-full-dv-dg">
-											<div className="img-box-dgg">
-												<img src={p2} className='casestudy-img-box' alt="" />
-											</div>
-											<div className="details-case-dv-dv">
-												<h4 className='heading-casestudy-service-dg-sub'>Influencer Campaign Brought 364K+ Views for Reliance Trends
-												</h4>
-												<div className="time-date-dg">
-													<img src={clock} className='clock-icon-dg' alt="" />
-													<p className='text-of-time'>March 8, 2024</p>
-												</div>
-												<p className='description-service-dg grey-clr-fg'>Learn how we ideated a perfect campaign for Reliance Trends and drove 1000s of views.</p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						)}
-
-						{activeTab === 'Social Media' && (
-							<div className='row'>
-								<div className="col-lg-6">
-									<div className="casestudy-card-dg height-dg">
-										<img src={sm1} className='casestudy-img-box' alt="Performance Marketing" />
-										<div className="details-case-dv-dv">
-											<h4 className="heading-casestudy-service-dg"> Hit 41K Views for Reels Within 5 Days</h4>
-											<div className="time-date-dg">
-												<img src={clock} className='clock-icon-dg' alt="Clock Icon" />
-												<p className="text-of-time">March 8, 2024</p>
-											</div>
-											<p className="description-service-dg">See how the inauguration campaign of Care n Cure drove brand awareness.
-											</p>
-										</div>
-									</div>
-								</div>
-								<div className="col-lg-6">
-									<div className="casestudy-card-dg">
-										<div className="sub-full-dv-dg">
-											<div className="img-box-dgg">
-												<img src={sm2} className='casestudy-img-box' alt="" />
-											</div>
-											<div className="details-case-dv-dv">
-												<h4 className='heading-casestudy-service-dg-sub'>17,000 to 59,900 Followers in Just 60 Days
-												</h4>
-												<div className="time-date-dg">
-													<img src={clock} className='clock-icon-dg' alt="" />
-													<p className='text-of-time'>March 8, 2024</p>
-												</div>
-												<p className='description-service-dg grey-clr-fg'>Learn the way KiddieBus cracked the followers-winning formula with our strategy.
-												</p>
-											</div>
-										</div>
-									</div>
-									<div className="casestudy-card-dg">
-										<div className="sub-full-dv-dg">
-											<div className="img-box-dgg">
-												<img src={sm3} className='casestudy-img-box' alt="" />
-											</div>
-											<div className="details-case-dv-dv">
-												<h4 className='heading-casestudy-service-dg-sub'>100,000 Impressions and 100,000 Engagements Within One Week
-												</h4>
-												<div className="time-date-dg">
-													<img src={clock} className='clock-icon-dg' alt="" />
-													<p className='text-of-time'>March 8, 2024</p>
-												</div>
-												<p className='description-service-dg grey-clr-fg'>Here is how Care n Cure found a way with us to skyrocket their impressions and engagements.
-												</p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						)}
-
-						{activeTab === 'Branding' && (
-							<div className='row'>
-								<div className="col-lg-6">
-									<div className="casestudy-card-dg height-dg">
-										<img src={br1} className='casestudy-img-box' alt="Performance Marketing" />
-										<div className="details-case-dv-dv">
-											<h4 className="heading-casestudy-service-dg">Automate My Biz
-											</h4>
-											<div className="time-date-dg">
-												<img src={clock} className='clock-icon-dg' alt="Clock Icon" />
-												<p className="text-of-time">March 8, 2024</p>
-											</div>
-											<p className="description-service-dg">Logo, Website UI, ID Card design, and Banners. We gave them all to create a face.
-
-											</p>
-										</div>
-									</div>
-								</div>
-								<div className="col-lg-6">
-									<div className="casestudy-card-dg">
-										<div className="sub-full-dv-dg">
-											<div className="img-box-dgg">
-												<img src={br2} className='casestudy-img-box' alt="" />
-											</div>
-											<div className="details-case-dv-dv">
-												<h4 className='heading-casestudy-service-dg-sub'>Quarter Plate
-												</h4>
-												<div className="time-date-dg">
-													<img src={clock} className='clock-icon-dg' alt="" />
-													<p className='text-of-time'>March 8, 2024</p>
-												</div>
-												<p className='description-service-dg grey-clr-fg'>Witness what our branding team ideated and developed for this restaurant.
-												</p>
-											</div>
-										</div>
-									</div>
-									<div className="casestudy-card-dg">
-										<div className="sub-full-dv-dg">
-											<div className="img-box-dgg">
-												<img src={br3} className='casestudy-img-box' alt="" />
-											</div>
-											<div className="details-case-dv-dv">
-												<h4 className='heading-casestudy-service-dg-sub'>Heal Bev
-
-												</h4>
-												<div className="time-date-dg">
-													<img src={clock} className='clock-icon-dg' alt="" />
-													<p className='text-of-time'>March 8, 2024</p>
-												</div>
-												<p className='description-service-dg grey-clr-fg'>Explore everything we developed from an elegant logo to an eye-catching package design for this beverage brand.
-												</p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						)}
-
-						{activeTab === 'Creative Strategy' && (
-							<div className='row'>
-								<div className="col-lg-6">
-									<div className="casestudy-card-dg height-dg">
-										<img src={cr1} className='casestudy-img-box' alt="Performance Marketing" />
-										<div className="details-case-dv-dv">
-											<h4 className="heading-casestudy-service-dg">Scaled Revenue by 110%+ in Just 4 Months
-
-											</h4>
-											<div className="time-date-dg">
-												<img src={clock} className='clock-icon-dg' alt="Clock Icon" />
-												<p className="text-of-time">March 8, 2024</p>
-											</div>
-											<p className="description-service-dg">Learn how we scaled Skin Bae - a Korean skincare brand, from 900,000 to 20,00,000
-											</p>
-										</div>
-									</div>
-								</div>
-								<div className="col-lg-6">
-									<div className="casestudy-card-dg">
-										<div className="sub-full-dv-dg">
-											<div className="img-box-dgg">
-												<img src={cr2} className='casestudy-img-box' alt="" />
-											</div>
-											<div className="details-case-dv-dv">
-												<h4 className='heading-casestudy-service-dg-sub'>Fetched 147 Registrations for a Workshop in Just 14 Days
-												</h4>
-												<div className="time-date-dg">
-													<img src={clock} className='clock-icon-dg' alt="" />
-													<p className='text-of-time'>March 8, 2024</p>
-												</div>
-												<p className='description-service-dg grey-clr-fg'>This case study shows how Million Dots found their lead generation campaign successful.
-												</p>
-											</div>
-										</div>
-									</div>
-									<div className="casestudy-card-dg">
-										<div className="sub-full-dv-dg">
-											<div className="img-box-dgg">
-												<img src={cr3} className='casestudy-img-box' alt="" />
-											</div>
-											<div className="details-case-dv-dv">
-												<h4 className='heading-casestudy-service-dg-sub'>1 Video - 3+ ROAS & 380,000+ Impressions
-
-												</h4>
-												<div className="time-date-dg">
-													<img src={clock} className='clock-icon-dg' alt="" />
-													<p className='text-of-time'>March 8, 2024</p>
-												</div>
-												<p className='description-service-dg grey-clr-fg'>Learn how creativity paved the way for Blue Tyga to increase sales and brand awareness.
-												</p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						)}
-
-						{activeTab === 'Web Development' && (
-							<div className='row'>
-								<div className="col-lg-6">
-									<div className="casestudy-card-dg height-dg">
-										<img src={w1} className='casestudy-img-box' alt="Performance Marketing" />
-										<div className="details-case-dv-dv">
-											<h4 className="heading-casestudy-service-dg">Redesigned an E-commerce Store
-											</h4>												<div className="time-date-dg">
-												<img src={clock} className='clock-icon-dg' alt="Clock Icon" />
-												<p className="text-of-time">March 8, 2024</p>
-											</div>
-											<p className="description-service-dg">Take a look into Popees’ (a leading Kidswear brand) brand new website.
-											</p>
-										</div>
-									</div>
-								</div>
-								<div className="col-lg-6">
-									<div className="casestudy-card-dg">
-										<div className="sub-full-dv-dg">
-											<div className="img-box-dgg">
-												<img src={w2} className='casestudy-img-box' alt="" />
-											</div>
-											<div className="details-case-dv-dv">
-												<h4 className='heading-casestudy-service-dg-sub'>Gave a New Look for Walkaroo’s Store
-												</h4>
-												<div className="time-date-dg">
-													<img src={clock} className='clock-icon-dg' alt="" />
-													<p className='text-of-time'>March 8, 2024</p>
-												</div>
-												<p className='description-service-dg grey-clr-fg'>See how the redesigned Ecommerce website we developed for Walkaroo brought them leads.
-												</p>
-											</div>
-										</div>
-									</div>
-									<div className="casestudy-card-dg">
-										<div className="sub-full-dv-dg">
-											<div className="img-box-dgg">
-												<img src={w3} className='casestudy-img-box' alt="" />
-											</div>
-											<div className="details-case-dv-dv">
-												<h4 className='heading-casestudy-service-dg-sub'>A Complete Revamp
-												</h4>
-												<div className="time-date-dg">
-													<img src={clock} className='clock-icon-dg' alt="" />
-													<p className='text-of-time'>March 8, 2024</p>
-												</div>
-												<p className='description-service-dg grey-clr-fg'>We gave Nassguard's website a completely new look.
-												</p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						)}
 
 
 
@@ -1110,7 +672,7 @@ const DigitalMarketing = () => {
 
 					</div>
 				</div>
-				<div className="clients-reviews">
+				<div className="clients-reviews-seo">
 					<div className="container-main">
 						<div className="row">
 							<div className="col-lg-5">
@@ -1246,70 +808,63 @@ const DigitalMarketing = () => {
 								<Accordion defaultActiveKey="0" flush>
 
 									<Accordion.Item eventKey="0">
-										<Accordion.Header>What are the types of businesses for which you provide digital marketing services?
+										<Accordion.Header>What is SEO?
 										</Accordion.Header>
 										<Accordion.Body>
-											We focus mainly on D2C, B2B and B2C companies. Get in touch with us to learn how we can help your business thrive.
+											SEO is the technique by which you can make your website appear on top of the search engine results when someone makes a search. Consequently, this can lead to an increase in website visitors and lead generation.
 										</Accordion.Body>
 									</Accordion.Item>
 
 									<Accordion.Item eventKey="1">
-										<Accordion.Header>Where are most of your clients from?</Accordion.Header>
+										<Accordion.Header>Why is SEO important for my business?										</Accordion.Header>
 										<Accordion.Body>
-											Our clients are majorly based in India, Bahrain, Kuwait, Oman, Qatar, Saudi Arabia and the UAE. And, yes we have plans to expand our presence. Reach us for digital marketing consulting from any corner of the world and our team will be at your service!
+											DataReportal's study states that nearly 50% of internet users use search engines to learn more about brands. So, being there on the top when they search is truly important. They can potentially become your next customer.
 										</Accordion.Body>
 									</Accordion.Item>
 
 									<Accordion.Item eventKey="2">
-										<Accordion.Header> How can I measure the success of my digital marketing campaigns?										</Accordion.Header>
+										<Accordion.Header> How long does SEO take to show results?										</Accordion.Header>
 										<Accordion.Body>
-											Some common metrics that help you measure success include website traffic, lead generation, conversions (sales), engagement on social media, and return on investment (ROI). At Haris&Co., we help you track your results and make adjustments to your campaigns as needed.
-										</Accordion.Body>
+											SEO is an ongoing and organic process, but you can expect to see initial results within 3-6 months with consistent effort. Long-term SEO strategy yields sustainable results.</Accordion.Body>
 									</Accordion.Item>
 
 									<Accordion.Item eventKey="3">
-										<Accordion.Header>  What type of marketing will I need for my business?
+										<Accordion.Header>  How will you measure the success of your SEO strategy?
 										</Accordion.Header>
 										<Accordion.Body>
-											The digital marketing strategy for your business can vary according to the type of your business, industry and current brand awareness. You may not need every service. Sometimes, just Social Media Marketing would do and at times you might want to invest in SEO as well. In short, it all depends. We recommend consulting with us before you make a decision.
+											We use tools like Google Search Console, SEMrush and Ubersuggest to track website traffic keyword ranking, leads generated, and conversions.
+											Apart from that, we use tools like Microsoft Clarity and Hotjar to analyse how the users are scrolling through your website, where they are clicking and how much content they are reading. This helps us to tweak the UX and the content if required.
 										</Accordion.Body>
 									</Accordion.Item>
 
 									<Accordion.Item eventKey="4">
-										<Accordion.Header> Can I see results quickly with digital marketing?
+										<Accordion.Header>How can my website speed affect SEO?
 										</Accordion.Header>
 										<Accordion.Body>
-											Some aspects of digital marketing, like performance marketing (digital ads), can deliver relatively quick results. However, SEO and content marketing take time to build authority and organic traffic. We'll set realistic expectations and track your progress towards your goals.
+											Basically, when your website is slow to load, the visitor will bounce off. This can increase the bounce rate, which is something Google doesn't encourage.
+
+											Hence, this can affect your SEO efforts adversely. This is the reason why we do Technical SEO and sort every technical issue at the initial stage of our SEO projects.
 										</Accordion.Body>
 									</Accordion.Item>
 
 
 									<Accordion.Item eventKey="5">
-										<Accordion.Header> What are the industries you have experience in working with?
+										<Accordion.Header>Why should I hire an SEO agency? Can’t I do it myself?
 										</Accordion.Header>
 										<Accordion.Body>
-											Over the years, we have worked with brands from the following industries:
-											Architecture,
-											Landscaping,
-											Vacation Rental,
-											Footwear,
-											Furniture,
-											Automobile,
-											Petroleum,
-											Technology,
-											Consultancy,
-											Ed-tech,
-											Kidswear,
-											FMCG,
-											Skincare,
-											Packaging,
-											Healthcare,
-											Hotel,
-											Logistics,
-											Plywood,
-											Construction,
-											Jewellery
+											You can certainly do SEO yourself, but it's like managing your own investments – time-consuming and requiring constant learning.
 
+											However, when you have an expert SEO company that stays on top of the latest algorithms, you can worry less about the SEO part and concentrate more on your business.
+
+
+										</Accordion.Body>
+									</Accordion.Item>
+
+									<Accordion.Item eventKey="6">
+										<Accordion.Header>How will you maintain the results?
+										</Accordion.Header>
+										<Accordion.Body>
+											SEO is an ongoing process. Once you stop it, you can lose your ranks. Hence, in order to maintain the results, we consistently keep our work rolling and tweak the strategies to make good results great over time.
 
 										</Accordion.Body>
 									</Accordion.Item>
@@ -1323,66 +878,83 @@ const DigitalMarketing = () => {
 			<div className='seocontent'>
 				<Container>
 					<div className='headcontent'>
-						<h2 className='hd'>A Leading Revenue-focused Digital Marketing
-							Agency in Kerala
+						<h2 className='hd'>An SEO Company in Kerala That Brings You Real Results
+
 						</h2>
-						<p className='txt'>We understand that getting likes and shares is great, but at Haris&Co, our focus is on driving real results for your business – increased revenue.</p>
+						<p className='txt'>Forget generic strategies and cookie-cutter campaigns. As a well-established SEO company in Kerala, we craft individualised plans that target your specific audience and industry. We don't just boost website traffic (though we excel at that too); we focus on attracting qualified visitors who are ready to convert into paying customers.</p>
 
-						<p className='txt'>We achieve this by offering all the comprehensive digital marketing services you'd expect from a leading digital marketing company in Kerala but with a key difference:  a laser focus on maximising your return on investment (ROI).</p>
+						<p className='txt'>Imagine your website ranking high on search results for keywords that matter to your business. That's the power of our data-driven SEO approach. We combine in-depth keyword research, strategic on-page optimisation, and effective link building to get your website noticed by the right people.
+						</p>
 
-						<p className='txt'>To date, we have generated more than ₹600 Million for our clients including top brands such as Walkaroo, Skin Bae, BOSQ, Afyun Plywood, Femisafe, Million Dots, Algate, Visa Guy, Francis Alukkas and many more.</p>
+						<p className='txt'>Stop waiting for customers to find you. Get our SEO service in Kerala and get your website ranking high and your business booming.
+						</p>
 					</div>
 					<div className='headcontent'>
-						<h2 className='twohd'>Why Us As Your Digital Marketing Company
+						<h2 className='twohd'>Why You Should Invest in Our SEO
 						</h2>
 
 						<ul>
 							<li>
-								A Compelling Portfolio: Our proven track record speaks for itself. We've helped businesses of all sizes and industries achieve significant growth through our data-driven marketing strategies. Check out our portfolio to see real-world examples of our success.
-							</li>
+								Reach more interested customers: We bring people who are already searching for what you offer. They're high-quality leads compared to those seeing a random ad.</li>
 							<li>
-								Experienced Team: Our team is comprised of passionate and experienced digital marketing experts. We stay ahead of the curve with the latest trends and technologies to ensure your campaigns are cutting-edge and effective.
+								Boost website traffic: As an SEO company in Kerala, we help your website rank higher in search results, meaning more people will find you naturally.
 							</li>
 
 							{showFullContent ? (
 								<>
 									<li>
-										ROI-focused Approach: As a digital marketing company in Kerala, we believe in transparency and accountability. That's why we focus on measurable results that directly impact your bottom line. We'll work closely with you to define your goals and develop a customised strategy that delivers a strong ROI.
+										Improve brand awareness: Higher rankings and organic traffic lead to more brand recognition and establish you as an authority.
 									</li>
 									<li>
-										Client-Centric: We take the time to understand your unique business needs and target audience. This ensures our campaigns are tailored to resonate with your ideal customers and achieve your specific goals.
+										Get a better return on investment: Our SEO is a cost-effective way to generate leads and sales since our strategy ultimately focuses on bringing you better ROI.
 									</li>
 									<li>
-										Data-Driven Decisions: We are not fans of guesswork. Every decision we make is backed by data and analytics, allowing us to constantly optimise your campaigns for maximum impact.
+										Long-term benefits: Unlike ads, SEO results are long-lasting. Once you rank well, you'll continue to see traffic for months or even years and we will make sure by tweaking the strategies if needed.
 									</li>
-									<li>
-										Long-Term Partnerships: We believe in building long-term partnerships with our clients. We're here to help you achieve sustainable growth, not just a quick fix.
-									</li>
-									<p className='txt'>So, when you choose Haris&Co as your digital marketing agency in Kerala, you're gaining a trusted partner dedicated to driving real revenue for your business. Sounds awesome, right?</p>
+
 									<div className='headcontent  headcontent-sub'>
 										<h2 className='threehd'>Bagging Awards On the Way
 										</h2>
-										<p className='txt'>Haris&co. isn't just another digital marketing agency in Kerala. We put our heart into everything we do, be it SEO activities, Social Media campaigns or Performance Marketing campaigns. Over the years, we have delivered a shedload of projects to our clients and we have won awards for many of our works. Here is the list of awards we have won thus far:
+										<p className='txt'>The SEO Company in Kerala With a Professional Process
 										</p>
 										<ul>
-											<li>
-												A Compelling Portfolio: Our proven track record speaks for itself. We've helped businesses of all sizes and industries achieve significant growth through our data-driven marketing strategies. Check out our portfolio to see real-world examples of our success.
-											</li>
-											<li>
-												Experienced Team: Our team is comprised of passionate and experienced digital marketing experts. We stay ahead of the curve with the latest trends and technologies to ensure your campaigns are cutting-edge and effective.
-											</li>
-											<li>
-												ROI-focused Approach: As a digital marketing company in Kerala, we believe in transparency and accountability. That's why we focus on measurable results that directly impact your bottom line. We'll work closely with you to define your goals and develop a customised strategy that delivers a strong ROI.
-											</li>
-											<li>
-												Client-Centric: We take the time to understand your unique business needs and target audience. This ensures our campaigns are tailored to resonate with your ideal customers and achieve your specific goals.
-											</li>
-											<li>
-												Data-Driven Decisions: We are not fans of guesswork. Every decision we make is backed by data and analytics, allowing us to constantly optimise your campaigns for maximum impact.
-											</li>
-											<li>
-												Long-Term Partnerships: We believe in building long-term partnerships with our clients. We're here to help you achieve sustainable growth, not just a quick fix.
-											</li>
+											<p className='txtbld'>1. Brand Understanding											</p>
+											<p className='txt'>Our SEO team start by getting to know your brand, its goals, target audience, and unique selling proposition (USP).											</p>
+
+											<p className='txtbld'>2. Industry & Competitor Research
+											</p>
+											<p className='txt'>We study your industry, analyse your competitors' SEO strategies, and identify potential opportunities for your website.
+											</p>
+
+											<p className='txtbld'>3. Website Audit											</p>
+											<p className='txt'>We conduct a comprehensive technical audit of your website to identify any SEO roadblocks and areas for improvement.</p>
+
+											<p className='txtbld'>4. Keyword Research								</p>
+											<p className='txt'>We research relevant keywords with high search volume and low competition to attract qualified traffic.			</p>
+
+											<p className='txtbld'>5. Creating the SEO Plan											</p>
+											<p className='txt'>Based on our findings, we craft a customised SEO plan outlining specific strategies, timelines, and deliverables.	</p>
+
+											<p className='txtbld'>6. Executing the Plan											</p>
+											<p className='txt'>We implement the SEO plan, including on-page optimisation, off-page activities, content creation, link building, and technical SEO improvements.											</p>
+
+											<p className='txtbld'>7. Tracking the Results											</p>
+											<p className='txt'>We closely monitor website traffic, keyword rankings, and other key metrics to measure progress.
+											</p>
+
+											<p className='txtbld'>8. Reporting to the Client
+											</p>
+											<p className='txt'>We provide regular reports with clear visualisations, keeping you informed of the campaign's performance.
+											</p>
+
+											<p className='txtbld'>9. Tweaking the Plan											</p>
+											<p className='txt'>SEO is an ongoing process. We continuously analyse data and adjust the plan as needed to optimise for search engine algorithms.</p>
+
+											<p className='txtbld'>10. Maintaining the Results											</p>
+											<p className='txt'>We focus on long-term SEO strategies to ensure your website maintains its high ranking and organic visibility.
+											</p>
+
+
 										</ul>
 									</div>
 								</>
@@ -1476,4 +1048,4 @@ const DigitalMarketing = () => {
 		</div>
 	)
 }
-export default DigitalMarketing;	
+export default SeoPage;	

@@ -62,7 +62,7 @@ import dsix from '../Assets/PR/6.png';
 
 const Works = () => {
   // State to keep track of the active tab
-  const [activeTab, setActiveTab] = useState('Branding');
+  const [activeTab, setActiveTab] = useState('SEO');
 
   // Function to render content based on the active tab
   const renderTabContent = () => {

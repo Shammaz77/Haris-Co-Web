@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import '../components/css/Digital.css';
 import { Link } from 'react-router-dom';
+import { Link as ScrollLink } from 'react-scroll';
+import { CSSTransition } from 'react-transition-group';
 import logo from '../Assets/navlogo.png'
 import founder from '../Assets/DigitalMarketing/copy.png'
 import clients from '../Assets/DigitalMarketing/Clients.svg'
@@ -37,7 +39,6 @@ import footerlogo from '../Assets/DigitalMarketing/footer-logo.svg'
 import google from '../Assets/DigitalMarketing/google.png'
 import callfooter from '../Assets/DigitalMarketing/callfooter.svg'
 import emailfooter from '../Assets/DigitalMarketing/emailfooter.svg'
-import { Link as ScrollLink } from 'react-scroll';
 import locationf from '../Assets/DigitalMarketing/locationf.svg'
 import b from '../Assets/DigitalMarketing/b.png'
 import f1 from '../Assets/DigitalMarketing/f1.png'
@@ -76,6 +77,10 @@ import s11 from '../Assets/DigitalMarketing/s11.svg'
 import p from '../Assets/DigitalMarketing/p.png'
 import l from '../Assets/DigitalMarketing/l.png'
 import m from '../Assets/DigitalMarketing/m.png'
+import k from '../Assets/DigitalMarketing/kevin.png'
+import s from '../Assets/DigitalMarketing/siva.png'
+import j from '../Assets/DigitalMarketing/jasim.png'
+import sw from '../Assets/DigitalMarketing/sw.png'
 
 
 import { Container } from 'react-bootstrap';
@@ -217,14 +222,14 @@ const AgencyAbudhabi = () => {
 			subtitle: 'We achieved 10 lakh revenue in the last month. Really happy to work with Haris aboobacker, Adarsh and team, really happy to work with you dear. We should fly together more heights,Thankfully',
 			username: 'Kalamandalam Sivaprasad',
 			userdesignation: 'Founder of Natya Arts Learning App',
-			userimg: userimg,
+			userimg: s,
 		},
 		{
 			title: 'This is great ! ',
 			subtitle: 'The professionalism, attention to detail, and the quality of service you have demonstrated have been instrumental in our success. It is a pleasure to work with this team that consistently goes above and beyond expectations,Thank you the exceptional work. We look forward to continuing our partnership and achieving even better results.',
 			username: 'Kevin Mohan',
 			userdesignation: 'Marketing Head of Katara limousine',
-			userimg: userimg,
+			userimg: k,
 		},
 		{
 			title: 'Hi team,',
@@ -238,7 +243,7 @@ const AgencyAbudhabi = () => {
 			subtitle: 'Kudos and keep the great good work up..I can see a rising stars soon to get hit for awards..Just merge and look forward for adding a spark of innovation and you are there my friends.',
 			username: 'Swetha',
 			userdesignation: 'Care n Cure',
-			userimg: userimg,
+			userimg: sw,
 		},
 
 	];

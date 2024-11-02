@@ -133,14 +133,65 @@
 	font-family: Abroreguler;
 }
 .sub-title-srvc-seo{
-	color: rgb(192, 192, 192);
+	color: rgb(255, 255, 255);
 	font-size: 16px;
-	width: 75%;
+	/* width: 75%; */
 	margin: auto;
 	padding-top: 20px;
 	margin-bottom: 0px !important;
 	font-family: PoppinsRegular;
 }
+.icon-servc-seo{
+	width: 30px;
+	height: 30px;
+}
+.seo-clients-image-logos{
+	padding-bottom: 5px;
+}
+.casestudy-main-div-seo{
+	padding-top: 30px;
+}
+.white-section-seo {
+	background-color: #fff;
+	padding-top: 20px;
+	padding-bottom: 110px;
+}
+.txtbld{
+	font-weight: 800;
+}
+.form-seo-report .form-control{
+	border-radius: 27px;
+	padding: 10px 20px !important;
+	border: 1px solid #000 !important;
+	background-color: transparent !important;
+}
+.form-seo-report{
+	display: flex;
+	padding-bottom: 40px;
+	justify-content: center;
+	padding-left: 30px;
+}
+.form-seo-report .form-group{
+	width: 170px;
+	margin-right: 20px;
+}
+.clients-reviews-seo {
+	padding: 60px 0px;
+	margin-top: 60px;
+	margin-bottom: 60px;
+	min-height: 419px;
+	box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -175,9 +226,9 @@
 	.hide-mobile-seo{
 		display: none;
 	}
-	.show-mobile-seo{
+	.show-mobile-seo {
 		display: block !important;
-		padding-top: 40px;
+		padding-top: 22px;
 	}
 	.seo-company-text-title {
     font-size: 31px;
@@ -194,13 +245,52 @@
 	.seo-white-section{
 		padding-top: 30px !important;
 	}
+	.home-wrapper-seo{
+		padding-top: 12%;
+	}
+}
+@media (max-width:700px){
+	.form-seo-report {
+    padding-left: 0px;
+		display: block;
+	}
+	.form-seo-report .form-group{
+		padding-bottom: 20px;
+	}
+	.form-seo-report .form-group{
+		width: 90%;
+		margin: auto;
+		display: table;
+		margin-right: auto;
+		margin-left: auto;
+	}
 }
 @media (max-width:600px){
 	.believe-titile-text {
     font-size: 33px;
 	}
+	.seo-top-viw-all{
+		margin-top: 23px !important;
+	}
+	.seo-mobile-showw{
+		padding-top: 55px !important;
+	}
+	.seo-white-section {
+		padding-top: 45px !important;
+	}
 	.believe-sub-titile-text {
     font-size: 32px;
+	}
+	.sub-title-seo-company {
+		font-size: 18px;
+		width: 98%;
+		margin-left: unset;
+	}
+	.title-seo-items{
+		padding-top: 0px !important;
+	}
+	.seo-wrapper {
+		font-size: 40px !important;
 	}
 	.free-box-div {
     margin-top: 0px;
